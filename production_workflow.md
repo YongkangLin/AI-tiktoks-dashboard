@@ -248,7 +248,14 @@ PYTHONPATH=src python3 -m ai_story_pipeline --submit-tiktok-queue outputs/week-0
 Execute only after `TIKTOK_ACCESS_TOKEN` is set, the TikTok app has the required Content Posting API scope, and `--review-mode real` is intentionally selected:
 
 ```bash
-PYTHONPATH=src python3 -m ai_story_pipeline --submit-tiktok-queue outputs/week-01/publish_queue.csv --tiktok-execute --tiktok-mode direct_post --tiktok-privacy-level SELF_ONLY --review-mode real
+PYTHONPATH=src python3 -m ai_story_pipeline --submit-tiktok-queue outputs/week-01/publish_queue.csv --tiktok-execute --tiktok-mode direct_post --tiktok-privacy-level SELF_ONLY
+```
+
+After execution, fetch TikTok publish status for returned `publish_id` values:
+
+```bash
+PYTHONPATH=src python3 -m ai_story_pipeline --fetch-tiktok-statuses outputs/week-01/tiktok_submissions/tiktok_submissions.json
+PYTHONPATH=src python3 -m ai_story_pipeline --fetch-tiktok-statuses outputs/week-01/tiktok_submissions/tiktok_submissions.json --tiktok-status-execute
 ```
 
 During trial mode, do not run `--tiktok-execute` until the final MP4s, `quality_gate.md`, and `publish_queue.md` have been reviewed.

@@ -35,6 +35,12 @@ PYTHONPATH=src python3 -m ai_story_pipeline --approve-campaign-run outputs/campa
 
 The approval command refreshes `quality_review.json`, `quality_gate.md`, `publish_queue.csv`, `tiktok_submissions/tiktok_submissions.json`, `e2e_readiness.md`, and the dashboard. TikTok execution still requires a separate real-mode command with `--tiktok-execute`.
 
+To prove the real-mode path without live posting, run the same story in real mode without `--tiktok-execute`; this skips the manual review gate and writes dry-run TikTok payloads:
+
+```bash
+PYTHONPATH=src python3 -m ai_story_pipeline --run-campaign --campaign-format story --story-json docs/story_episode_001.json --episodes 1 --out outputs/real_mode_dry_run --campaign-run-id story-episode-001-real --provider local_character_animatic --review-mode real --tiktok-row-limit 1
+```
+
 ## TikTok Direct Posting Requirements
 
 For direct TikTok posting, use TikTok's official Content Posting API rather than cookie-based browser bots.
@@ -66,6 +72,15 @@ Execute one ready queue row through Direct Post after setting `TIKTOK_ACCESS_TOK
 ```bash
 PYTHONPATH=src python3 -m ai_story_pipeline --submit-tiktok-queue outputs/week-01/publish_queue.csv --tiktok-execute --tiktok-mode direct_post --tiktok-privacy-level SELF_ONLY
 ```
+
+After a live submit, fetch TikTok publish status from the returned `publish_id` values:
+
+```bash
+PYTHONPATH=src python3 -m ai_story_pipeline --fetch-tiktok-statuses outputs/week-01/tiktok_submissions/tiktok_submissions.json
+PYTHONPATH=src python3 -m ai_story_pipeline --fetch-tiktok-statuses outputs/week-01/tiktok_submissions/tiktok_submissions.json --tiktok-status-execute
+```
+
+The first status command is a dry run that verifies which jobs have publish IDs. The second requires `TIKTOK_ACCESS_TOKEN` and calls TikTok's status endpoint.
 
 Use upload-to-inbox instead of Direct Post when the app only has `video.upload`:
 

@@ -29,6 +29,7 @@ The repo now automates story package generation, monetization review, batch queu
 - Publish queue generation for safe manual upload or future official API posting, blocked when character visuals or the quality gate are incomplete.
 - Official TikTok Content Posting API submission planner and client in `tiktok.py`.
 - Credential-gated TikTok Direct Post or upload-to-inbox execution from a ready publish queue.
+- TikTok publish status fetch artifacts from returned `publish_id` values, dry-run by default and credential-gated for remote polling.
 - Season continuity bible generation so cliffhangers have planned next-episode payoffs.
 - Multi-format test planning with early risk caps so no single plot gets overfunded before metrics.
 - CSV-based metrics import and analytics scoring.
