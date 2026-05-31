@@ -1,0 +1,77 @@
+{
+  "captured_at": "2026-05-31T06:10:08Z",
+  "source": "latest inline chat upload: save these as reference pictures",
+  "count": 10,
+  "images": [
+    {
+      "id": "chat_ref_2026-05-31_01",
+      "path": "reference/ideal_examples/chat_reference_images/chat_ref_2026-05-31_01.png",
+      "mime": "image/png",
+      "sha256": "b2b8a669b4cbebf62b51ec31d48266063e9cb1b2090bfad8497a2e963e1e37d1",
+      "bytes": 373128
+    },
+    {
+      "id": "chat_ref_2026-05-31_02",
+      "path": "reference/ideal_examples/chat_reference_images/chat_ref_2026-05-31_02.png",
+      "mime": "image/png",
+      "sha256": "84887ca060791312d783bb016f510ab175427be03f088b89a806d16a1752686c",
+      "bytes": 112787
+    },
+    {
+      "id": "chat_ref_2026-05-31_03",
+      "path": "reference/ideal_examples/chat_reference_images/chat_ref_2026-05-31_03.png",
+      "mime": "image/png",
+      "sha256": "82d487da1cd3d995c3e71104642e2d19453bcf94135782f64957b95eed3a8360",
+      "bytes": 111337
+    },
+    {
+      "id": "chat_ref_2026-05-31_04",
+      "path": "reference/ideal_examples/chat_reference_images/chat_ref_2026-05-31_04.png",
+      "mime": "image/png",
+      "sha256": "dfdf989d96b8791beb2970ac052b47f4b1dbf1845ae8dca922a86b6853b08eef",
+      "bytes": 319864
+    },
+    {
+      "id": "chat_ref_2026-05-31_05",
+      "path": "reference/ideal_examples/chat_reference_images/chat_ref_2026-05-31_05.png",
+      "mime": "image/png",
+      "sha256": "a025cde57ca1c71322aa3f195465189521140b667a3d099c98e36a4791540bf5",
+      "bytes": 1245518
+    },
+    {
+      "id": "chat_ref_2026-05-31_06",
+      "path": "reference/ideal_examples/chat_reference_images/chat_ref_2026-05-31_06.png",
+      "mime": "image/png",
+      "sha256": "fd15f4e6c0bae00e65a6d3bc1b0cd8012da124a595a0d9fb45cf8601502ff998",
+      "bytes": 866926
+    },
+    {
+      "id": "chat_ref_2026-05-31_07",
+      "path": "reference/ideal_examples/chat_reference_images/chat_ref_2026-05-31_07.png",
+      "mime": "image/png",
+      "sha256": "5630f4cc0a98af7afc152a3b50f0fcc4ec8cf5d5347ed4aad1c728e69c64875d",
+      "bytes": 112974
+    },
+    {
+      "id": "chat_ref_2026-05-31_08",
+      "path": "reference/ideal_examples/chat_reference_images/chat_ref_2026-05-31_08.png",
+      "mime": "image/png",
+      "sha256": "4d957bef894d33648d7f17ccc4984590c0f68e7e552d9856ab502be17eed8d4a",
+      "bytes": 3565881
+    },
+    {
+      "id": "chat_ref_2026-05-31_09",
+      "path": "reference/ideal_examples/chat_reference_images/chat_ref_2026-05-31_09.png",
+      "mime": "image/png",
+      "sha256": "b4d0c48b6a2d678a0e822d5d1a003974d2aa1201f820dace71640f87cf637ad4",
+      "bytes": 79682
+    },
+    {
+      "id": "chat_ref_2026-05-31_10",
+      "path": "reference/ideal_examples/chat_reference_images/chat_ref_2026-05-31_10.png",
+      "mime": "image/png",
+      "sha256": "f05836c50f7139da77b26459304ee18cdcb7f48720f5f5457cb13b80bc922112",
+      "bytes": 76611
+    }
+  ]
+}

@@ -50,6 +50,7 @@
     .assets { grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); }
     .asset-card { overflow: hidden; }
     .asset-card img { width: 100%; aspect-ratio: 9 / 16; object-fit: cover; display: block; background: #eef0ed; }
+    .reference-gallery .asset-card img { aspect-ratio: 1 / 1; object-fit: contain; padding: 6px; background: #111; }
     .asset-card p { margin: 9px 10px 11px; color: var(--muted); font-size: 13px; }
     .contact-sheet { width: 100%; max-height: 620px; object-fit: contain; display: block; background: #111; border: 1px solid var(--line); border-radius: 8px; margin: 12px 0 16px; }
     table { width: 100%; border-collapse: collapse; font-size: 14px; }
@@ -114,6 +115,23 @@
     <section class="panel">
       <h2>Paid Visual Target</h2>
       <p>The private repo now stores user-approved MOV examples, extracted stills, and a paid API style card. The dashboard shows reference stills only; full source MOVs stay out of the public site.</p><img class="contact-sheet" src="dashboard/assets/ideal_examples/ideal_examples_contact_sheet.jpg" alt="Ideal reference contact sheet"><table><tbody><tr><th>Private pack</th><td><code>reference/ideal_examples</code></td></tr><tr><th>Primary image</th><td>Ideogram API for paid character stills/reference sheets</td></tr><tr><th>Edit pass</th><td>OpenAI Images for expression, outfit, and continuity edits</td></tr><tr><th>Motion</th><td>Runway or Kling image-to-video from approved stills</td></tr></tbody></table><ul class="actions"><li>human-like but clearly non-human fruit characters</li><li>premium glossy 3D reality-show look</li><li>expressive eyes, eyebrows, mouths, and body language</li><li>detailed wardrobe, jewelry, hands, and fruit texture</li><li>tropical villa lighting, romance-drama framing, and interaction in every shot</li></ul><div class="grid assets"><div class="asset-card"><img src="dashboard/assets/ideal_examples/example_01_t003.jpg" alt="Example 01 - opening"><p>Example 01 - opening</p></div><div class="asset-card"><img src="dashboard/assets/ideal_examples/example_01_t018.jpg" alt="Example 01 - hospital beat"><p>Example 01 - hospital beat</p></div><div class="asset-card"><img src="dashboard/assets/ideal_examples/example_01_t042.jpg" alt="Example 01 - exterior conflict"><p>Example 01 - exterior conflict</p></div><div class="asset-card"><img src="dashboard/assets/ideal_examples/example_01_t078.jpg" alt="Example 01 - reception scene"><p>Example 01 - reception scene</p></div><div class="asset-card"><img src="dashboard/assets/ideal_examples/example_02_t003.jpg" alt="Example 02 - interior close-up"><p>Example 02 - interior close-up</p></div><div class="asset-card"><img src="dashboard/assets/ideal_examples/example_02_t015.jpg" alt="Example 02 - full-body acting"><p>Example 02 - full-body acting</p></div><div class="asset-card"><img src="dashboard/assets/ideal_examples/example_02_t030.jpg" alt="Example 02 - facial intensity"><p>Example 02 - facial intensity</p></div><div class="asset-card"><img src="dashboard/assets/ideal_examples/example_02_t050.jpg" alt="Example 02 - silhouette"><p>Example 02 - silhouette</p></div></div>
+    </section>
+    <section class="panel">
+      <h2>Uploaded Reference Pictures</h2>
+      <p>Recovered from the latest inline chat upload and stored in <code>reference/ideal_examples/chat_reference_images</code>. These are the direct visual references for paid fruit-character and object-character generation.</p>
+      <img class="contact-sheet" src="dashboard/assets/ideal_examples/chat_reference_images/chat_refs_contact_sheet.jpg" alt="Uploaded reference contact sheet">
+      <div class="grid assets reference-gallery">
+        <div class="asset-card"><img src="dashboard/assets/ideal_examples/chat_reference_images/chat_ref_2026-05-31_01.png" alt="Orange-haired fruit woman close-up"><p>Orange-haired fruit woman close-up</p></div>
+        <div class="asset-card"><img src="dashboard/assets/ideal_examples/chat_reference_images/chat_ref_2026-05-31_02.png" alt="Cherry drink confessional"><p>Cherry drink confessional</p></div>
+        <div class="asset-card"><img src="dashboard/assets/ideal_examples/chat_reference_images/chat_ref_2026-05-31_03.png" alt="Pineapple villa portrait"><p>Pineapple villa portrait</p></div>
+        <div class="asset-card"><img src="dashboard/assets/ideal_examples/chat_reference_images/chat_ref_2026-05-31_04.png" alt="Green-dress fruit host"><p>Green-dress fruit host</p></div>
+        <div class="asset-card"><img src="dashboard/assets/ideal_examples/chat_reference_images/chat_ref_2026-05-31_05.png" alt="Full-body banana man"><p>Full-body banana man</p></div>
+        <div class="asset-card"><img src="dashboard/assets/ideal_examples/chat_reference_images/chat_ref_2026-05-31_06.png" alt="Beach fruit couple"><p>Beach fruit couple</p></div>
+        <div class="asset-card"><img src="dashboard/assets/ideal_examples/chat_reference_images/chat_ref_2026-05-31_07.png" alt="Strawberry woman portrait"><p>Strawberry woman portrait</p></div>
+        <div class="asset-card"><img src="dashboard/assets/ideal_examples/chat_reference_images/chat_ref_2026-05-31_08.png" alt="Coffee cup ballerina"><p>Coffee cup ballerina</p></div>
+        <div class="asset-card"><img src="dashboard/assets/ideal_examples/chat_reference_images/chat_ref_2026-05-31_09.png" alt="Shark in sneakers"><p>Shark in sneakers</p></div>
+        <div class="asset-card"><img src="dashboard/assets/ideal_examples/chat_reference_images/chat_ref_2026-05-31_10.png" alt="Wooden bat character"><p>Wooden bat character</p></div>
+      </div>
     </section>
     <section class="panel">
       <h2>Scene Frames</h2>
