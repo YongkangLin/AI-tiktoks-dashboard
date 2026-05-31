@@ -55,6 +55,36 @@ Use the full multi-provider stack only after Kling proves a format winner:
 
 If API automation is required immediately, use one unified API route for early tests instead of integrating every vendor at once. `fal.ai` exposes Kling reference-to-video style endpoints and can work as a temporary integration layer. Use direct provider APIs later when volume justifies the engineering and pricing work.
 
+## Kling vs Veo For Fruit Reality Drama
+
+Use Kling as the default production tool for the Fruit Love Island-style format. Use Veo as a premium comparison/hero-shot renderer, not the cost baseline.
+
+| Criterion | Kling | Veo 3.1 |
+|---|---|---|
+| Best fit | Serialized character scenes with recurring fruit/object cast | Cinematic polish, natural realism, stronger one-shot spectacle |
+| Character consistency | Strong workflow fit through Element Library, Element Reference, multi-angle character assets, and voice binding | Supports image/reference workflows and Ingredients to Video, but the reference-asset workflow is less tailored to reusable character libraries |
+| Talking characters | Native audio/lip-sync and character voice binding are central Kling 3.0/Omni features | Native audio is strong, but per-second API cost is higher |
+| Clip length | Up to 15s in the app/workflow for Video 3.0 style generation | API specs list 4, 6, or 8 second clips for Veo 3.1 generation |
+| Social format | Built around image-to-video, character scenes, 9:16, and creator workflows | Officially supports 9:16 and social-ready vertical output |
+| Cost | More attractive for iterative testing, especially when using one tool for image/video/audio | Gemini API lists Veo 3.1 Lite at $0.05/s 720p or $0.08/s 1080p, Fast at $0.10-$0.12/s, Standard at $0.40/s, and 4K up to $0.60/s |
+| Recommendation | Start here | Use after a Kling scene wins and needs higher polish |
+
+Practical workflow:
+
+1. Generate 10-20 character/scene tests in Kling.
+2. Pick the best character design and reference workflow.
+3. Produce 3-5 short Kling clips for one episode.
+4. If the scene concept works, run one matching Veo 3.1 Fast or Standard comparison shot.
+5. Choose based on cost per usable second, not raw model quality.
+
+For this project, Veo should not replace Kling unless it clearly produces better recurring fruit-character continuity at a cost we can tolerate.
+
+Sources checked:
+
+- Kling image-to-video feature page: image animation, character consistency, native audio/lip-sync, 15s duration, 4K/pro/social-use claims.
+- Google Vertex AI Veo 3.1 docs: Veo supports 9:16 output, image/reference workflows, and 4/6/8 second API video lengths.
+- Google Gemini API pricing: Veo 3.1 Lite/Fast/Standard prices are listed per generated second.
+
 ## Provider Comparison
 
 | Provider | Best use | Why it matters for humanoid fruit drama | Main weakness |
