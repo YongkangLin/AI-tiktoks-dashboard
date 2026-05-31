@@ -4,355 +4,320 @@
 
 - **Show:** Fruit Crush Villa
 - **Episode:** 1
-- **Title:** The Sour Receipt
+- **Title:** The Necklace He Denied
 - **Runtime target:** 60 seconds
 - **Format:** Original humanoid-fruit dating-reality parody
-- **Pacing model:** Duanju-style vertical micro-drama
-- **Status:** Ready for paid character still generation and paid video prompt test
+- **Pacing model:** Duanju-style vertical microdrama
+- **Status:** Rewritten again for maximum clarity after viewer feedback; passed sub-agent critic with fixes applied
 
-## Core Hook
+## One-Sentence Plot
 
-Stella Strawberry finds a wet smoothie-bar receipt proving Mango Marco was inside the villa before his official "bombshell" entrance.
+Stella Strawberry met Mango Marco at the private villa audition last night, where he gave her half of a matching seed-heart necklace. Today he enters holding Pina Pineapple's hand and says he has never met Stella, until Bella Blueberry proves Marco is wearing the other half.
+
+## Why This Version Makes Sense Faster
+
+- One public betrayal: Marco denies knowing Stella.
+- One obvious proof object: Marco is wearing half of Stella's matching necklace.
+- One clean humiliation: Marco lies in front of the whole villa.
+- One production mystery: Benny tries to stop the cameras when the proof appears.
+- One Part 2 promise: Stella demands the audition tape from last night.
 
 ## Duanju Spine
 
-- First 3 seconds: Stella slaps down proof and accuses Marco.
-- First turn: Marco knew Stella's exact drink before he should have known her.
-- Midpoint reversal: Gina finds mango pulp on the prize, proving Marco touched the challenge before it began.
-- Final reversal: the receipt is signed by Benny, and Stella is labeled as the test subject.
-- Part 2 promise: Benny must answer why Stella was tested before any new mystery starts.
-- Loop design: Benny begins, "Because Stella..." and the cut snaps back to the opening receipt slap.
+- **0-3 seconds:** Marco walks in with another girl and says, "I have never met that strawberry in my life."
+- **First turn:** Stella calmly shows her matching necklace.
+- **Midpoint proof:** Bella reads `S + M - 11:47 PM` on Marco's necklace.
+- **Final reversal:** Benny says, "Cut Camera Three. Not the audition tape."
+- **Cliffhanger:** Stella says, "Roll the audition tape."
+- **Part 2 must answer:** What did Marco and production record at 11:47 PM last night?
 
 ## Cast In This Minute
 
 **Stella Strawberry**
-Glossy strawberry-coded lead. Sweet public face, secretly strategic. Always smiles one beat before deciding what to reveal.
+Met Marco during the private casting mixer last night. She arrives sweet and hopeful, then becomes calm, sharp, and impossible to embarrass.
 
 **Mango Marco**
-Charming mango-coded bombshell. Athletic, nervous when exposed. Acts confident until physical evidence appears.
+Looks like the perfect bombshell. Publicly denies Stella because he thinks production will hide what happened at the audition.
+
+**Pina Pineapple**
+New girl on Marco's arm. She is the public betrayal image, not a full subplot yet.
 
 **Bella Blueberry**
-Gossip detective. Tracks timestamps and production clues. Always notices doors, receipts, and camera cuts.
-
-**Gina Grape**
-Dramatic wildcard. Arrived during rehearsal day. Says the quiet clue out loud at the worst possible time.
+Gossip detective. She catches the tiny detail everyone else misses: the engraving on Marco's necklace.
 
 **Benny Banana**
-Host. Too calm when evidence appears. Turns every accusation into a game until the proof points at him.
-
-## Why Stella Might Be The Test Subject
-
-Benny thinks Stella is secretly controlling the first vote.
-
-He may have brought Marco in early to test whether Stella would protect the villa, protect Marco, or protect her own screen time.
-
-The key clue: Stella looks at the locked Juice Room before Benny explains why it matters.
+Host and producer. He smiles through chaos, but panics when Stella asks for the audition tape.
 
 ## 60-Second Script
 
-### Beat 1: Cold Proof
+### Beat 1: The Public Denial
 
-- **Time:** 0:00-0:08
+- **Time:** 0:00-0:07
 
-**Visual:** Stella slaps a wet receipt onto a glass poolside table. Marco is mid-smile. His face drops. Fast push-in on the receipt: 2:16 a.m., two mango mocktails, two straws.
-
-**Dialogue:**
-
-```text
-Stella: Marco... why is your name on a drink order from before you entered the villa?
-Bella: Wait. That is from last night.
-```
-
-**On-screen caption:** He was inside before the villa opened.
-
-### Beat 2: The Entrance Was Too Clean
-
-- **Time:** 0:08-0:22
-
-**Visual:** Smash cut: "12 HOURS EARLIER." Marco walks through palm shadows by the pool, open shirt, gold chain, perfect smile. Everyone cheers. Stella freezes, looks at the bar, then claps two beats late. Bella clocks it.
-
-**Dialogue / VO:**
-
-```text
-Narrator: Twelve hours earlier, Marco walked in like the villa already belonged to him.
-Narrator: But Stella did not scream. She looked at the bar first.
-Bella, confessional: Everyone screamed. Stella counted to two, then screamed.
-Bella, confessional: That is not excitement. That is math.
-```
-
-**On-screen caption:** Watch Stella.
-
-### Beat 3: The Locked Room Test
-
-- **Time:** 0:22-0:30
-
-**Visual:** Benny rolls out a gold peel bracelet on a velvet tray. A locked door glows behind the smoothie bar. Stella looks at the door before Benny points to it.
+**Visual:** Marco enters the villa holding Pina's hand. Stella is already waiting by the pool, smiling because he gave her a necklace last night.
 
 **Dialogue:**
 
 ```text
-Benny: One smoothie. One fruit you trust.
-Benny: Winner gets first pick... and ten minutes in the locked Juice Room.
+Benny: New bombshell in the villa... Mango Marco.
+Stella: Marco?
+Marco: I have never met that strawberry in my life.
 ```
 
-**On-screen caption:** First pick. Locked room. One clue.
+**On-screen caption:** He said he never met her.
 
-### Beat 4: Marco Knows Too Much
+### Beat 2: Pina Claims Him
 
-- **Time:** 0:30-0:38
+- **Time:** 0:07-0:15
 
-**Visual:** Marco mixes strawberry, lime, and salt without asking. Stella tries not to smile.
+**Visual:** Pina tightens her hand around Marco's. The other fruits gasp and look at Stella.
 
 **Dialogue:**
 
 ```text
-Marco: Strawberry, lime, little salt. That's Stella's drink.
-Stella: How would you know that?
-Marco: Lucky guess.
+Pina: That's awkward. He came in with me.
+Marco: Stella, right? Nice to meet you.
+Stella: Nice to meet me?
 ```
 
-**On-screen caption:** Lucky guess?
+**On-screen caption:** Nice to meet me?
 
-### Beat 5: The Prize Was Already Touched
+### Beat 3: Stella Shows Her Half
 
-- **Time:** 0:38-0:46
+- **Time:** 0:15-0:25
 
-**Visual:** Gina tilts the Golden Peel bracelet into the sunset. A tiny orange smear glows on the clasp. Benny snatches the tray back too fast.
+**Visual:** Stella lifts a small seed-heart necklace from her dress. The villa goes quiet.
 
 **Dialogue:**
 
 ```text
-Gina: Why does the prize already have mango pulp on it?
-Benny: Gina, we are flirting, not doing forensics.
+Stella: Then why am I wearing your promise?
+Marco: A lot of people wear necklaces.
+Stella: Not from last night's audition.
 ```
 
-**On-screen caption:** Why was the prize touched?
+**On-screen caption:** Then why am I wearing your promise?
 
-### Beat 6: Bella's Timestamp Trap
+### Beat 4: Marco Tries To Laugh It Off
 
-- **Time:** 0:46-0:54
+- **Time:** 0:25-0:34
 
-**Visual:** Back to the present. Bella puts a straw wrapper beside the wet receipt. Marco looks at Stella, not the receipt.
+**Visual:** Marco laughs too loudly and touches his own necklace without realizing it.
 
 **Dialogue:**
 
 ```text
-Bella: The booth door clicked at 2:13.
-Bella: The receipt printed at 2:16.
-Bella: And there were two straws.
-Marco: I can explain.
+Marco: Every mango has charm.
+Bella: Then why are you hiding yours?
+Marco: I'm not hiding anything.
 ```
 
-**On-screen caption:** Two straws. One lie.
+**On-screen caption:** Why are you hiding yours?
 
-### Beat 7: Benny Is On The Receipt
+### Beat 5: Bella Reads The Engraving
 
-- **Time:** 0:54-1:00
+- **Time:** 0:34-0:46
 
-**Visual:** Stella flips the receipt over. On the back: "TEST SUBJECT - STELLA." Benny's smile disappears. He starts to answer, but the shot cuts on his first word and loops back to the receipt slap.
+**Visual:** Bella steps behind Marco, flips his necklace toward camera, and squints at the tiny writing.
 
 **Dialogue:**
 
 ```text
-Stella: Then why did you sign my test?
-Benny: Because Stella...
+Bella: It says S plus M.
+Pina: That could mean anything.
+Bella: It also says... 11:47 p.m.
+```
+
+**On-screen caption:** S + M. 11:47 p.m.
+
+### Beat 6: Benny Panics
+
+- **Time:** 0:46-0:55
+
+**Visual:** Benny's host smile breaks. He gestures at the camera crew to stop filming, then accidentally names the hidden tape.
+
+**Dialogue:**
+
+```text
+Benny: Cut Camera Three. Not the audition tape.
+Stella: Why?
+Bella: Because he knew.
+```
+
+**On-screen caption:** Benny knew.
+
+### Beat 7: The Tape
+
+- **Time:** 0:55-1:00
+
+**Visual:** Stella turns from Marco to Benny. Marco looks less guilty than scared.
+
+**Dialogue:**
+
+```text
+Stella: Roll the audition tape.
+Benny: Stella, don't.
 CUT.
 ```
 
-**On-screen caption:** Part 2 opens on Benny's answer.
+**On-screen caption:** Part 2 opens on the tape.
 
 ## End State
 
-The minute resolves one question: Marco was probably in the villa early.
+The episode resolves one question: Marco lied when he said he never met Stella.
 
-It opens the next question: Benny may have staged the whole entrance as a loyalty test on Stella.
+It opens one new question: what did Benny and Marco record at 11:47 p.m. last night?
 
 ## Part 2 Continuity Promise
 
-Part 2 must open on Benny answering why he signed the receipt. Do not dodge this with a new unrelated cliffhanger.
+Part 2 must open with the audition tape from last night. Do not skip to a new villa problem. The first shot should be security footage of Marco giving Stella the necklace, followed by Benny coaching Marco before the official entrance.
 
 ## Posting Package
 
-- Search-style caption: Fruit villa drama where Stella finds proof Mango Marco entered before the bombshell reveal.
-- Comment bait: Team Stella or Team Marco?
-- Account lore-drop comment: Bella noticed the locked Juice Room before anyone mentioned it. Watch Stella's eyes during Benny's challenge.
-- Repeatable audio cue: Benny saying, "Gina, we are flirting, not doing forensics."
-- Loop note: the final "Because Stella..." cut should snap back into the opening receipt slap sound.
+- Search-style caption: Fruit villa drama where Mango Marco denies knowing Stella, but the necklace from last night's audition exposes him.
+- Comment bait: Did Marco betray Stella, or did Benny set them both up?
+- Account lore-drop comment: Look at Marco's hand at 0:28. He touches the necklace before Bella even says anything.
+- Repeatable audio cue: Stella saying, "Nice to meet me?"
+- Loop note: the final "Stella, don't" should cut back to Marco saying "I have never met that strawberry in my life."
 
 ## Paid Render Micro-Shot Pack
 
 All micro-shots are 3-5 seconds and should use approved character reference stills. Generate as vertical 9:16 image-to-video clips, then edit together with hard Duanju-style cuts.
 
-### Shot 01: Receipt Slap
+### Shot 01: Marco Enters With Pina
 
 - **Time:** 0:00-0:04
+- **Characters:** Marco, Pina, Stella
+- **Action:** Marco enters holding Pina's hand while Stella recognizes him.
+- **Expression change:** Stella happy to stunned; Marco confident to guarded.
+- **Camera:** Fast push from Stella reaction to Marco and Pina.
+- **Prompt core:** Mango Marco enters tropical fruit villa holding Pina Pineapple's hand, Stella Strawberry waiting by pool recognizes him from last night's audition, glossy humanoid fruit reality drama, shocked reaction, vertical 9:16.
+
+### Shot 02: Public Denial
+
+- **Time:** 0:04-0:07
+- **Characters:** Marco, Stella
+- **Action:** Marco publicly says he has never met Stella.
+- **Expression change:** Marco fake polite smile; Stella hurt but controlled.
+- **Camera:** Tight shot-reverse-shot.
+- **Prompt core:** Mango Marco close-up with fake charming smile saying he has never met Stella, Stella Strawberry stunned in background, premium 3D animated humanoid fruit style.
+
+### Shot 03: Pina Takes His Arm
+
+- **Time:** 0:07-0:11
+- **Characters:** Pina, Marco, Stella
+- **Action:** Pina pulls Marco closer in front of Stella.
+- **Expression change:** Pina smug to uncertain.
+- **Camera:** Medium two-shot with Stella visible between them.
+- **Prompt core:** Pina Pineapple holds Mango Marco's arm possessively, Stella Strawberry watches from poolside, tropical villa contestants reacting.
+
+### Shot 04: Nice To Meet Me?
+
+- **Time:** 0:11-0:15
+- **Characters:** Stella
+- **Action:** Stella repeats Marco's fake greeting back at him.
+- **Expression change:** Hurt smile becomes sharp disbelief.
+- **Camera:** Close-up on Stella's face and necklace chain.
+- **Prompt core:** Stella Strawberry close-up, glossy red fruit skin, expressive green eyes, necklace chain visible, she looks wounded but composed.
+
+### Shot 05: Stella Shows Her Necklace
+
+- **Time:** 0:15-0:20
 - **Characters:** Stella, Marco
-- **Action:** Stella slaps wet receipt onto glass table.
-- **Expression change:** Marco charming smile to panic.
-- **Camera:** Impact close-up, fast push.
-- **Prompt core:** Stella Strawberry foreground hand and receipt, Mango Marco behind her at pool table, wet proof lands hard, sunset villa, premium humanoid fruit reality drama.
+- **Action:** Stella lifts her seed-heart necklace from last night's audition toward camera.
+- **Expression change:** Stella calm; Marco's smile drops.
+- **Camera:** Insert on necklace, rack focus to Marco.
+- **Prompt core:** Stella Strawberry holds up seed-heart necklace from last night's audition, tiny engraving visible, Mango Marco shocked behind her, warm sunset villa lighting.
 
-### Shot 02: Receipt Evidence
+### Shot 06: Marco Laughs Too Loud
 
-- **Time:** 0:04-0:08
-- **Characters:** Bella
-- **Action:** Receipt close-up: 2:16 a.m., two mango mocktails, two straws.
-- **Expression change:** Bella's eyes widen into detective focus.
-- **Camera:** Macro prop insert, whip to Bella.
-- **Prompt core:** Wet smoothie receipt readable as prop, Bella Blueberry leans into frame, sharp eye movement, shallow depth of field, no real logos.
+- **Time:** 0:20-0:28
+- **Characters:** Marco, Pina, villa cast
+- **Action:** Marco laughs and dismisses the necklace.
+- **Expression change:** Forced laugh to nervous glance.
+- **Camera:** Reality TV handheld push-in.
+- **Prompt core:** Mango Marco laughs nervously beside Pina Pineapple, villa contestants gossip, tropical pool party, comedic tension.
 
-### Shot 03: Bombshell Entrance
+### Shot 07: Bella Notices His Hand
 
-- **Time:** 0:08-0:12
-- **Characters:** Marco
-- **Action:** Flashback entrance through palm shadows.
-- **Expression change:** Confident grin, performs for cameras.
-- **Camera:** Low-angle walk-in, lens flare.
-- **Prompt core:** Mango Marco enters tropical villa like a bombshell, open linen shirt, gold chain, crowd energy, sunset pool lights.
-
-### Shot 04: Stella Recognizes The Bar
-
-- **Time:** 0:12-0:16
-- **Characters:** Stella
-- **Action:** Stella freezes and looks at smoothie bar before clapping.
-- **Expression change:** Recognition panic hidden under smile.
-- **Camera:** Tight close-up, eye dart.
-- **Prompt core:** Stella Strawberry sees the bar, freezes, then fakes excitement, expressive green eyes, human-like hand rising late to clap.
-
-### Shot 05: Bella's Confessional
-
-- **Time:** 0:16-0:21
-- **Characters:** Bella
-- **Action:** Bella confessional: "That is math."
-- **Expression change:** Amused gossip to serious investigator.
-- **Camera:** Confessional close-up.
-- **Prompt core:** Bella Blueberry in blue-lit booth, direct-to-camera, notebook tap, crisp mouth movement, tiny mic charm.
-
-### Shot 06: Golden Peel Rule
-
-- **Time:** 0:21-0:26
-- **Characters:** Benny, Stella
-- **Action:** Benny reveals Golden Peel and locked Juice Room; Stella glances at door early.
-- **Expression change:** Benny showman smile; Stella calculates.
-- **Camera:** Tray close-up to door rack focus.
-- **Prompt core:** Benny Banana presents gold peel bracelet on velvet tray, locked door glowing behind bar, Stella's eyes move before his hand points.
-
-### Shot 07: The Exact Drink
-
-- **Time:** 0:26-0:31
-- **Characters:** Marco, Stella
-- **Action:** Marco mixes Stella's exact drink.
-- **Expression change:** Stella private smile turns suspicious.
-- **Camera:** Hands, blender, eye cut.
-- **Prompt core:** Mango Marco mixes strawberry, lime, salt without asking, Stella hides a smile behind her hand, tropical bar close-ups.
-
-### Shot 08: Lucky Guess
-
-- **Time:** 0:31-0:36
-- **Characters:** Marco, Stella
-- **Action:** Stella asks how he knew; Marco says lucky guess.
-- **Expression change:** Marco confidence cracks for one blink.
-- **Camera:** Shot-reverse-shot.
-- **Prompt core:** Mango Marco tries to laugh off the clue, Stella leans in, romantic tension under accusation, detailed fruit textures and hands.
-
-### Shot 09: Mango Pulp
-
-- **Time:** 0:36-0:41
-- **Characters:** Gina, Benny
-- **Action:** Gina tilts bracelet; mango pulp glows on clasp.
-- **Expression change:** Gina triumphant; Benny alarmed.
-- **Camera:** Sunlit macro reveal.
-- **Prompt core:** Gina Grape reveals orange smear on Golden Peel bracelet, Benny Banana reaches in too fast, reality-TV zoom.
-
-### Shot 10: Benny Grabs The Tray
-
-- **Time:** 0:41-0:45
-- **Characters:** Benny, cast
-- **Action:** Benny snatches tray and jokes about forensics.
-- **Expression change:** Host control slips for half a second.
-- **Camera:** Handheld reaction cut.
-- **Prompt core:** Benny Banana pulls tray away, cast reacts in quick close-ups, Stella and Bella exchange a look, dramatic villa sunset.
-
-### Shot 11: Timestamp Trap
-
-- **Time:** 0:45-0:50
+- **Time:** 0:28-0:34
 - **Characters:** Bella, Marco
-- **Action:** Bella lays straw wrapper beside receipt and gives timestamps.
-- **Expression change:** Marco looks at Stella instead of proof.
-- **Camera:** Tabletop evidence board.
-- **Prompt core:** Bella Blueberry arranges receipt and straw wrapper like evidence, Marco's eyes avoid the table and lock onto Stella.
+- **Action:** Bella sees Marco touching his hidden necklace.
+- **Expression change:** Bella playful to detective.
+- **Camera:** Close-up on Marco's hand, snap to Bella's eyes.
+- **Prompt core:** Bella Blueberry notices Mango Marco touching hidden necklace under floral shirt, detective expression, reality show zoom.
 
-### Shot 12: Test Subject
+### Shot 08: Bella Flips The Necklace
 
-- **Time:** 0:50-0:54
-- **Characters:** Stella
-- **Action:** Stella flips receipt over.
-- **Expression change:** Calm smile to cold discovery.
-- **Camera:** Slow hand flip, snap zoom.
-- **Prompt core:** Stella Strawberry flips wet receipt, back reveals TEST SUBJECT - STELLA, her expression hardens.
+- **Time:** 0:34-0:40
+- **Characters:** Bella, Marco
+- **Action:** Bella flips Marco's necklace outward.
+- **Expression change:** Marco panic; Bella triumph.
+- **Camera:** Fast hand close-up.
+- **Prompt core:** Bella Blueberry flips Mango Marco's matching seed-heart necklace toward camera, Marco panics, glossy fruit-human characters.
 
-### Shot 13: Benny Breaks
+### Shot 09: Engraving Proof
 
-- **Time:** 0:54-0:57
-- **Characters:** Benny
-- **Action:** Benny's smile disappears.
-- **Expression change:** Showman mask collapses.
-- **Camera:** Tight face close-up.
-- **Prompt core:** Benny Banana host face in close-up, sunglasses lowered, mouth opens to answer, pool lights behind him.
+- **Time:** 0:40-0:46
+- **Characters:** Bella, Pina, Stella
+- **Action:** Bella reads the engraving as Pina's confidence collapses.
+- **Expression change:** Pina smug to humiliated; Stella quiet fury.
+- **Camera:** Macro insert plus reaction cuts.
+- **Prompt core:** Close-up of necklace engraving reading S + M - 11:47 PM as clean edited overlay, Pina Pineapple shocked, Stella Strawberry silent.
 
-### Shot 14: Loop Cut
+### Shot 10: Benny Cuts Cameras
 
-- **Time:** 0:57-1:00
-- **Characters:** Stella, Benny
-- **Action:** Benny says "Because Stella..." and cut loops to receipt slap.
-- **Expression change:** Stella's eyes snap up.
-- **Camera:** Abrupt cut on motion.
-- **Prompt core:** Stella foreground, Benny mid-confession, cut before answer, sound bridge into receipt slap for seamless loop.
+- **Time:** 0:46-0:52
+- **Characters:** Benny, camera crew, Stella
+- **Action:** Benny tells the crew to cut Camera Three and not show the audition tape.
+- **Expression change:** Benny host smile to panic.
+- **Camera:** Whip pan to Benny.
+- **Prompt core:** Benny Banana host panics and says cut Camera Three, not the audition tape, Stella Strawberry turns toward him, tropical villa production chaos.
 
-## Thumbnail Frame
+### Shot 11: Benny Knew
 
-Stella Strawberry holds the wet receipt toward camera in the foreground. Mango Marco panics behind her at the pool table. Benny Banana is visible over Stella's shoulder with his smile falling.
+- **Time:** 0:52-0:55
+- **Characters:** Bella, Benny, Stella
+- **Action:** Bella says Benny knew.
+- **Expression change:** Benny frozen; Stella realizes the bigger betrayal.
+- **Camera:** Three-shot triangle.
+- **Prompt core:** Bella Blueberry points at Benny Banana, Stella Strawberry realizes host was involved, dramatic sunset villa lighting.
 
-The receipt, Stella's eyes, and Marco's panic must be readable at phone thumbnail size.
+### Shot 12: Roll The Tape
+
+- **Time:** 0:55-1:00
+- **Characters:** Stella, Benny, Marco
+- **Action:** Stella demands the audition tape.
+- **Expression change:** Marco guilt turns fear; Benny tries to stop her.
+- **Camera:** Push on Stella, smash cut.
+- **Prompt core:** Stella Strawberry points toward reality show camera and demands the audition tape from last night, Mango Marco scared, Benny Banana saying don't, cliffhanger.
 
 ## Voice Direction
 
-- Narrator: fast Duanju reality-drama narrator, conspiratorial, urgent, no dead air.
-- Stella: sweet tone with a controlled edge; every accusation sounds calm, not loud.
-- Marco: charming and flirtatious until evidence appears, then a nervous crack.
-- Bella: quick, precise gossip detective; speaks like timestamps are weapons.
-- Gina: dramatic wildcard with dry comic bite.
-- Benny: smooth host voice that turns brittle when exposed.
+- **Narrator / Benny:** smooth reality-host voice, playful until the final panic.
+- **Stella:** soft at first, then controlled and cold.
+- **Marco:** charming but overacting; his laugh should sound fake.
+- **Pina:** confident, then embarrassed.
+- **Bella:** fast, amused, forensic.
 
-## Visual Bar
+## Visual Style Target
 
-Use the uploaded reference images in `reference/ideal_examples/chat_reference_images/` for humanoid fruit quality: expressive eyes, detailed fruit texture, human-like bodies, jewelry, hands, tropical villa lighting, and actual acting beats.
+Use the uploaded reference pictures as the paid-API visual bar:
 
-Every rendered shot must be readable on mute in under one second. No paid shot should last more than five seconds unless the face is actively changing, a prop is being revealed, or a social reversal is happening.
-
-## Paid Character Visual Prompts
-
-**Stella Strawberry**
-Humanoid strawberry woman, glossy red seed-textured fruit head, large expressive green eyes, thick lashes, leaf hair bow, gold hoop earrings, fitted tropical green dress, human-like hands and shoulders, sweet smile hiding calculation, premium 3D animated reality-show style, sunset villa pool lighting.
-
-**Mango Marco**
-Humanoid mango man, golden mango-textured face and head, expressive eyebrows, athletic human-like body, open white linen shirt, shell necklace, resort shorts, charming smile turning nervous, premium 3D animated reality-show style, tropical villa lighting.
-
-**Bella Blueberry**
-Humanoid blueberry woman, glossy blue round fruit head, sharp expressive eyes, sparkly lashes, metallic mini dress, tiny microphone charm, detective-gossip posture, premium 3D animated reality-show confessional lighting.
-
-**Gina Grape**
-Humanoid grape woman, readable grape-cluster hair silhouette, glossy purple skin, theatrical eyes, star earrings, fitted evening outfit, hand-on-hip stance, dramatic wildcard expression, premium 3D animated reality-show style.
-
-**Benny Banana**
-Humanoid banana host, tall banana-shaped head, athletic yellow body, peel tuxedo jacket, lapel mic, sunglasses, broad showman gestures, smile dropping when exposed, premium 3D animated reality-show style.
+- Human-like fruit bodies with expressive eyes, eyebrows, mouths, and hands.
+- Clearly non-human fruit identity through skin texture, leaf hair, seed details, and silhouettes.
+- Premium glossy 3D animated reality-show look.
+- Sunset tropical villa, pool, string lights, confession-booth energy.
+- The necklace timestamp must be readable via edited overlay or clean prop insert. Do not rely on video generation to render tiny text.
 
 ## Critic Gate
 
-Sub-agent critic result before fixes: fail for paid video generation.
+Sub-agent critic result: **PASS for Episode 1 with fixes applied.**
 
-Second critic result after Duanju pass: character stills pass, video blocked until micro-shot pack.
+Fixes applied from the critic:
 
-Final critic result after the micro-shot pack: pass for paid video prompt test.
-
-See [first script critic review](script_reviews/first_60s_script_review.md).
+- Replaced the confusing `After the Finale` engraving with the concrete timestamp `S + M - 11:47 PM`.
+- Clarified that Stella and Marco met during the private villa audition last night, not in a long off-screen relationship.
+- Made production guilt direct: Benny says, "Cut Camera Three. Not the audition tape."
+- Kept Pina mostly visual so Episode 1 does not over-invest in a second subplot.
+- Ended before the tape plays, creating a specific Part 2 promise.
