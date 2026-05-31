@@ -1,0 +1,525 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fruit Crush Villa - The Sour Receipt Script</title>
+  <style>
+    :root {
+      --bg: #fff8ef;
+      --panel: #ffffff;
+      --ink: #1d2630;
+      --muted: #69727d;
+      --line: #e7d9c8;
+      --accent: #e05248;
+      --gold: #c58a1d;
+      --blue: #2d6cdf;
+      --green: #2f8f66;
+      --shadow: 0 14px 40px rgba(59, 38, 22, .10);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background:
+        linear-gradient(180deg, rgba(255, 213, 158, .28), transparent 280px),
+        var(--bg);
+      color: var(--ink);
+      font: 16px/1.55 ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    a { color: var(--blue); }
+
+    .wrap {
+      width: min(1120px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    header {
+      padding: 34px 0 18px;
+      border-bottom: 1px solid var(--line);
+      background: rgba(255, 248, 239, .92);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      backdrop-filter: blur(14px);
+    }
+
+    .topline {
+      display: flex;
+      justify-content: space-between;
+      gap: 14px;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+
+    h1, h2, h3 { line-height: 1.1; margin: 0; }
+
+    h1 {
+      font-size: clamp(2rem, 5vw, 4.4rem);
+      letter-spacing: 0;
+      max-width: 760px;
+    }
+
+    .eyebrow {
+      color: var(--accent);
+      font-weight: 800;
+      text-transform: uppercase;
+      font-size: .8rem;
+      letter-spacing: .08em;
+      margin-bottom: 10px;
+    }
+
+    .summary {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-top: 18px;
+    }
+
+    .pill {
+      border: 1px solid var(--line);
+      background: #fff;
+      border-radius: 999px;
+      padding: 7px 11px;
+      color: var(--muted);
+      font-size: .9rem;
+      white-space: nowrap;
+    }
+
+    .nav {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-top: 18px;
+    }
+
+    .nav a {
+      display: inline-flex;
+      text-decoration: none;
+      background: #261f1b;
+      color: #fff;
+      border-radius: 7px;
+      padding: 8px 10px;
+      font-size: .9rem;
+      font-weight: 700;
+    }
+
+    main { padding: 26px 0 56px; }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 18px;
+    }
+
+    .panel {
+      grid-column: span 12;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: clamp(18px, 3vw, 28px);
+      box-shadow: var(--shadow);
+    }
+
+    .half { grid-column: span 6; }
+    .third { grid-column: span 4; }
+
+    .lead {
+      font-size: clamp(1.1rem, 2vw, 1.45rem);
+      margin: 0;
+      max-width: 880px;
+    }
+
+    .list {
+      display: grid;
+      gap: 10px;
+      margin: 16px 0 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .list li {
+      padding-left: 14px;
+      border-left: 4px solid var(--accent);
+    }
+
+    .cast-grid,
+    .shot-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 14px;
+      margin-top: 18px;
+    }
+
+    .card {
+      border: 1px solid var(--line);
+      background: #fffdf9;
+      border-radius: 8px;
+      padding: 16px;
+      min-width: 0;
+    }
+
+    .card h3 {
+      font-size: 1.05rem;
+      margin-bottom: 8px;
+    }
+
+    .meta {
+      color: var(--muted);
+      font-weight: 700;
+      font-size: .88rem;
+      margin-bottom: 10px;
+    }
+
+    .beat {
+      display: grid;
+      grid-template-columns: 130px minmax(0, 1fr);
+      gap: 18px;
+      border-top: 1px solid var(--line);
+      padding: 20px 0;
+    }
+
+    .beat:first-of-type { border-top: 0; padding-top: 0; }
+
+    .time {
+      font-weight: 900;
+      color: var(--accent);
+      font-size: 1.05rem;
+    }
+
+    .beat h3 { margin-bottom: 8px; }
+
+    .label {
+      display: inline-flex;
+      margin: 10px 0 6px;
+      color: var(--muted);
+      font-size: .78rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+    }
+
+    .dialogue {
+      background: #1f252b;
+      color: #f8f4eb;
+      border-radius: 8px;
+      padding: 12px 14px;
+      margin: 8px 0 0;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: .95rem;
+      white-space: pre-wrap;
+      overflow-wrap: anywhere;
+    }
+
+    .caption {
+      display: inline-flex;
+      margin-top: 10px;
+      padding: 6px 9px;
+      border-radius: 7px;
+      background: #fff1d6;
+      color: #6d4810;
+      font-weight: 800;
+    }
+
+    .shot-grid .card {
+      display: grid;
+      gap: 8px;
+      align-content: start;
+    }
+
+    .field strong {
+      color: var(--muted);
+      display: block;
+      font-size: .78rem;
+      text-transform: uppercase;
+      letter-spacing: .07em;
+      margin-bottom: 2px;
+    }
+
+    .prompt {
+      background: #f6f1ea;
+      border-radius: 7px;
+      padding: 10px;
+      overflow-wrap: anywhere;
+    }
+
+    .status {
+      display: grid;
+      gap: 10px;
+      margin-top: 14px;
+    }
+
+    .pass {
+      border-left: 5px solid var(--green);
+      background: #effaf4;
+      padding: 12px 14px;
+      border-radius: 7px;
+    }
+
+    footer {
+      padding: 28px 0 40px;
+      color: var(--muted);
+      border-top: 1px solid var(--line);
+    }
+
+    @media (max-width: 820px) {
+      header { position: static; }
+      .half, .third { grid-column: span 12; }
+      .cast-grid, .shot-grid { grid-template-columns: 1fr; }
+      .beat { grid-template-columns: 1fr; gap: 8px; }
+      .nav a { flex: 1 1 auto; justify-content: center; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <div class="topline">
+        <div>
+          <div class="eyebrow">Fruit Crush Villa - Episode 1</div>
+          <h1>The Sour Receipt</h1>
+        </div>
+        <a class="pill" href="index.html">Back to dashboard</a>
+      </div>
+      <div class="summary">
+        <span class="pill">60 seconds</span>
+        <span class="pill">Duanju-style vertical micro-drama</span>
+        <span class="pill">Paid video prompt test: pass</span>
+        <span class="pill">Review before TikTok in trial mode</span>
+      </div>
+      <nav class="nav" aria-label="Script sections">
+        <a href="#beats">Story Beats</a>
+        <a href="#shots">Render Shots</a>
+        <a href="#voices">Voices</a>
+        <a href="#visuals">Visual Prompts</a>
+        <a href="first_60s_script.md">Raw Markdown</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap grid">
+    <section class="panel">
+      <h2>Core Hook</h2>
+      <p class="lead">Stella Strawberry finds a wet smoothie-bar receipt proving Mango Marco was inside the villa before his official bombshell entrance.</p>
+    </section>
+
+    <section class="panel half">
+      <h2>Duanju Spine</h2>
+      <ul class="list">
+        <li>First 3 seconds: Stella slaps down proof and accuses Marco.</li>
+        <li>First turn: Marco knew Stella's exact drink before he should have known her.</li>
+        <li>Midpoint reversal: Gina finds mango pulp on the prize.</li>
+        <li>Final reversal: Benny signed the receipt, and Stella is labeled as the test subject.</li>
+        <li>Part 2 promise: Benny must answer why Stella was tested before any new mystery starts.</li>
+        <li>Loop design: Benny begins, "Because Stella..." and the cut snaps back to the opening receipt slap.</li>
+      </ul>
+    </section>
+
+    <section class="panel half">
+      <h2>Test Subject Logic</h2>
+      <p>Benny thinks Stella is secretly controlling the first vote. He may have brought Marco in early to test whether Stella would protect the villa, protect Marco, or protect her own screen time.</p>
+      <p><strong>Key clue:</strong> Stella looks at the locked Juice Room before Benny explains why it matters.</p>
+    </section>
+
+    <section class="panel" id="cast">
+      <h2>Cast</h2>
+      <div class="cast-grid">
+        <article class="card"><h3>Stella Strawberry</h3><p>Glossy strawberry-coded lead. Sweet public face, secretly strategic. Always smiles one beat before deciding what to reveal.</p></article>
+        <article class="card"><h3>Mango Marco</h3><p>Charming mango-coded bombshell. Athletic, nervous when exposed. Acts confident until physical evidence appears.</p></article>
+        <article class="card"><h3>Bella Blueberry</h3><p>Gossip detective. Tracks timestamps and production clues. Always notices doors, receipts, and camera cuts.</p></article>
+        <article class="card"><h3>Gina Grape</h3><p>Dramatic wildcard. Arrived during rehearsal day. Says the quiet clue out loud at the worst possible time.</p></article>
+        <article class="card"><h3>Benny Banana</h3><p>Host. Too calm when evidence appears. Turns every accusation into a game until the proof points at him.</p></article>
+      </div>
+    </section>
+
+    <section class="panel" id="beats">
+      <h2>60-Second Script</h2>
+
+      <article class="beat">
+        <div class="time">0:00-0:08</div>
+        <div>
+          <h3>Beat 1: Cold Proof</h3>
+          <span class="label">Visual</span>
+          <p>Stella slaps a wet receipt onto a glass poolside table. Marco is mid-smile. His face drops. Fast push-in on the receipt: 2:16 a.m., two mango mocktails, two straws.</p>
+          <span class="label">Dialogue</span>
+          <div class="dialogue">Stella: Marco... why is your name on a drink order from before you entered the villa?
+Bella: Wait. That is from last night.</div>
+          <div class="caption">He was inside before the villa opened.</div>
+        </div>
+      </article>
+
+      <article class="beat">
+        <div class="time">0:08-0:22</div>
+        <div>
+          <h3>Beat 2: The Entrance Was Too Clean</h3>
+          <span class="label">Visual</span>
+          <p>Smash cut: "12 HOURS EARLIER." Marco walks through palm shadows by the pool, open shirt, gold chain, perfect smile. Everyone cheers. Stella freezes, looks at the bar, then claps two beats late. Bella clocks it.</p>
+          <span class="label">Dialogue / VO</span>
+          <div class="dialogue">Narrator: Twelve hours earlier, Marco walked in like the villa already belonged to him.
+Narrator: But Stella did not scream. She looked at the bar first.
+Bella, confessional: Everyone screamed. Stella counted to two, then screamed.
+Bella, confessional: That is not excitement. That is math.</div>
+          <div class="caption">Watch Stella.</div>
+        </div>
+      </article>
+
+      <article class="beat">
+        <div class="time">0:22-0:30</div>
+        <div>
+          <h3>Beat 3: The Locked Room Test</h3>
+          <span class="label">Visual</span>
+          <p>Benny rolls out a gold peel bracelet on a velvet tray. A locked door glows behind the smoothie bar. Stella looks at the door before Benny points to it.</p>
+          <span class="label">Dialogue</span>
+          <div class="dialogue">Benny: One smoothie. One fruit you trust.
+Benny: Winner gets first pick... and ten minutes in the locked Juice Room.</div>
+          <div class="caption">First pick. Locked room. One clue.</div>
+        </div>
+      </article>
+
+      <article class="beat">
+        <div class="time">0:30-0:38</div>
+        <div>
+          <h3>Beat 4: Marco Knows Too Much</h3>
+          <span class="label">Visual</span>
+          <p>Marco mixes strawberry, lime, and salt without asking. Stella tries not to smile.</p>
+          <span class="label">Dialogue</span>
+          <div class="dialogue">Marco: Strawberry, lime, little salt. That's Stella's drink.
+Stella: How would you know that?
+Marco: Lucky guess.</div>
+          <div class="caption">Lucky guess?</div>
+        </div>
+      </article>
+
+      <article class="beat">
+        <div class="time">0:38-0:46</div>
+        <div>
+          <h3>Beat 5: The Prize Was Already Touched</h3>
+          <span class="label">Visual</span>
+          <p>Gina tilts the Golden Peel bracelet into the sunset. A tiny orange smear glows on the clasp. Benny snatches the tray back too fast.</p>
+          <span class="label">Dialogue</span>
+          <div class="dialogue">Gina: Why does the prize already have mango pulp on it?
+Benny: Gina, we are flirting, not doing forensics.</div>
+          <div class="caption">Why was the prize touched?</div>
+        </div>
+      </article>
+
+      <article class="beat">
+        <div class="time">0:46-0:54</div>
+        <div>
+          <h3>Beat 6: Bella's Timestamp Trap</h3>
+          <span class="label">Visual</span>
+          <p>Back to the present. Bella puts a straw wrapper beside the wet receipt. Marco looks at Stella, not the receipt.</p>
+          <span class="label">Dialogue</span>
+          <div class="dialogue">Bella: The booth door clicked at 2:13.
+Bella: The receipt printed at 2:16.
+Bella: And there were two straws.
+Marco: I can explain.</div>
+          <div class="caption">Two straws. One lie.</div>
+        </div>
+      </article>
+
+      <article class="beat">
+        <div class="time">0:54-1:00</div>
+        <div>
+          <h3>Beat 7: Benny Is On The Receipt</h3>
+          <span class="label">Visual</span>
+          <p>Stella flips the receipt over. On the back: "TEST SUBJECT - STELLA." Benny's smile disappears. He starts to answer, but the shot cuts on his first word and loops back to the receipt slap.</p>
+          <span class="label">Dialogue</span>
+          <div class="dialogue">Stella: Then why did you sign my test?
+Benny: Because Stella...
+CUT.</div>
+          <div class="caption">Part 2 opens on Benny's answer.</div>
+        </div>
+      </article>
+    </section>
+
+    <section class="panel half">
+      <h2>End State</h2>
+      <p>The minute resolves one question: Marco was probably in the villa early.</p>
+      <p>It opens the next question: Benny may have staged the whole entrance as a loyalty test on Stella.</p>
+    </section>
+
+    <section class="panel half">
+      <h2>Part 2 Promise</h2>
+      <p>Part 2 must open on Benny answering why he signed the receipt. Do not dodge this with a new unrelated cliffhanger.</p>
+    </section>
+
+    <section class="panel">
+      <h2>Posting Package</h2>
+      <ul class="list">
+        <li><strong>Search caption:</strong> Fruit villa drama where Stella finds proof Mango Marco entered before the bombshell reveal.</li>
+        <li><strong>Comment bait:</strong> Team Stella or Team Marco?</li>
+        <li><strong>Lore-drop comment:</strong> Bella noticed the locked Juice Room before anyone mentioned it. Watch Stella's eyes during Benny's challenge.</li>
+        <li><strong>Repeatable audio cue:</strong> Benny saying, "Gina, we are flirting, not doing forensics."</li>
+        <li><strong>Loop note:</strong> the final "Because Stella..." cut should snap back into the opening receipt slap sound.</li>
+      </ul>
+    </section>
+
+    <section class="panel" id="shots">
+      <h2>Paid Render Micro-Shot Pack</h2>
+      <p>All micro-shots are 3-5 seconds and should use approved character reference stills. Generate as vertical 9:16 image-to-video clips, then edit together with hard Duanju-style cuts.</p>
+      <div class="shot-grid">
+        <article class="card"><h3>Shot 01: Receipt Slap</h3><div class="meta">0:00-0:04 - Stella, Marco</div><div class="field"><strong>Action</strong>Stella slaps wet receipt onto glass table.</div><div class="field"><strong>Expression</strong>Marco charming smile to panic.</div><div class="field"><strong>Camera</strong>Impact close-up, fast push.</div><div class="prompt">Stella Strawberry foreground hand and receipt, Mango Marco behind her at pool table, wet proof lands hard, sunset villa, premium humanoid fruit reality drama.</div></article>
+        <article class="card"><h3>Shot 02: Receipt Evidence</h3><div class="meta">0:04-0:08 - Bella</div><div class="field"><strong>Action</strong>Receipt close-up: 2:16 a.m., two mango mocktails, two straws.</div><div class="field"><strong>Expression</strong>Bella's eyes widen into detective focus.</div><div class="field"><strong>Camera</strong>Macro prop insert, whip to Bella.</div><div class="prompt">Wet smoothie receipt readable as prop, Bella Blueberry leans into frame, sharp eye movement, shallow depth of field, no real logos.</div></article>
+        <article class="card"><h3>Shot 03: Bombshell Entrance</h3><div class="meta">0:08-0:12 - Marco</div><div class="field"><strong>Action</strong>Flashback entrance through palm shadows.</div><div class="field"><strong>Expression</strong>Confident grin, performs for cameras.</div><div class="field"><strong>Camera</strong>Low-angle walk-in, lens flare.</div><div class="prompt">Mango Marco enters tropical villa like a bombshell, open linen shirt, gold chain, crowd energy, sunset pool lights.</div></article>
+        <article class="card"><h3>Shot 04: Stella Recognizes The Bar</h3><div class="meta">0:12-0:16 - Stella</div><div class="field"><strong>Action</strong>Stella freezes and looks at smoothie bar before clapping.</div><div class="field"><strong>Expression</strong>Recognition panic hidden under smile.</div><div class="field"><strong>Camera</strong>Tight close-up, eye dart.</div><div class="prompt">Stella Strawberry sees the bar, freezes, then fakes excitement, expressive green eyes, human-like hand rising late to clap.</div></article>
+        <article class="card"><h3>Shot 05: Bella's Confessional</h3><div class="meta">0:16-0:21 - Bella</div><div class="field"><strong>Action</strong>Bella confessional: "That is math."</div><div class="field"><strong>Expression</strong>Amused gossip to serious investigator.</div><div class="field"><strong>Camera</strong>Confessional close-up.</div><div class="prompt">Bella Blueberry in blue-lit booth, direct-to-camera, notebook tap, crisp mouth movement, tiny mic charm.</div></article>
+        <article class="card"><h3>Shot 06: Golden Peel Rule</h3><div class="meta">0:21-0:26 - Benny, Stella</div><div class="field"><strong>Action</strong>Benny reveals Golden Peel and locked Juice Room; Stella glances at door early.</div><div class="field"><strong>Expression</strong>Benny showman smile; Stella calculates.</div><div class="field"><strong>Camera</strong>Tray close-up to door rack focus.</div><div class="prompt">Benny Banana presents gold peel bracelet on velvet tray, locked door glowing behind bar, Stella's eyes move before his hand points.</div></article>
+        <article class="card"><h3>Shot 07: The Exact Drink</h3><div class="meta">0:26-0:31 - Marco, Stella</div><div class="field"><strong>Action</strong>Marco mixes Stella's exact drink.</div><div class="field"><strong>Expression</strong>Stella private smile turns suspicious.</div><div class="field"><strong>Camera</strong>Hands, blender, eye cut.</div><div class="prompt">Mango Marco mixes strawberry, lime, salt without asking, Stella hides a smile behind her hand, tropical bar close-ups.</div></article>
+        <article class="card"><h3>Shot 08: Lucky Guess</h3><div class="meta">0:31-0:36 - Marco, Stella</div><div class="field"><strong>Action</strong>Stella asks how he knew; Marco says lucky guess.</div><div class="field"><strong>Expression</strong>Marco confidence cracks for one blink.</div><div class="field"><strong>Camera</strong>Shot-reverse-shot.</div><div class="prompt">Mango Marco tries to laugh off the clue, Stella leans in, romantic tension under accusation, detailed fruit textures and hands.</div></article>
+        <article class="card"><h3>Shot 09: Mango Pulp</h3><div class="meta">0:36-0:41 - Gina, Benny</div><div class="field"><strong>Action</strong>Gina tilts bracelet; mango pulp glows on clasp.</div><div class="field"><strong>Expression</strong>Gina triumphant; Benny alarmed.</div><div class="field"><strong>Camera</strong>Sunlit macro reveal.</div><div class="prompt">Gina Grape reveals orange smear on Golden Peel bracelet, Benny Banana reaches in too fast, reality-TV zoom.</div></article>
+        <article class="card"><h3>Shot 10: Benny Grabs The Tray</h3><div class="meta">0:41-0:45 - Benny, cast</div><div class="field"><strong>Action</strong>Benny snatches tray and jokes about forensics.</div><div class="field"><strong>Expression</strong>Host control slips for half a second.</div><div class="field"><strong>Camera</strong>Handheld reaction cut.</div><div class="prompt">Benny Banana pulls tray away, cast reacts in quick close-ups, Stella and Bella exchange a look, dramatic villa sunset.</div></article>
+        <article class="card"><h3>Shot 11: Timestamp Trap</h3><div class="meta">0:45-0:50 - Bella, Marco</div><div class="field"><strong>Action</strong>Bella lays straw wrapper beside receipt and gives timestamps.</div><div class="field"><strong>Expression</strong>Marco looks at Stella instead of proof.</div><div class="field"><strong>Camera</strong>Tabletop evidence board.</div><div class="prompt">Bella Blueberry arranges receipt and straw wrapper like evidence, Marco's eyes avoid the table and lock onto Stella.</div></article>
+        <article class="card"><h3>Shot 12: Test Subject</h3><div class="meta">0:50-0:54 - Stella</div><div class="field"><strong>Action</strong>Stella flips receipt over.</div><div class="field"><strong>Expression</strong>Calm smile to cold discovery.</div><div class="field"><strong>Camera</strong>Slow hand flip, snap zoom.</div><div class="prompt">Stella Strawberry flips wet receipt, back reveals TEST SUBJECT - STELLA, her expression hardens.</div></article>
+        <article class="card"><h3>Shot 13: Benny Breaks</h3><div class="meta">0:54-0:57 - Benny</div><div class="field"><strong>Action</strong>Benny's smile disappears.</div><div class="field"><strong>Expression</strong>Showman mask collapses.</div><div class="field"><strong>Camera</strong>Tight face close-up.</div><div class="prompt">Benny Banana host face in close-up, sunglasses lowered, mouth opens to answer, pool lights behind him.</div></article>
+        <article class="card"><h3>Shot 14: Loop Cut</h3><div class="meta">0:57-1:00 - Stella, Benny</div><div class="field"><strong>Action</strong>Benny says "Because Stella..." and cut loops to receipt slap.</div><div class="field"><strong>Expression</strong>Stella's eyes snap up.</div><div class="field"><strong>Camera</strong>Abrupt cut on motion.</div><div class="prompt">Stella foreground, Benny mid-confession, cut before answer, sound bridge into receipt slap for seamless loop.</div></article>
+      </div>
+    </section>
+
+    <section class="panel half">
+      <h2>Thumbnail Frame</h2>
+      <p>Stella Strawberry holds the wet receipt toward camera in the foreground. Mango Marco panics behind her at the pool table. Benny Banana is visible over Stella's shoulder with his smile falling.</p>
+      <p>The receipt, Stella's eyes, and Marco's panic must be readable at phone thumbnail size.</p>
+    </section>
+
+    <section class="panel half" id="voices">
+      <h2>Voice Direction</h2>
+      <ul class="list">
+        <li><strong>Narrator:</strong> fast Duanju reality-drama narrator, conspiratorial, urgent, no dead air.</li>
+        <li><strong>Stella:</strong> sweet tone with a controlled edge; every accusation sounds calm, not loud.</li>
+        <li><strong>Marco:</strong> charming and flirtatious until evidence appears, then a nervous crack.</li>
+        <li><strong>Bella:</strong> quick, precise gossip detective; speaks like timestamps are weapons.</li>
+        <li><strong>Gina:</strong> dramatic wildcard with dry comic bite.</li>
+        <li><strong>Benny:</strong> smooth host voice that turns brittle when exposed.</li>
+      </ul>
+    </section>
+
+    <section class="panel" id="visuals">
+      <h2>Paid Character Visual Prompts</h2>
+      <div class="cast-grid">
+        <article class="card"><h3>Stella Strawberry</h3><p>Humanoid strawberry woman, glossy red seed-textured fruit head, large expressive green eyes, thick lashes, leaf hair bow, gold hoop earrings, fitted tropical green dress, human-like hands and shoulders, sweet smile hiding calculation, premium 3D animated reality-show style, sunset villa pool lighting.</p></article>
+        <article class="card"><h3>Mango Marco</h3><p>Humanoid mango man, golden mango-textured face and head, expressive eyebrows, athletic human-like body, open white linen shirt, shell necklace, resort shorts, charming smile turning nervous, premium 3D animated reality-show style, tropical villa lighting.</p></article>
+        <article class="card"><h3>Bella Blueberry</h3><p>Humanoid blueberry woman, glossy blue round fruit head, sharp expressive eyes, sparkly lashes, metallic mini dress, tiny microphone charm, detective-gossip posture, premium 3D animated reality-show confessional lighting.</p></article>
+        <article class="card"><h3>Gina Grape</h3><p>Humanoid grape woman, readable grape-cluster hair silhouette, glossy purple skin, theatrical eyes, star earrings, fitted evening outfit, hand-on-hip stance, dramatic wildcard expression, premium 3D animated reality-show style.</p></article>
+        <article class="card"><h3>Benny Banana</h3><p>Humanoid banana host, tall banana-shaped head, athletic yellow body, peel tuxedo jacket, lapel mic, sunglasses, broad showman gestures, smile dropping when exposed, premium 3D animated reality-show style.</p></article>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Critic Gate</h2>
+      <div class="status">
+        <div class="pass"><strong>Final critic result:</strong> pass for paid video prompt test.</div>
+        <p>Sub-agent critic result before fixes: fail for paid video generation.</p>
+        <p>Second critic result after Duanju pass: character stills pass, video blocked until micro-shot pack.</p>
+        <p>See <a href="script_reviews/first_60s_script_review.md">first script critic review</a>.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">Trial mode still requires MP4 review before TikTok posting. Real mode can post only after quality and credential gates pass.</div>
+  </footer>
+</body>
+</html>
