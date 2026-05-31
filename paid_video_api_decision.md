@@ -35,6 +35,26 @@ The first credentials to wire are:
 - `OPENAI_API_KEY` for image edits and fallback generation.
 - `RUNWAYML_API_SECRET` or `KLING_API_KEY` for image-to-video motion.
 
+## One-Stop Cost Recommendation
+
+If the goal is to reduce API costs and avoid stitching together too many providers, start with Kling as the one-stop production environment:
+
+1. Generate or import character stills inside Kling.
+2. Use Kling image-to-video / Omni with element reference or character lock.
+3. Use Kling native audio and lip sync for first-pass dialogue.
+4. Export clips and assemble locally with FFmpeg.
+
+This is the cheapest practical path for the Fruit Love Island-style look because it reduces provider handoffs. The expensive part is not only price per generation; it is failed output from inconsistent characters, separate voice/lip-sync passes, and re-rendering because one provider changed the face while another handled motion.
+
+Use the full multi-provider stack only after Kling proves a format winner:
+
+- Ideogram/OpenAI Images for higher-quality reference sheets.
+- Runway Act-Two for hero confessionals and performance shots.
+- ElevenLabs for recurring polished voices.
+- Shotstack/Creatomate for scale rendering.
+
+If API automation is required immediately, use one unified API route for early tests instead of integrating every vendor at once. `fal.ai` exposes Kling reference-to-video style endpoints and can work as a temporary integration layer. Use direct provider APIs later when volume justifies the engineering and pricing work.
+
 ## Provider Comparison
 
 | Provider | Best use | Why it matters for humanoid fruit drama | Main weakness |
