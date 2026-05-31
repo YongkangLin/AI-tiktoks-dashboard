@@ -77,6 +77,30 @@
       grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 14px;
     }
+    .ref-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 12px;
+    }
+    .ref-card {
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+    }
+    .ref-card img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      background: #111;
+    }
+    .ref-card p {
+      margin: 0;
+      padding: 9px 10px 11px;
+      color: var(--muted);
+      font-size: 13px;
+    }
     .image-card {
       display: grid;
       gap: 12px;
@@ -124,6 +148,41 @@
   </header>
 
   <main class="wrap">
+    <section class="panel">
+      <div class="prompt-head">
+        <div>
+          <h2>Ideal Character References</h2>
+          <p class="lead">Include these images as visual references for character quality, expressive faces, body acting, and rich micro-drama framing.</p>
+        </div>
+      </div>
+      <div class="ref-grid">
+        <article class="ref-card">
+          <img src="dashboard/assets/ideal_examples/chat_reference_images/chat_ref_2026-05-31_01.png" alt="Expressive lead woman reference">
+          <p>Lead woman face detail</p>
+        </article>
+        <article class="ref-card">
+          <img src="dashboard/assets/ideal_examples/chat_reference_images/chat_ref_2026-05-31_02.png" alt="Confessional acting reference">
+          <p>Confessional acting</p>
+        </article>
+        <article class="ref-card">
+          <img src="dashboard/assets/ideal_examples/chat_reference_images/chat_ref_2026-05-31_03.png" alt="Glamorous rival reference">
+          <p>Glamorous rival energy</p>
+        </article>
+        <article class="ref-card">
+          <img src="dashboard/assets/ideal_examples/chat_reference_images/chat_ref_2026-05-31_05.png" alt="Male body acting reference">
+          <p>Male body reference</p>
+        </article>
+        <article class="ref-card">
+          <img src="dashboard/assets/ideal_examples/chat_reference_images/chat_ref_2026-05-31_07.png" alt="Heroine close-up reference">
+          <p>Heroine close-up</p>
+        </article>
+        <article class="ref-card">
+          <img src="dashboard/assets/ideal_examples/chat_reference_images/chat_ref_2026-05-31_06.png" alt="Couple blocking reference">
+          <p>Couple blocking</p>
+        </article>
+      </div>
+    </section>
+
     <section class="panel">
       <div class="prompt-head">
         <div>

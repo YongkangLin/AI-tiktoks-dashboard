@@ -1,5 +1,16 @@
 # The Substitute Bride Contract
 
+## Ideal Character References To Include
+
+Use these existing dashboard assets as visual references:
+
+- ![Lead woman face detail](dashboard/assets/ideal_examples/chat_reference_images/chat_ref_2026-05-31_01.png)
+- ![Confessional acting](dashboard/assets/ideal_examples/chat_reference_images/chat_ref_2026-05-31_02.png)
+- ![Glamorous rival energy](dashboard/assets/ideal_examples/chat_reference_images/chat_ref_2026-05-31_03.png)
+- ![Male body reference](dashboard/assets/ideal_examples/chat_reference_images/chat_ref_2026-05-31_05.png)
+- ![Heroine close-up](dashboard/assets/ideal_examples/chat_reference_images/chat_ref_2026-05-31_07.png)
+- ![Couple blocking](dashboard/assets/ideal_examples/chat_reference_images/chat_ref_2026-05-31_06.png)
+
 ## Master Video Prompt
 
 Create a 10-minute vertical 9:16 Chinese Duanju-style micro drama called "The Substitute Bride Contract."
