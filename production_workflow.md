@@ -32,6 +32,14 @@ PYTHONPATH=src python3 -m ai_story_pipeline --run-campaign --campaign-format obj
 
 This creates a timestamped run folder with local character-animatic MP4s, visual asset plans, publish queue, metrics template, TikTok dry-run submission files, `review_request.html`, `campaign_run.md`, and `e2e_readiness.md`. It does not post to TikTok. Trial mode blocks upload until the MP4 is reviewed; real mode can skip manual review but still requires final MP4s, character visuals, and monetization-audit readiness.
 
+To run the locked Episode 1 story through the same review-gated flow:
+
+```bash
+PYTHONPATH=src python3 -m ai_story_pipeline --run-campaign --campaign-format story --story-json docs/story_episode_001.json --episodes 1 --out outputs/locked_story_review --campaign-run-id story-episode-001 --provider local_character_animatic --review-mode trial --tiktok-row-limit 1
+```
+
+This makes `docs/story_episode_001.json` the source story, writes a package for `The Sour Receipt`, assembles a review MP4, creates the visual asset plan, blocks TikTok upload in trial mode, and writes the operator review/dashboard files.
+
 ```bash
 python3 -m ai_story_pipeline --show fruit_crush_villa --episodes 2 --seed week-01
 ```

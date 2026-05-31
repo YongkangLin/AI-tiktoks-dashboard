@@ -34,6 +34,7 @@ The repo now automates story package generation, monetization review, batch queu
 - Analytics-driven iteration planning with concrete next-batch commands.
 - `--run-e2e` operator command for a full local generate-assemble-queue-monitor prep pass.
 - `--run-campaign` review-gated campaign command for batch generation, local final MP4s, visual plans, publish queue, metrics template, and TikTok dry-run files.
+- Locked story JSON import for turning a human-approved story such as `docs/story_episode_001.json` into the same package, MP4 review, queue, dashboard, and readiness flow.
 
 ## Not Automated Yet
 
