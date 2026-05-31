@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-31T03:26:49.852381+00:00",
+  "generated_at": "2026-05-31T03:42:26.827959+00:00",
   "campaign": {
     "generated_at": "2026-05-31T02:59:07.679315+00:00",
     "campaign_name": "daily",
@@ -282,8 +282,42 @@
   ],
   "ideal_examples": {
     "private_pack": "reference/ideal_examples",
-    "contact_sheet": "reference/ideal_examples/stills/ideal_examples_contact_sheet.jpg",
-    "summary": "The private repo now stores user-approved MOV examples, extracted stills, and a paid API style card. Public dashboard shows the target criteria only.",
+    "contact_sheet": "dashboard/assets/ideal_examples/ideal_examples_contact_sheet.jpg",
+    "stills": [
+      {
+        "label": "Example 01 - opening",
+        "href": "dashboard/assets/ideal_examples/example_01_t003.jpg"
+      },
+      {
+        "label": "Example 01 - hospital beat",
+        "href": "dashboard/assets/ideal_examples/example_01_t018.jpg"
+      },
+      {
+        "label": "Example 01 - exterior conflict",
+        "href": "dashboard/assets/ideal_examples/example_01_t042.jpg"
+      },
+      {
+        "label": "Example 01 - reception scene",
+        "href": "dashboard/assets/ideal_examples/example_01_t078.jpg"
+      },
+      {
+        "label": "Example 02 - interior close-up",
+        "href": "dashboard/assets/ideal_examples/example_02_t003.jpg"
+      },
+      {
+        "label": "Example 02 - full-body acting",
+        "href": "dashboard/assets/ideal_examples/example_02_t015.jpg"
+      },
+      {
+        "label": "Example 02 - facial intensity",
+        "href": "dashboard/assets/ideal_examples/example_02_t030.jpg"
+      },
+      {
+        "label": "Example 02 - silhouette",
+        "href": "dashboard/assets/ideal_examples/example_02_t050.jpg"
+      }
+    ],
+    "summary": "The private repo now stores user-approved MOV examples, extracted stills, and a paid API style card. The dashboard shows reference stills only; full source MOVs stay out of the public site.",
     "primary_image_provider": "Ideogram API for paid character stills/reference sheets",
     "edit_provider": "OpenAI Images for expression, outfit, and continuity edits",
     "motion_provider": "Runway or Kling image-to-video from approved stills",

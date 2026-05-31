@@ -51,6 +51,7 @@
     .asset-card { overflow: hidden; }
     .asset-card img { width: 100%; aspect-ratio: 9 / 16; object-fit: cover; display: block; background: #eef0ed; }
     .asset-card p { margin: 9px 10px 11px; color: var(--muted); font-size: 13px; }
+    .contact-sheet { width: 100%; max-height: 620px; object-fit: contain; display: block; background: #111; border: 1px solid var(--line); border-radius: 8px; margin: 12px 0 16px; }
     table { width: 100%; border-collapse: collapse; font-size: 14px; }
     th, td { border-bottom: 1px solid var(--line); padding: 10px 8px; text-align: left; vertical-align: top; }
     th { color: var(--muted); font-size: 12px; text-transform: uppercase; }
@@ -111,7 +112,7 @@
     </section>
     <section class="panel">
       <h2>Paid Visual Target</h2>
-      <p>The private repo now stores user-approved MOV examples, extracted stills, and a paid API style card. Public dashboard shows the target criteria only.</p><table><tbody><tr><th>Private pack</th><td><code>reference/ideal_examples</code></td></tr><tr><th>Primary image</th><td>Ideogram API for paid character stills/reference sheets</td></tr><tr><th>Edit pass</th><td>OpenAI Images for expression, outfit, and continuity edits</td></tr><tr><th>Motion</th><td>Runway or Kling image-to-video from approved stills</td></tr></tbody></table><ul class="actions"><li>human-like but clearly non-human fruit characters</li><li>premium glossy 3D reality-show look</li><li>expressive eyes, eyebrows, mouths, and body language</li><li>detailed wardrobe, jewelry, hands, and fruit texture</li><li>tropical villa lighting, romance-drama framing, and interaction in every shot</li></ul>
+      <p>The private repo now stores user-approved MOV examples, extracted stills, and a paid API style card. The dashboard shows reference stills only; full source MOVs stay out of the public site.</p><img class="contact-sheet" src="dashboard/assets/ideal_examples/ideal_examples_contact_sheet.jpg" alt="Ideal reference contact sheet"><table><tbody><tr><th>Private pack</th><td><code>reference/ideal_examples</code></td></tr><tr><th>Primary image</th><td>Ideogram API for paid character stills/reference sheets</td></tr><tr><th>Edit pass</th><td>OpenAI Images for expression, outfit, and continuity edits</td></tr><tr><th>Motion</th><td>Runway or Kling image-to-video from approved stills</td></tr></tbody></table><ul class="actions"><li>human-like but clearly non-human fruit characters</li><li>premium glossy 3D reality-show look</li><li>expressive eyes, eyebrows, mouths, and body language</li><li>detailed wardrobe, jewelry, hands, and fruit texture</li><li>tropical villa lighting, romance-drama framing, and interaction in every shot</li></ul><div class="grid assets"><div class="asset-card"><img src="dashboard/assets/ideal_examples/example_01_t003.jpg" alt="Example 01 - opening"><p>Example 01 - opening</p></div><div class="asset-card"><img src="dashboard/assets/ideal_examples/example_01_t018.jpg" alt="Example 01 - hospital beat"><p>Example 01 - hospital beat</p></div><div class="asset-card"><img src="dashboard/assets/ideal_examples/example_01_t042.jpg" alt="Example 01 - exterior conflict"><p>Example 01 - exterior conflict</p></div><div class="asset-card"><img src="dashboard/assets/ideal_examples/example_01_t078.jpg" alt="Example 01 - reception scene"><p>Example 01 - reception scene</p></div><div class="asset-card"><img src="dashboard/assets/ideal_examples/example_02_t003.jpg" alt="Example 02 - interior close-up"><p>Example 02 - interior close-up</p></div><div class="asset-card"><img src="dashboard/assets/ideal_examples/example_02_t015.jpg" alt="Example 02 - full-body acting"><p>Example 02 - full-body acting</p></div><div class="asset-card"><img src="dashboard/assets/ideal_examples/example_02_t030.jpg" alt="Example 02 - facial intensity"><p>Example 02 - facial intensity</p></div><div class="asset-card"><img src="dashboard/assets/ideal_examples/example_02_t050.jpg" alt="Example 02 - silhouette"><p>Example 02 - silhouette</p></div></div>
     </section>
     <section class="panel">
       <h2>Scene Frames</h2>
@@ -133,7 +134,7 @@
     </section>
   </main>
   <footer>
-    <div class="wrap">Generated 2026-05-31T03:26:49.852381+00:00. Trial mode keeps TikTok posting blocked until review passes.</div>
+    <div class="wrap">Generated 2026-05-31T03:42:26.827959+00:00. Trial mode keeps TikTok posting blocked until review passes.</div>
   </footer>
 </body>
 </html>
