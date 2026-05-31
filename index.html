@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI TikTok Automation Dashboard</title>
+  <style>
+    :root {
+      --ink: #17212b;
+      --muted: #66717d;
+      --line: #d9dfdf;
+      --paper: #fbfaf6;
+      --panel: #ffffff;
+      --green: #1f8a70;
+      --amber: #b66d12;
+      --red: #b33b3b;
+      --teal: #1f6f78;
+      --grape: #7c4d8b;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: var(--paper); color: var(--ink); }
+    header { border-bottom: 1px solid var(--line); background: #ffffff; }
+    .wrap { max-width: 1240px; margin: 0 auto; padding: 24px; }
+    .topline { display: flex; gap: 16px; align-items: center; justify-content: space-between; flex-wrap: wrap; }
+    h1 { margin: 0; font-size: clamp(28px, 4vw, 48px); line-height: 1.02; letter-spacing: 0; }
+    h2 { margin: 0 0 14px; font-size: 22px; letter-spacing: 0; }
+    h3 { margin: 0 0 8px; font-size: 17px; letter-spacing: 0; }
+    p { line-height: 1.55; }
+    .sub { color: var(--muted); max-width: 760px; margin: 10px 0 0; }
+    .badge { display: inline-flex; align-items: center; border: 1px solid var(--line); border-radius: 999px; padding: 7px 11px; font-weight: 700; background: #eef8f4; color: var(--green); white-space: nowrap; }
+    .grid { display: grid; gap: 16px; }
+    .kpis { grid-template-columns: repeat(6, minmax(140px, 1fr)); margin-top: 22px; }
+    .kpi, .panel, .story, .asset-card { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; }
+    .kpi { padding: 16px; }
+    .kpi strong { display: block; font-size: 28px; }
+    .kpi span { color: var(--muted); font-size: 13px; }
+    .layout { grid-template-columns: minmax(280px, 420px) 1fr; align-items: start; }
+    .panel { padding: 18px; }
+    video { width: 100%; aspect-ratio: 9 / 16; display: block; background: #121212; border-radius: 8px; }
+    .stages { display: grid; grid-template-columns: repeat(5, minmax(150px, 1fr)); gap: 10px; }
+    .stage { border: 1px solid var(--line); background: #fff; border-radius: 8px; padding: 12px; min-height: 96px; }
+    .stage .state { font-size: 12px; font-weight: 800; text-transform: uppercase; color: var(--muted); }
+    .stage.complete { border-color: rgba(31, 138, 112, .35); background: #f2fbf6; }
+    .stage.review { border-color: rgba(182, 109, 18, .35); background: #fff8ec; }
+    .stage.blocked { border-color: rgba(179, 59, 59, .35); background: #fff4f3; }
+    .stage.next { border-color: rgba(31, 111, 120, .35); background: #eff8f9; }
+    .story { padding: 18px; }
+    .label { color: var(--muted); font-size: 12px; font-weight: 800; text-transform: uppercase; }
+    .quote { font-size: 20px; line-height: 1.35; margin: 8px 0 14px; }
+    .assets { grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); }
+    .asset-card { overflow: hidden; }
+    .asset-card img { width: 100%; aspect-ratio: 9 / 16; object-fit: cover; display: block; background: #eef0ed; }
+    .asset-card p { margin: 9px 10px 11px; color: var(--muted); font-size: 13px; }
+    table { width: 100%; border-collapse: collapse; font-size: 14px; }
+    th, td { border-bottom: 1px solid var(--line); padding: 10px 8px; text-align: left; vertical-align: top; }
+    th { color: var(--muted); font-size: 12px; text-transform: uppercase; }
+    code { background: #eef0ed; border-radius: 4px; padding: 2px 5px; overflow-wrap: anywhere; }
+    a { color: var(--teal); font-weight: 700; }
+    .actions li { margin-bottom: 8px; }
+    footer { color: var(--muted); border-top: 1px solid var(--line); }
+    @media (max-width: 1000px) { .kpis, .layout, .stages { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 680px) { .wrap { padding: 18px; } .kpis, .layout, .stages { grid-template-columns: 1fr; } h1 { font-size: 32px; } }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <div class="topline">
+        <div>
+          <h1>AI TikTok Automation Dashboard</h1>
+          <p class="sub">Story generation, recurring character assets, review MP4s, publish queue, and iteration artifacts for the fruit-drama automation pipeline.</p>
+        </div>
+        <span class="badge">ready for trial review</span>
+      </div>
+      <section class="grid kpis">
+        <div class="kpi"><strong>1</strong><span>Packages - story outputs</span></div>
+        <div class="kpi"><strong>1</strong><span>Final MP4s - reviewable videos</span></div>
+        <div class="kpi"><strong>1</strong><span>Visual Plans - provider jobs</span></div>
+        <div class="kpi"><strong>0</strong><span>Ready - publish queue</span></div>
+        <div class="kpi"><strong>1</strong><span>Blocked - needs review</span></div>
+        <div class="kpi"><strong>0</strong><span>Live Posts - TikTok</span></div>
+      </section>
+    </div>
+  </header>
+  <main class="wrap grid" style="gap: 22px;">
+    <section class="grid layout">
+      <div class="panel">
+        <h2>Current MP4</h2>
+        <video controls preload="metadata" src="dashboard/assets/videos/episode-001-mango-marco-got-exposed-at-the-ceremony.mp4"></video>
+        <p><a href="dashboard/assets/videos/episode-001-mango-marco-got-exposed-at-the-ceremony.mp4">Open video file</a></p>
+      </div>
+      <div class="grid" style="gap: 16px;">
+        <section class="story">
+          <span class="label">Fruit Crush Villa</span>
+          <h2>Mango Marco Got Exposed at the Ceremony</h2>
+          <p class="quote">The smoothie booth leaked one sentence, and suddenly Mango Marco looked guilty.</p>
+          <p>Mango Marco is trying to become the most wanted fruit before sunset, but Stella Strawberry turns two-note recoupling scandal into a public test at the mango cabana.</p>
+          <p><strong>CTA:</strong> Follow before Benny changes the rule again.</p>
+          <p><strong>Quality:</strong> blocked_quality_gate (42)</p>
+          <p><a href="story_episode_001.html">Open locked Episode 1 story</a></p>
+        </section>
+        <section class="panel">
+          <h2>Pipeline</h2>
+          <div class="stages"><div class="stage complete"><div class="state">complete</div><h3>Story Engine</h3><p>1 package(s) generated</p></div><div class="stage complete"><div class="state">complete</div><h3>Character Bible</h3><p>Recurring cast and continuity files are present</p></div><div class="stage complete"><div class="state">complete</div><h3>Reference Images</h3><p>4 image sheet(s) copied</p></div><div class="stage complete"><div class="state">complete</div><h3>Scene Images</h3><p>14 scene frame(s) copied</p></div><div class="stage complete"><div class="state">complete</div><h3>Final MP4</h3><p>1 final MP4(s)</p></div><div class="stage review"><div class="state">review</div><h3>Quality Review</h3><p>Trial review page is ready: outputs/long_humanoid_review/daily/long-humanoid-demo/review_request.html</p></div><div class="stage review"><div class="state">review</div><h3>Publish Queue</h3><p>0 ready / 1 total</p></div><div class="stage review"><div class="state">review</div><h3>TikTok Plan</h3><p>Dry-run only until review passes</p></div><div class="stage review"><div class="state">review</div><h3>Metrics Loop</h3><p>Metrics template is ready for 24h and 72h checks</p></div><div class="stage next"><div class="state">next</div><h3>Production API Upgrade</h3><p>Replace local animatic assets with Kling/Runway/Sora-style video scenes</p></div></div>
+        </section>
+      </div>
+    </section>
+    <section class="panel">
+      <h2>Character References</h2>
+      <div class="grid assets"><div class="asset-card"><img src="dashboard/assets/references/episode-001-mango-marco-got-exposed-at-the-ceremony-ref-01.png" alt="Mango Marco"><p>Mango Marco</p></div><div class="asset-card"><img src="dashboard/assets/references/episode-001-mango-marco-got-exposed-at-the-ceremony-ref-02.png" alt="Stella Strawberry"><p>Stella Strawberry</p></div><div class="asset-card"><img src="dashboard/assets/references/episode-001-mango-marco-got-exposed-at-the-ceremony-ref-03.png" alt="Bella Blueberry"><p>Bella Blueberry</p></div><div class="asset-card"><img src="dashboard/assets/references/episode-001-mango-marco-got-exposed-at-the-ceremony-ref-04.png" alt="Gina Grape"><p>Gina Grape</p></div></div>
+    </section>
+    <section class="panel">
+      <h2>Scene Frames</h2>
+      <div class="grid assets"><div class="asset-card"><img src="dashboard/assets/scenes/episode-001-mango-marco-got-exposed-at-the-ceremony-scene-01.png" alt="Scene 1"><p>Scene 1</p></div><div class="asset-card"><img src="dashboard/assets/scenes/episode-001-mango-marco-got-exposed-at-the-ceremony-scene-02.png" alt="Scene 2"><p>Scene 2</p></div><div class="asset-card"><img src="dashboard/assets/scenes/episode-001-mango-marco-got-exposed-at-the-ceremony-scene-03.png" alt="Scene 3"><p>Scene 3</p></div><div class="asset-card"><img src="dashboard/assets/scenes/episode-001-mango-marco-got-exposed-at-the-ceremony-scene-04.png" alt="Scene 4"><p>Scene 4</p></div><div class="asset-card"><img src="dashboard/assets/scenes/episode-001-mango-marco-got-exposed-at-the-ceremony-scene-05.png" alt="Scene 5"><p>Scene 5</p></div><div class="asset-card"><img src="dashboard/assets/scenes/episode-001-mango-marco-got-exposed-at-the-ceremony-scene-06.png" alt="Scene 6"><p>Scene 6</p></div><div class="asset-card"><img src="dashboard/assets/scenes/episode-001-mango-marco-got-exposed-at-the-ceremony-scene-07.png" alt="Scene 7"><p>Scene 7</p></div><div class="asset-card"><img src="dashboard/assets/scenes/episode-001-mango-marco-got-exposed-at-the-ceremony-scene-08.png" alt="Scene 8"><p>Scene 8</p></div><div class="asset-card"><img src="dashboard/assets/scenes/episode-001-mango-marco-got-exposed-at-the-ceremony-scene-09.png" alt="Scene 9"><p>Scene 9</p></div><div class="asset-card"><img src="dashboard/assets/scenes/episode-001-mango-marco-got-exposed-at-the-ceremony-scene-10.png" alt="Scene 10"><p>Scene 10</p></div><div class="asset-card"><img src="dashboard/assets/scenes/episode-001-mango-marco-got-exposed-at-the-ceremony-scene-11.png" alt="Scene 11"><p>Scene 11</p></div><div class="asset-card"><img src="dashboard/assets/scenes/episode-001-mango-marco-got-exposed-at-the-ceremony-scene-12.png" alt="Scene 12"><p>Scene 12</p></div><div class="asset-card"><img src="dashboard/assets/scenes/episode-001-mango-marco-got-exposed-at-the-ceremony-scene-13.png" alt="Scene 13"><p>Scene 13</p></div><div class="asset-card"><img src="dashboard/assets/scenes/episode-001-mango-marco-got-exposed-at-the-ceremony-scene-14.png" alt="Scene 14"><p>Scene 14</p></div></div>
+    </section>
+    <section class="panel">
+      <h2>Publish Queue</h2>
+      <table><thead><tr><th>title</th><th>status</th><th>visual readiness</th><th>quality gate status</th><th>quality blockers</th></tr></thead><tbody><tr><td>Mango Marco Got Exposed at the Ceremony</td><td>blocked_quality_gate</td><td>character_visuals_complete</td><td>blocked_quality_gate</td><td>Review design consistency and mark `quality_review.json` design_consistency as pass.; Review voice consistency and mark `quality_review.json` voice_consistency as pass.; Fix or review lip sync and mark `quality_review.json` mouth_dialogue_sync as pass.; Regenerate or edit lifeless shots, then mark animation_vitality as pass.; Rewrite generic dialogue, then mark dialogue_specificity as pass.; Strengthen the joke, stakes, or cliffhanger, then mark story_value as pass.; Strengthen the opening three seconds, then mark retention_hook as pass.</td></tr></tbody></table>
+    </section>
+    <section class="panel">
+      <h2>Next Actions</h2>
+      <ul class="actions"><li>Open review_request.html, watch the MP4, then mark quality_review.json checks as pass if it meets the bar.</li><li>Review the embedded MP4 before any live TikTok command.</li><li>Resolve quality review blockers, then rebuild the publish queue.</li><li>For more realistic characters, execute the visual asset plan through Kling, Runway, Veo, or Sora-compatible providers using the saved reference sheets.</li></ul>
+      <p>Data snapshot: <code>dashboard/data.json</code></p>
+    </section>
+  </main>
+  <footer>
+    <div class="wrap">Generated 2026-05-31T02:15:27.198724+00:00. Trial mode keeps TikTok posting blocked until review passes.</div>
+  </footer>
+</body>
+</html>

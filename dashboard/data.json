@@ -1,0 +1,296 @@
+{
+  "generated_at": "2026-05-31T02:15:27.198724+00:00",
+  "campaign": {
+    "generated_at": "2026-05-31T02:00:31.092047+00:00",
+    "campaign_name": "daily",
+    "run_id": "long-humanoid-demo",
+    "content_format": "show",
+    "run_root": "outputs/long_humanoid_review/daily/long-humanoid-demo",
+    "inputs": {
+      "episodes": 1,
+      "seed": "long-humanoid-demo",
+      "show_id": "fruit_crush_villa",
+      "object_series": "appliance_breakup",
+      "target_seconds": 120,
+      "provider_id": "local_character_animatic",
+      "plan_visuals": true,
+      "prepare_tiktok": true,
+      "tiktok_mode": "direct_post",
+      "review_mode": "trial",
+      "tiktok_execute_requested": false
+    },
+    "summary": {
+      "packages": 1,
+      "final_videos": 1,
+      "visual_plans": 1,
+      "publish_ready": 0,
+      "publish_blocked": 1,
+      "tiktok_dry_run_planned": 0,
+      "review_required_before_tiktok": true,
+      "tiktok_live_posting": false,
+      "e2e_readiness_status": "ready_for_trial_review"
+    },
+    "outputs": {
+      "packages": [
+        "outputs/long_humanoid_review/daily/long-humanoid-demo/fruit_crush_villa/episode-001-mango-marco-got-exposed-at-the-ceremony"
+      ],
+      "final_videos": [
+        "outputs/long_humanoid_review/daily/long-humanoid-demo/fruit_crush_villa/episode-001-mango-marco-got-exposed-at-the-ceremony/exports/final.mp4"
+      ],
+      "manifest_json": "outputs/long_humanoid_review/daily/long-humanoid-demo/batch_manifest.json",
+      "manifest_csv": "outputs/long_humanoid_review/daily/long-humanoid-demo/batch_manifest.csv",
+      "publish_queue_csv": "outputs/long_humanoid_review/daily/long-humanoid-demo/publish_queue.csv",
+      "publish_queue_markdown": "outputs/long_humanoid_review/daily/long-humanoid-demo/publish_queue.md",
+      "metrics_template": "outputs/long_humanoid_review/daily/long-humanoid-demo/metrics_template.csv",
+      "visual_plans": [
+        {
+          "json": "outputs/long_humanoid_review/daily/long-humanoid-demo/fruit_crush_villa/episode-001-mango-marco-got-exposed-at-the-ceremony/visual_asset_plan.json",
+          "markdown": "outputs/long_humanoid_review/daily/long-humanoid-demo/fruit_crush_villa/episode-001-mango-marco-got-exposed-at-the-ceremony/visual_asset_plan.md"
+        }
+      ],
+      "tiktok_submission_json": "outputs/long_humanoid_review/daily/long-humanoid-demo/tiktok_submissions/tiktok_submissions.json",
+      "tiktok_submission_markdown": "outputs/long_humanoid_review/daily/long-humanoid-demo/tiktok_submissions/tiktok_submissions.md",
+      "review_markdown": "outputs/long_humanoid_review/daily/long-humanoid-demo/campaign_run.md",
+      "review_request_markdown": "outputs/long_humanoid_review/daily/long-humanoid-demo/review_request.md",
+      "review_request_html": "outputs/long_humanoid_review/daily/long-humanoid-demo/review_request.html",
+      "e2e_readiness_json": "outputs/long_humanoid_review/daily/long-humanoid-demo/e2e_readiness.json",
+      "e2e_readiness_markdown": "outputs/long_humanoid_review/daily/long-humanoid-demo/e2e_readiness.md"
+    }
+  },
+  "readiness": {
+    "generated_at": "2026-05-31T02:00:31.093105+00:00",
+    "status": "ready_for_trial_review",
+    "run_root": "outputs/long_humanoid_review/daily/long-humanoid-demo",
+    "review_mode": "trial",
+    "require_tiktok_credentials": false,
+    "summary": {
+      "packages": 1,
+      "final_videos": 1,
+      "publish_ready": 0,
+      "publish_blocked": 1,
+      "tiktok_execute_requested": false,
+      "tiktok_live_posting": false,
+      "blocking_checks": 0,
+      "warning_checks": 3
+    },
+    "checks": [
+      {
+        "id": "final_video",
+        "status": "pass",
+        "detail": "1 final MP4 file(s) exist: final.mp4=5749573 bytes"
+      },
+      {
+        "id": "character_visuals",
+        "status": "pass",
+        "detail": "Every queued video has scene-level character visuals."
+      },
+      {
+        "id": "publish_queue",
+        "status": "warn",
+        "detail": "No rows are ready yet; 1 blocked/incomplete row(s). Current statuses: blocked_quality_gate"
+      },
+      {
+        "id": "review_gate",
+        "status": "pass",
+        "detail": "Trial review page is ready: outputs/long_humanoid_review/daily/long-humanoid-demo/review_request.html"
+      },
+      {
+        "id": "tiktok_submission",
+        "status": "warn",
+        "detail": "No TikTok payloads were planned because no queue rows are upload-ready."
+      },
+      {
+        "id": "tiktok_credentials",
+        "status": "warn",
+        "detail": "TikTok live-posting credentials were not required for this dry-run/review report."
+      }
+    ],
+    "next_action": "Open review_request.html, watch the MP4, then mark quality_review.json checks as pass if it meets the bar."
+  },
+  "publish_queue": [
+    {
+      "platform": "tiktok",
+      "status": "blocked_quality_gate",
+      "show_id": "fruit_crush_villa",
+      "episode_number": "1",
+      "title": "Mango Marco Got Exposed at the Ceremony",
+      "description": "Mango Marco is trying to become the most wanted fruit before sunset, but Stella Strawberry turns two-note recoupling scandal into a public test at the mango cabana. Watch to the last second for the reveal.",
+      "hashtags": "#fruitdrama #animateddrama #cliffhanger #aifruit #verticalstory #aistory #minidrama #storytime",
+      "final_path": "outputs/long_humanoid_review/daily/long-humanoid-demo/fruit_crush_villa/episode-001-mango-marco-got-exposed-at-the-ceremony/exports/final.mp4",
+      "package_path": "outputs/long_humanoid_review/daily/long-humanoid-demo/fruit_crush_villa/episode-001-mango-marco-got-exposed-at-the-ceremony",
+      "audit_status": "ready_after_upload_actions",
+      "audit_risk_level": "low",
+      "ai_disclosure_required": "yes",
+      "audio_rights_required": "yes",
+      "visual_assets_used": "14",
+      "visual_assets_required": "14",
+      "visual_readiness": "character_visuals_complete",
+      "quality_gate_status": "blocked_quality_gate",
+      "quality_gate_score": "42",
+      "quality_blockers": "Review design consistency and mark `quality_review.json` design_consistency as pass.; Review voice consistency and mark `quality_review.json` voice_consistency as pass.; Fix or review lip sync and mark `quality_review.json` mouth_dialogue_sync as pass.; Regenerate or edit lifeless shots, then mark animation_vitality as pass.; Rewrite generic dialogue, then mark dialogue_specificity as pass.; Strengthen the joke, stakes, or cliffhanger, then mark story_value as pass.; Strengthen the opening three seconds, then mark retention_hook as pass.",
+      "review_mode": "trial_review_required",
+      "posted_url": "",
+      "posted_at": "",
+      "metrics_due_at": ""
+    }
+  ],
+  "packages": [
+    {
+      "title": "Mango Marco Got Exposed at the Ceremony",
+      "show": "Fruit Crush Villa",
+      "hook": "The smoothie booth leaked one sentence, and suddenly Mango Marco looked guilty.",
+      "logline": "Mango Marco is trying to become the most wanted fruit before sunset, but Stella Strawberry turns two-note recoupling scandal into a public test at the mango cabana.",
+      "cta": "Follow before Benny changes the rule again.",
+      "location": "the mango cabana",
+      "runtime_seconds": 120,
+      "video_href": "dashboard/assets/videos/episode-001-mango-marco-got-exposed-at-the-ceremony.mp4",
+      "quality_status": "blocked_quality_gate",
+      "quality_score": 42,
+      "quality_blockers": [
+        "Review design consistency and mark `quality_review.json` design_consistency as pass.",
+        "Review voice consistency and mark `quality_review.json` voice_consistency as pass.",
+        "Fix or review lip sync and mark `quality_review.json` mouth_dialogue_sync as pass.",
+        "Regenerate or edit lifeless shots, then mark animation_vitality as pass.",
+        "Rewrite generic dialogue, then mark dialogue_specificity as pass.",
+        "Strengthen the joke, stakes, or cliffhanger, then mark story_value as pass.",
+        "Strengthen the opening three seconds, then mark retention_hook as pass."
+      ],
+      "visual_assets_used": 14,
+      "references": [
+        {
+          "name": "Mango Marco",
+          "href": "dashboard/assets/references/episode-001-mango-marco-got-exposed-at-the-ceremony-ref-01.png"
+        },
+        {
+          "name": "Stella Strawberry",
+          "href": "dashboard/assets/references/episode-001-mango-marco-got-exposed-at-the-ceremony-ref-02.png"
+        },
+        {
+          "name": "Bella Blueberry",
+          "href": "dashboard/assets/references/episode-001-mango-marco-got-exposed-at-the-ceremony-ref-03.png"
+        },
+        {
+          "name": "Gina Grape",
+          "href": "dashboard/assets/references/episode-001-mango-marco-got-exposed-at-the-ceremony-ref-04.png"
+        }
+      ],
+      "scenes": [
+        {
+          "scene": 1,
+          "href": "dashboard/assets/scenes/episode-001-mango-marco-got-exposed-at-the-ceremony-scene-01.png"
+        },
+        {
+          "scene": 2,
+          "href": "dashboard/assets/scenes/episode-001-mango-marco-got-exposed-at-the-ceremony-scene-02.png"
+        },
+        {
+          "scene": 3,
+          "href": "dashboard/assets/scenes/episode-001-mango-marco-got-exposed-at-the-ceremony-scene-03.png"
+        },
+        {
+          "scene": 4,
+          "href": "dashboard/assets/scenes/episode-001-mango-marco-got-exposed-at-the-ceremony-scene-04.png"
+        },
+        {
+          "scene": 5,
+          "href": "dashboard/assets/scenes/episode-001-mango-marco-got-exposed-at-the-ceremony-scene-05.png"
+        },
+        {
+          "scene": 6,
+          "href": "dashboard/assets/scenes/episode-001-mango-marco-got-exposed-at-the-ceremony-scene-06.png"
+        },
+        {
+          "scene": 7,
+          "href": "dashboard/assets/scenes/episode-001-mango-marco-got-exposed-at-the-ceremony-scene-07.png"
+        },
+        {
+          "scene": 8,
+          "href": "dashboard/assets/scenes/episode-001-mango-marco-got-exposed-at-the-ceremony-scene-08.png"
+        },
+        {
+          "scene": 9,
+          "href": "dashboard/assets/scenes/episode-001-mango-marco-got-exposed-at-the-ceremony-scene-09.png"
+        },
+        {
+          "scene": 10,
+          "href": "dashboard/assets/scenes/episode-001-mango-marco-got-exposed-at-the-ceremony-scene-10.png"
+        },
+        {
+          "scene": 11,
+          "href": "dashboard/assets/scenes/episode-001-mango-marco-got-exposed-at-the-ceremony-scene-11.png"
+        },
+        {
+          "scene": 12,
+          "href": "dashboard/assets/scenes/episode-001-mango-marco-got-exposed-at-the-ceremony-scene-12.png"
+        },
+        {
+          "scene": 13,
+          "href": "dashboard/assets/scenes/episode-001-mango-marco-got-exposed-at-the-ceremony-scene-13.png"
+        },
+        {
+          "scene": 14,
+          "href": "dashboard/assets/scenes/episode-001-mango-marco-got-exposed-at-the-ceremony-scene-14.png"
+        }
+      ],
+      "package_path": "fruit_crush_villa/episode-001-mango-marco-got-exposed-at-the-ceremony"
+    }
+  ],
+  "pipeline": [
+    {
+      "label": "Story Engine",
+      "status": "complete",
+      "detail": "1 package(s) generated"
+    },
+    {
+      "label": "Character Bible",
+      "status": "complete",
+      "detail": "Recurring cast and continuity files are present"
+    },
+    {
+      "label": "Reference Images",
+      "status": "complete",
+      "detail": "4 image sheet(s) copied"
+    },
+    {
+      "label": "Scene Images",
+      "status": "complete",
+      "detail": "14 scene frame(s) copied"
+    },
+    {
+      "label": "Final MP4",
+      "status": "complete",
+      "detail": "1 final MP4(s)"
+    },
+    {
+      "label": "Quality Review",
+      "status": "review",
+      "detail": "Trial review page is ready: outputs/long_humanoid_review/daily/long-humanoid-demo/review_request.html"
+    },
+    {
+      "label": "Publish Queue",
+      "status": "review",
+      "detail": "0 ready / 1 total"
+    },
+    {
+      "label": "TikTok Plan",
+      "status": "review",
+      "detail": "Dry-run only until review passes"
+    },
+    {
+      "label": "Metrics Loop",
+      "status": "review",
+      "detail": "Metrics template is ready for 24h and 72h checks"
+    },
+    {
+      "label": "Production API Upgrade",
+      "status": "next",
+      "detail": "Replace local animatic assets with Kling/Runway/Sora-style video scenes"
+    }
+  ],
+  "next_actions": [
+    "Open review_request.html, watch the MP4, then mark quality_review.json checks as pass if it meets the bar.",
+    "Review the embedded MP4 before any live TikTok command.",
+    "Resolve quality review blockers, then rebuild the publish queue.",
+    "For more realistic characters, execute the visual asset plan through Kling, Runway, Veo, or Sora-compatible providers using the saved reference sheets."
+  ]
+}
