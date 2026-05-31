@@ -109,8 +109,11 @@ Recommended starting options:
 - Script API: `ANTHROPIC_API_KEY` or `OPENAI_API_KEY`
 - Avatar video: `HEYGEN_API_KEY` and `HEYGEN_AVATAR_ID`
 - Local visuals: `COMFYUI_BASE_URL`
-- Cloud visuals: `RUNWAYML_API_SECRET`, `OPENAI_API_KEY` for Sora while available, `REPLICATE_API_TOKEN`, `KLING_API_KEY`, `LUMA_API_KEY`, `GOOGLE_APPLICATION_CREDENTIALS`, or `PIKA_API_KEY`
+- Paid character stills: `IDEOGRAM_API_KEY` first, then `OPENAI_API_KEY` for edits and variants
+- Cloud motion: `RUNWAYML_API_SECRET`, `KLING_API_KEY`, `OPENAI_API_KEY` for Sora while available, `REPLICATE_API_TOKEN`, `LUMA_API_KEY`, `GOOGLE_APPLICATION_CREDENTIALS`, or `PIKA_API_KEY`
 - Voice: `ELEVENLABS_API_KEY` and `ELEVENLABS_VOICE_ID`, `OPENAI_API_KEY`, Kokoro, or Piper
+
+The user-approved visual standard is stored privately in `reference/ideal_examples/`. Use that pack before spending on paid image/video generations; the local dashboard images are storyboard placeholders, not the final quality bar.
 
 Generate object-character packages before visual/provider work:
 

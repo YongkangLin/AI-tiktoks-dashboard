@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-31T03:08:44.869946+00:00",
+  "generated_at": "2026-05-31T03:26:49.852381+00:00",
   "campaign": {
     "generated_at": "2026-05-31T02:59:07.679315+00:00",
     "campaign_name": "daily",
@@ -280,6 +280,21 @@
       "package_path": "fruit_crush_villa/episode-001-the-sour-receipt"
     }
   ],
+  "ideal_examples": {
+    "private_pack": "reference/ideal_examples",
+    "contact_sheet": "reference/ideal_examples/stills/ideal_examples_contact_sheet.jpg",
+    "summary": "The private repo now stores user-approved MOV examples, extracted stills, and a paid API style card. Public dashboard shows the target criteria only.",
+    "primary_image_provider": "Ideogram API for paid character stills/reference sheets",
+    "edit_provider": "OpenAI Images for expression, outfit, and continuity edits",
+    "motion_provider": "Runway or Kling image-to-video from approved stills",
+    "requirements": [
+      "human-like but clearly non-human fruit characters",
+      "premium glossy 3D reality-show look",
+      "expressive eyes, eyebrows, mouths, and body language",
+      "detailed wardrobe, jewelry, hands, and fruit texture",
+      "tropical villa lighting, romance-drama framing, and interaction in every shot"
+    ]
+  },
   "pipeline": [
     {
       "label": "Story Engine",
@@ -329,13 +344,13 @@
     {
       "label": "Production API Upgrade",
       "status": "next",
-      "detail": "Replace local animatic assets with Kling/Runway/Sora-style video scenes"
+      "detail": "Paid visual target locked; replace local animatic assets with Ideogram/OpenAI stills and Runway/Kling motion"
     }
   ],
   "next_actions": [
     "Open review_request.html, watch the MP4, then mark quality_review.json checks as pass if it meets the bar.",
     "Review the embedded MP4 before any live TikTok command.",
     "Resolve quality review blockers, then rebuild the publish queue.",
-    "For more realistic characters, execute the visual asset plan through Kling, Runway, Veo, or Sora-compatible providers using the saved reference sheets."
+    "Use reference/ideal_examples as the paid-API visual bar: Ideogram/OpenAI for detailed character stills, then Runway/Kling for moving scene shots."
   ]
 }

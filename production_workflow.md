@@ -40,6 +40,15 @@ PYTHONPATH=src python3 -m ai_story_pipeline --run-campaign --campaign-format sto
 
 This makes `docs/story_episode_001.json` the source story, writes a package for `The Sour Receipt`, assembles a review MP4, creates the visual asset plan, blocks TikTok upload in trial mode, and writes the operator review/dashboard files.
 
+Before spending on paid visuals, use the ideal reference pack:
+
+```bash
+open reference/ideal_examples/README.md
+open reference/ideal_examples/stills/ideal_examples_contact_sheet.jpg
+```
+
+The pack contains the user-approved MOV examples, extracted stills, and `paid_api_style_card.md`. It is the visual bar for Ideogram/OpenAI character stills and Runway/Kling motion. Do not judge production quality from the local dashboard images; those are storyboard placeholders.
+
 To turn that visual plan into the first paid Runway scene-video test:
 
 ```bash

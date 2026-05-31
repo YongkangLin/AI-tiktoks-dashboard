@@ -6,11 +6,14 @@ As of May 31, 2026, the local character animatic should be treated as a storyboa
 
 Primary paid path:
 
-1. Character stills: OpenAI Images, Ideogram, or Runway Gen-4 Image references.
-2. Scene video: Kling v3 Omni first.
-3. Facial performance and close-up confessionals: Runway Act-Two or LivePortrait.
-4. Backup/high-polish tests: Sora 2 Pro and Veo 3.1.
-5. Cheap B-roll/transition fallback: Luma Ray 2.
+1. Character stills and reference sheets: Ideogram API first.
+2. Controlled edits, expression sheets, and outfit variants: OpenAI Images.
+3. Scene video: Kling v3 Omni or Runway image-to-video from approved stills.
+4. Facial performance and close-up confessionals: Runway Act-Two or LivePortrait.
+5. Backup/high-polish tests: Sora 2 Pro and Veo 3.1.
+6. Cheap B-roll/transition fallback: Luma Ray 2.
+
+The local dashboard images are now explicitly storyboard placeholders. The paid visual target is stored in `reference/ideal_examples/`, including the two user-provided MOV examples, extracted stills, a contact sheet, a manifest, and a paid API style card.
 
 The first paid test should be one 30-45 second Fruit Crush Villa scene, not a full episode. Spend on three shots:
 
@@ -19,6 +22,18 @@ The first paid test should be one 30-45 second Fruit Crush Villa scene, not a fu
 - Two-character poolside conflict with body motion and reaction cut.
 
 If those three shots pass the viewer-feedback gate, expand to a 90-120 second episode.
+
+## Image Generation Decision
+
+Use Ideogram API as the first paid image provider because the main failure mode is character quality and consistency, not script scaffolding. The examples the user approved require humanoid fruit characters with glossy fruit texture, expressive eyes and mouths, detailed wardrobe, jewelry, hands, and luxury-villa lighting. Those stills become the source of truth for all downstream video shots.
+
+Use OpenAI Images as the edit and iteration provider after the first Ideogram sheets exist. It should handle expression variants, outfit variants, continuity fixes, and scene-specific keyframes without changing the locked character identity.
+
+The first credentials to wire are:
+
+- `IDEOGRAM_API_KEY` for paid character stills.
+- `OPENAI_API_KEY` for image edits and fallback generation.
+- `RUNWAYML_API_SECRET` or `KLING_API_KEY` for image-to-video motion.
 
 ## Provider Comparison
 
