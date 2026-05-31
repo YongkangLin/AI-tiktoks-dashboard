@@ -3,329 +3,635 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Fruit Crush Villa - The Necklace He Denied</title>
+  <title>Fruit Crush Villa Writer Dashboard</title>
   <style>
     :root {
-      --bg: #fff8ef;
-      --panel: #fff;
-      --ink: #1e2731;
-      --muted: #68737e;
-      --line: #eadbca;
-      --accent: #d94848;
-      --gold: #b98418;
-      --green: #2f8f66;
-      --shadow: 0 14px 40px rgba(58, 38, 22, .1);
+      --ink: #191b1f;
+      --muted: #5f6872;
+      --line: #d8dde2;
+      --paper: #f6f7f5;
+      --panel: #ffffff;
+      --berry: #c72a4c;
+      --mango: #c97914;
+      --leaf: #2c7a4b;
+      --pool: #117b83;
+      --blue: #4657a9;
+      --shadow: 0 14px 34px rgba(22, 25, 31, .08);
     }
+
     * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
     body {
       margin: 0;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       color: var(--ink);
-      background: linear-gradient(180deg, rgba(255, 216, 159, .32), transparent 310px), var(--bg);
-      font: 16px/1.55 ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--paper);
     }
-    a { color: #1f6f78; font-weight: 800; }
-    .wrap { width: min(1120px, calc(100% - 32px)); margin: 0 auto; }
+    a { color: var(--pool); font-weight: 800; }
+    h1, h2, h3, p { margin-top: 0; }
+    h1 { margin-bottom: 10px; font-size: clamp(34px, 5vw, 60px); line-height: 1; letter-spacing: 0; overflow-wrap: anywhere; }
+    h2 { margin-bottom: 14px; font-size: clamp(24px, 3vw, 34px); line-height: 1.1; letter-spacing: 0; }
+    h3 { margin-bottom: 8px; font-size: 18px; line-height: 1.2; letter-spacing: 0; }
+    p, li { line-height: 1.55; }
+    code {
+      padding: 2px 6px;
+      border-radius: 4px;
+      background: #eceff0;
+      overflow-wrap: anywhere;
+    }
+    pre {
+      margin: 0;
+      white-space: pre-wrap;
+      overflow-wrap: anywhere;
+      font: 13px/1.5 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      color: #22272e;
+    }
+    .wrap { width: min(1240px, calc(100% - 36px)); margin: 0 auto; }
     header {
-      padding: 34px 0 18px;
+      background: #ffffff;
       border-bottom: 1px solid var(--line);
-      background: rgba(255, 248, 239, .94);
+    }
+    .hero {
+      display: grid;
+      grid-template-columns: minmax(0, 1.05fr) minmax(280px, .95fr);
+      gap: 28px;
+      align-items: center;
+      padding: 28px 0 18px;
+    }
+    .eyebrow {
+      margin-bottom: 10px;
+      color: var(--berry);
+      font-size: 13px;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: .04em;
+    }
+    .lead { max-width: 820px; color: var(--muted); font-size: 18px; overflow-wrap: anywhere; }
+    .status-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 10px;
+      margin-top: 20px;
+    }
+    .status {
+      min-height: 84px;
+      padding: 13px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fbfcfc;
+    }
+    .status strong { display: block; font-size: 18px; }
+    .status span { color: var(--muted); font-size: 13px; }
+    .reference-hero {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+    }
+    .reference-hero img {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #111;
+      box-shadow: var(--shadow);
+    }
+    .nav {
       position: sticky;
       top: 0;
       z-index: 10;
-      backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--line);
+      background: rgba(255, 255, 255, .94);
+      backdrop-filter: blur(10px);
     }
-    .topline { display: flex; justify-content: space-between; gap: 16px; align-items: flex-start; flex-wrap: wrap; }
-    h1, h2, h3 { line-height: 1.1; margin: 0; letter-spacing: 0; }
-    h1 { font-size: clamp(2rem, 5vw, 4.3rem); max-width: 860px; }
-    h2 { margin-bottom: 12px; }
-    .eyebrow {
-      color: var(--accent);
-      font-weight: 900;
-      text-transform: uppercase;
-      font-size: .8rem;
-      letter-spacing: .08em;
-      margin-bottom: 10px;
-    }
-    .summary, .nav { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 16px; }
-    .pill {
-      border: 1px solid var(--line);
-      background: #fff;
-      border-radius: 999px;
-      padding: 7px 11px;
-      color: var(--muted);
-      font-size: .9rem;
-      white-space: nowrap;
-      text-decoration: none;
+    .nav .wrap {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      overflow-x: auto;
+      padding-top: 10px;
+      padding-bottom: 10px;
     }
     .nav a {
-      display: inline-flex;
+      flex: 0 0 auto;
+      padding: 8px 12px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: #fff;
+      color: var(--ink);
+      font-size: 13px;
       text-decoration: none;
-      background: #261f1b;
-      color: #fff;
-      border-radius: 7px;
-      padding: 8px 10px;
-      font-size: .9rem;
-      font-weight: 800;
+      white-space: nowrap;
     }
-    main { padding: 26px 0 56px; }
-    .grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 18px; }
-    .panel {
-      grid-column: span 12;
-      background: var(--panel);
+    main { padding: 24px 0 40px; }
+    .band {
+      margin-bottom: 18px;
+      padding: 22px;
       border: 1px solid var(--line);
       border-radius: 8px;
-      padding: clamp(18px, 3vw, 28px);
+      background: var(--panel);
       box-shadow: var(--shadow);
     }
-    .half { grid-column: span 6; }
-    .lead { font-size: clamp(1.1rem, 2vw, 1.45rem); margin: 0; max-width: 920px; }
-    .list { display: grid; gap: 10px; margin: 16px 0 0; padding: 0; list-style: none; }
-    .list li { padding-left: 14px; border-left: 4px solid var(--accent); }
-    .cast-grid, .shot-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; margin-top: 18px; }
-    .card {
-      border: 1px solid var(--line);
-      background: #fffdf9;
-      border-radius: 8px;
-      padding: 16px;
-      min-width: 0;
-    }
-    .card h3 { font-size: 1.05rem; margin-bottom: 8px; }
-    .beat {
+    .two-col {
       display: grid;
-      grid-template-columns: 130px minmax(0, 1fr);
-      gap: 18px;
-      border-top: 1px solid var(--line);
-      padding: 20px 0;
+      grid-template-columns: minmax(0, 1fr) minmax(280px, .82fr);
+      gap: 20px;
+      align-items: start;
     }
-    .beat:first-of-type { border-top: 0; padding-top: 0; }
-    .time { font-weight: 900; color: var(--accent); font-size: 1.05rem; }
-    .label {
-      display: inline-flex;
-      margin: 10px 0 6px;
-      color: var(--muted);
-      font-size: .78rem;
-      font-weight: 900;
-      text-transform: uppercase;
-      letter-spacing: .08em;
+    .three-col, .card-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
     }
-    .dialogue {
-      background: #1f252b;
-      color: #f8f4eb;
+    .card, .prompt-card, .beat {
+      border: 1px solid var(--line);
       border-radius: 8px;
-      padding: 12px 14px;
-      margin: 8px 0 0;
-      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
-      font-size: .95rem;
-      white-space: pre-wrap;
-      overflow-wrap: anywhere;
+      background: #ffffff;
     }
-    .caption {
-      display: inline-flex;
-      margin-top: 10px;
-      padding: 6px 9px;
-      border-radius: 7px;
-      background: #fff1d6;
-      color: #6d4810;
-      font-weight: 900;
-    }
-    .meta { color: var(--muted); font-weight: 800; font-size: .88rem; margin-bottom: 10px; }
-    .field { margin-top: 7px; }
-    .field strong {
+    .card { padding: 16px; }
+    .card .tag, .prompt-card .tag, .beat .tag {
       color: var(--muted);
-      display: block;
-      font-size: .78rem;
+      font-size: 12px;
+      font-weight: 900;
       text-transform: uppercase;
-      letter-spacing: .07em;
-      margin-bottom: 2px;
     }
-    .prompt { background: #f6f1ea; border-radius: 7px; padding: 10px; overflow-wrap: anywhere; }
-    .pass { border-left: 5px solid var(--green); background: #effaf4; padding: 12px 14px; border-radius: 7px; }
-    .warn { border-left: 5px solid var(--gold); background: #fff8ea; padding: 12px 14px; border-radius: 7px; }
-    footer { padding: 28px 0 40px; color: var(--muted); border-top: 1px solid var(--line); }
-    @media (max-width: 820px) {
-      header { position: static; }
-      .half { grid-column: span 12; }
-      .cast-grid, .shot-grid { grid-template-columns: 1fr; }
-      .beat { grid-template-columns: 1fr; gap: 8px; }
-      .nav a { flex: 1 1 auto; justify-content: center; }
+    .character-name { display: flex; gap: 8px; align-items: center; }
+    .dot {
+      width: 11px;
+      height: 11px;
+      border-radius: 999px;
+      background: var(--berry);
+      flex: 0 0 auto;
+    }
+    .dot.mango { background: var(--mango); }
+    .dot.leaf { background: var(--leaf); }
+    .dot.blue { background: var(--blue); }
+    .dot.pool { background: var(--pool); }
+    .prompt-card { display: grid; overflow: hidden; }
+    .prompt-head {
+      display: flex;
+      gap: 12px;
+      align-items: start;
+      justify-content: space-between;
+      padding: 14px 14px 10px;
+      border-bottom: 1px solid var(--line);
+      background: #fafbfb;
+    }
+    .prompt-body { padding: 14px; }
+    button.copy {
+      flex: 0 0 auto;
+      min-height: 34px;
+      padding: 7px 10px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+      color: var(--ink);
+      font-weight: 800;
+      cursor: pointer;
+    }
+    button.copy:focus { outline: 3px solid rgba(17, 123, 131, .22); outline-offset: 2px; }
+    .beat {
+      padding: 14px;
+      border-left: 5px solid var(--berry);
+    }
+    .beat:nth-child(2n) { border-left-color: var(--mango); }
+    .beat:nth-child(3n) { border-left-color: var(--pool); }
+    .script-line {
+      margin: 8px 0 0;
+      padding: 10px;
+      border-radius: 8px;
+      background: #f2f5f4;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      font-size: 13px;
+      white-space: pre-wrap;
+    }
+    .reference-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 12px;
+      margin-top: 14px;
+    }
+    figure {
+      margin: 0;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fff;
+    }
+    figure img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 9 / 16;
+      object-fit: cover;
+      background: #111;
+    }
+    .square img { aspect-ratio: 1 / 1; object-fit: contain; padding: 6px; }
+    figcaption {
+      padding: 9px 10px 11px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .contact-sheet {
+      width: 100%;
+      max-height: 560px;
+      object-fit: contain;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #111;
+    }
+    table { width: 100%; border-collapse: collapse; }
+    th, td {
+      padding: 10px 8px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+    th {
+      width: 30%;
+      color: var(--muted);
+      font-size: 12px;
+      text-transform: uppercase;
+    }
+    .checklist {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px 18px;
+      padding-left: 18px;
+    }
+    footer {
+      padding: 24px 0 34px;
+      color: var(--muted);
+      border-top: 1px solid var(--line);
+    }
+    @media (max-width: 980px) {
+      .hero, .two-col, .three-col, .card-grid { grid-template-columns: 1fr; }
+      .status-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .reference-hero { grid-template-columns: repeat(4, minmax(110px, 1fr)); }
+    }
+    @media (max-width: 680px) {
+      .wrap { width: min(100% - 28px, 1240px); }
+      .band { padding: 16px; }
+      h1 { font-size: 30px; line-height: 1.06; }
+      .status-grid, .reference-hero, .checklist { grid-template-columns: 1fr; }
+      .reference-hero img { aspect-ratio: 16 / 10; }
+      .prompt-head { align-items: stretch; flex-direction: column; }
+      button.copy { width: 100%; }
     }
   </style>
 </head>
 <body>
   <header>
-    <div class="wrap">
-      <div class="topline">
-        <div>
-          <div class="eyebrow">Fruit Crush Villa - Episode 1</div>
-          <h1>The Necklace He Denied</h1>
+    <div class="wrap hero">
+      <div>
+        <div class="eyebrow">Fruit Crush Villa - Episode 1 writer lock</div>
+        <h1>The Necklace He Denied</h1>
+        <p class="lead">Episode production packet for a 60-second humanoid-fruit microdrama: generator settings, reference photos, frame-by-frame shot cards, paid render prompts, captions, lore comments, and an 18-second test cut.</p>
+        <div class="status-grid">
+          <div class="status"><strong>60 sec</strong><span>Full series episode</span></div>
+          <div class="status"><strong>18 sec</strong><span>FYP hook test</span></div>
+          <div class="status"><strong>12</strong><span>Image-to-video shots</span></div>
+          <div class="status"><strong>5</strong><span>Locked characters</span></div>
         </div>
-        <a class="pill" href="index.html">Back to dashboard</a>
       </div>
-      <div class="summary">
-        <span class="pill">60 seconds</span>
-        <span class="pill">Duanju betrayal proof</span>
-        <span class="pill">Sub-agent critic: pass</span>
-        <span class="pill">Trial mode: review MP4 before TikTok</span>
+      <div class="reference-hero" aria-label="Uploaded visual references">
+        <img src="dashboard/assets/ideal_examples/chat_reference_images/chat_ref_2026-05-31_07.png" alt="Strawberry woman reference">
+        <img src="dashboard/assets/ideal_examples/chat_reference_images/chat_ref_2026-05-31_03.png" alt="Pineapple woman reference">
+        <img src="dashboard/assets/ideal_examples/chat_reference_images/chat_ref_2026-05-31_05.png" alt="Banana man reference">
+        <img src="dashboard/assets/ideal_examples/chat_reference_images/chat_ref_2026-05-31_08.png" alt="Object character reference">
       </div>
-      <nav class="nav" aria-label="Script sections">
-        <a href="#beats">Story Beats</a>
-        <a href="#shots">Render Shots</a>
-        <a href="#voices">Voices</a>
-        <a href="#visuals">Visuals</a>
-        <a href="first_60s_script.md">Raw Markdown</a>
-      </nav>
     </div>
   </header>
 
-  <main class="wrap grid">
-    <section class="panel">
-      <h2>One-Sentence Plot</h2>
-      <p class="lead">Stella Strawberry met Mango Marco at the private villa audition last night, where he gave her half of a matching seed-heart necklace. Today he enters holding Pina Pineapple's hand and says he has never met Stella, until Bella Blueberry proves Marco is wearing the other half.</p>
-    </section>
+  <nav class="nav" aria-label="Page sections">
+    <div class="wrap">
+      <a href="index.html">Dashboard</a>
+      <a href="#lock">Story Lock</a>
+      <a href="#settings">Settings</a>
+      <a href="#photos">Photos</a>
+      <a href="#characters">Characters</a>
+      <a href="#foundation">Prompt Rules</a>
+      <a href="#stills">Still Prompts</a>
+      <a href="#script">Script</a>
+      <a href="#frames">Frames</a>
+      <a href="#cutdown">18s Cut</a>
+      <a href="#posting">Posting</a>
+      <a href="first_60s_script.md">Raw Markdown</a>
+    </div>
+  </nav>
 
-    <section class="panel half">
-      <h2>Why This Makes Sense Faster</h2>
-      <ul class="list">
-        <li>One public betrayal: Marco denies knowing Stella.</li>
-        <li>One obvious proof object: Marco is wearing half of Stella's matching necklace.</li>
-        <li>One clean humiliation: Marco lies in front of the whole villa.</li>
-        <li>One direct production slip: Benny says, "Cut Camera Three. Not the audition tape."</li>
-        <li>One Part 2 promise: Stella demands the audition tape from last night.</li>
-      </ul>
-    </section>
-
-    <section class="panel half">
-      <h2>Duanju Spine</h2>
-      <ul class="list">
-        <li>0-3 seconds: Marco walks in with another girl and says he has never met Stella.</li>
-        <li>First turn: Stella calmly shows her matching necklace.</li>
-        <li>Midpoint proof: Bella reads <strong>S + M - 11:47 PM</strong> on Marco's necklace.</li>
-        <li>Final reversal: Benny accidentally names the hidden audition tape.</li>
-        <li>Part 2 must answer: what did Marco and production record last night?</li>
-      </ul>
-    </section>
-
-    <section class="panel" id="cast">
-      <h2>Cast</h2>
-      <div class="cast-grid">
-        <article class="card"><h3>Stella Strawberry</h3><p>Met Marco during the private casting mixer last night. She arrives sweet and hopeful, then becomes calm, sharp, and impossible to embarrass.</p></article>
-        <article class="card"><h3>Mango Marco</h3><p>Looks like the perfect bombshell. Publicly denies Stella because he thinks production will hide what happened at the audition.</p></article>
-        <article class="card"><h3>Pina Pineapple</h3><p>New girl on Marco's arm. She is the public betrayal image, not a full subplot yet.</p></article>
-        <article class="card"><h3>Bella Blueberry</h3><p>Gossip detective. She catches the engraving on Marco's necklace while everyone else watches the argument.</p></article>
-        <article class="card"><h3>Benny Banana</h3><p>Host and producer. He smiles through chaos, but panics when Stella asks for the audition tape.</p></article>
+  <main class="wrap">
+    <section class="band two-col" id="lock">
+      <div>
+        <h2>Story Lock</h2>
+        <p><strong>One-sentence plot:</strong> Stella Strawberry secretly met Mango Marco during last night's private villa audition, where he gave her half of a seed-heart necklace; today Marco enters holding Pina Pineapple's hand and denies knowing Stella, until Bella Blueberry exposes the matching necklace and Benny Banana accidentally reveals there is an audition tape.</p>
+        <p><strong>Part 2 promise:</strong> open on the audition tape from 11:47 p.m. before adding any new mystery.</p>
+      </div>
+      <div class="card">
+        <h3>Clarity Rules</h3>
+        <ul>
+          <li>Marco and Stella met last night, not in a vague past relationship.</li>
+          <li>Pina believes Marco honestly entered with her.</li>
+          <li>Stella has one proof object: the necklace.</li>
+          <li>Bella catches one behavior clue: Marco touching his chain.</li>
+          <li>Benny's tape slip creates the next episode.</li>
+        </ul>
       </div>
     </section>
 
-    <section class="panel" id="beats">
+    <section class="band" id="settings">
+      <h2>Episode Settings</h2>
+      <div class="three-col">
+        <div class="card">
+          <div class="tag">Canvas</div>
+          <h3>Video Format</h3>
+          <p>Vertical 9:16, export at 1080x1920. Generate source clips at the highest vertical resolution your provider supports, then assemble in a 60-second timeline.</p>
+        </div>
+        <div class="card">
+          <div class="tag">Motion</div>
+          <h3>Clip Length</h3>
+          <p>3-5 seconds per shot. Hard cuts, no dissolves. Keep the most interesting visual change between seconds 10 and 15 for retention.</p>
+        </div>
+        <div class="card">
+          <div class="tag">Workflow</div>
+          <h3>Generation Order</h3>
+          <p>Character stills first, ensemble reference second, image-to-video third, captions and necklace engraving last in edit.</p>
+        </div>
+        <div class="card">
+          <div class="tag">Audio</div>
+          <h3>Sound Design</h3>
+          <p>Bright villa sting, sudden silence on "Nice to meet me?", low bass hit on "11:47 p.m.", then cut mid-motion for a replay loop.</p>
+        </div>
+        <div class="card">
+          <div class="tag">Captions</div>
+          <h3>Text Layer</h3>
+          <p>Add captions and <code>S + M - 11:47 PM</code> in post. Do not ask the video model to bake text into the clip.</p>
+        </div>
+        <div class="card">
+          <div class="tag">Continuity</div>
+          <h3>Reject Criteria</h3>
+          <p>Reject clips where Stella or Marco's necklace disappears, Pina looks informed too early, or the characters change fruit shape between cuts.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="band" id="photos">
+      <h2>Reference Photos</h2>
+      <p>The uploaded fruit and object-character references are the target: glossy 3D, expressive eyes, readable silhouettes, human-like hands, jewelry, villa lighting, and consistent recurring cast design.</p>
+      <img class="contact-sheet" src="dashboard/assets/ideal_examples/chat_reference_images/chat_refs_contact_sheet.jpg" alt="Uploaded visual reference contact sheet">
+      <div class="reference-grid">
+        <figure class="square"><img src="dashboard/assets/ideal_examples/chat_reference_images/chat_ref_2026-05-31_01.png" alt="Orange-haired fruit woman"><figcaption>Fruit face and jewelry detail</figcaption></figure>
+        <figure class="square"><img src="dashboard/assets/ideal_examples/chat_reference_images/chat_ref_2026-05-31_02.png" alt="Cherry confessional"><figcaption>Confessional hand acting</figcaption></figure>
+        <figure class="square"><img src="dashboard/assets/ideal_examples/chat_reference_images/chat_ref_2026-05-31_03.png" alt="Pineapple villa portrait"><figcaption>Pina silhouette anchor</figcaption></figure>
+        <figure class="square"><img src="dashboard/assets/ideal_examples/chat_reference_images/chat_ref_2026-05-31_05.png" alt="Banana full body"><figcaption>Banana body reference</figcaption></figure>
+        <figure class="square"><img src="dashboard/assets/ideal_examples/chat_reference_images/chat_ref_2026-05-31_07.png" alt="Strawberry woman portrait"><figcaption>Stella face anchor</figcaption></figure>
+        <figure class="square"><img src="dashboard/assets/ideal_examples/chat_reference_images/chat_ref_2026-05-31_08.png" alt="Coffee cup ballerina"><figcaption>Object-character charm</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="band" id="characters">
+      <h2>Continuity Bible</h2>
+      <div class="card-grid" id="characterGrid"></div>
+    </section>
+
+    <section class="band two-col" id="foundation">
+      <div class="prompt-card">
+        <div class="prompt-head">
+          <div>
+            <div class="tag">Global prefix</div>
+            <h3>Use On Every Video Prompt</h3>
+          </div>
+          <button class="copy" type="button" data-copy-target="globalPrompt">Copy</button>
+        </div>
+        <div class="prompt-body"><pre id="globalPrompt">Vertical 9:16 premium 3D animated reality-show microdrama. Use the approved character references exactly. Humanoid fruit characters with clear fruit silhouettes, expressive eyes, eyebrows, mouths, human-like bodies and hands, detailed fruit texture, wardrobe, jewelry, tropical luxury villa at sunset, cinematic shallow depth of field, reality-TV push-in and reaction-cut energy.</pre></div>
+      </div>
+      <div class="prompt-card">
+        <div class="prompt-head">
+          <div>
+            <div class="tag">Negative prompt</div>
+            <h3>Paste Into Every Job</h3>
+          </div>
+          <button class="copy" type="button" data-copy-target="negativePrompt">Copy</button>
+        </div>
+        <div class="prompt-body"><pre id="negativePrompt">Avoid flat mascot art, sticker style, realistic human faces, uncanny human skin, horror, gore, extra characters, inconsistent fruit heads, warped hands, melted jewelry, unreadable props, baked-in subtitles, logos, watermarks, TikTok UI, copied show branding, celebrity likeness, random text.</pre></div>
+      </div>
+    </section>
+
+    <section class="band" id="stills">
+      <h2>Character Reference Still Prompts</h2>
+      <div class="card-grid" id="stillGrid"></div>
+    </section>
+
+    <section class="band" id="script">
       <h2>60-Second Script</h2>
-
-      <article class="beat"><div class="time">0:00-0:07</div><div><h3>Beat 1: The Public Denial</h3><span class="label">Visual</span><p>Marco enters holding Pina's hand. Stella is already waiting by the pool, smiling because he gave her a necklace last night.</p><span class="label">Dialogue</span><div class="dialogue">Benny: New bombshell in the villa... Mango Marco.
-Stella: Marco?
-Marco: I have never met that strawberry in my life.</div><div class="caption">He said he never met her.</div></div></article>
-
-      <article class="beat"><div class="time">0:07-0:15</div><div><h3>Beat 2: Pina Claims Him</h3><span class="label">Visual</span><p>Pina tightens her hand around Marco's. The other fruits gasp and look at Stella.</p><span class="label">Dialogue</span><div class="dialogue">Pina: That's awkward. He came in with me.
-Marco: Stella, right? Nice to meet you.
-Stella: Nice to meet me?</div><div class="caption">Nice to meet me?</div></div></article>
-
-      <article class="beat"><div class="time">0:15-0:25</div><div><h3>Beat 3: Stella Shows Her Half</h3><span class="label">Visual</span><p>Stella lifts a small seed-heart necklace from her dress. The villa goes quiet.</p><span class="label">Dialogue</span><div class="dialogue">Stella: Then why am I wearing your promise?
-Marco: A lot of people wear necklaces.
-Stella: Not from last night's audition.</div><div class="caption">Then why am I wearing your promise?</div></div></article>
-
-      <article class="beat"><div class="time">0:25-0:34</div><div><h3>Beat 4: Marco Tries To Laugh It Off</h3><span class="label">Visual</span><p>Marco laughs too loudly and touches his own necklace without realizing it.</p><span class="label">Dialogue</span><div class="dialogue">Marco: Every mango has charm.
-Bella: Then why are you hiding yours?
-Marco: I'm not hiding anything.</div><div class="caption">Why are you hiding yours?</div></div></article>
-
-      <article class="beat"><div class="time">0:34-0:46</div><div><h3>Beat 5: Bella Reads The Engraving</h3><span class="label">Visual</span><p>Bella steps behind Marco, flips his necklace toward camera, and squints at the tiny writing.</p><span class="label">Dialogue</span><div class="dialogue">Bella: It says S plus M.
-Pina: That could mean anything.
-Bella: It also says... 11:47 p.m.</div><div class="caption">S + M. 11:47 p.m.</div></div></article>
-
-      <article class="beat"><div class="time">0:46-0:55</div><div><h3>Beat 6: Benny Panics</h3><span class="label">Visual</span><p>Benny's host smile breaks. He gestures at the camera crew to stop filming, then accidentally names the hidden tape.</p><span class="label">Dialogue</span><div class="dialogue">Benny: Cut Camera Three. Not the audition tape.
-Stella: Why?
-Bella: Because he knew.</div><div class="caption">Benny knew.</div></div></article>
-
-      <article class="beat"><div class="time">0:55-1:00</div><div><h3>Beat 7: The Tape</h3><span class="label">Visual</span><p>Stella turns from Marco to Benny. Marco looks less guilty than scared.</p><span class="label">Dialogue</span><div class="dialogue">Stella: Roll the audition tape.
-Benny: Stella, don't.
-CUT.</div><div class="caption">Part 2 opens on the tape.</div></div></article>
+      <div class="card-grid" id="beatGrid"></div>
     </section>
 
-    <section class="panel half">
-      <h2>End State</h2>
-      <p>The episode resolves one question: Marco lied when he said he never met Stella.</p>
-      <p>It opens one new question: what did Benny and Marco record at 11:47 p.m. last night?</p>
+    <section class="band" id="frames">
+      <h2>Frames And Shot Prompts</h2>
+      <p>Each frame card is one paid image-to-video job. Generate each shot as a 3-5 second clip from approved stills. Add captions and necklace text in edit, not inside generated video.</p>
+      <div class="card-grid" id="shotGrid"></div>
     </section>
 
-    <section class="panel half">
-      <h2>Part 2 Promise</h2>
-      <p>Part 2 must open with the audition tape from last night. Do not skip to a new villa problem. The first shot should be security footage of Marco giving Stella the necklace, followed by Benny coaching Marco before the official entrance.</p>
-    </section>
-
-    <section class="panel">
-      <h2>Posting Package</h2>
-      <ul class="list">
-        <li><strong>Search caption:</strong> Fruit villa drama where Mango Marco denies knowing Stella, but the necklace from last night's audition exposes him.</li>
-        <li><strong>Comment bait:</strong> Did Marco betray Stella, or did Benny set them both up?</li>
-        <li><strong>Lore drop:</strong> Look at Marco's hand at 0:28. He touches the necklace before Bella even says anything.</li>
-        <li><strong>Repeatable audio cue:</strong> Stella saying, "Nice to meet me?"</li>
-        <li><strong>Loop note:</strong> the final "Stella, don't" cuts back to Marco saying he has never met Stella.</li>
-      </ul>
-    </section>
-
-    <section class="panel" id="shots">
-      <h2>Paid Render Micro-Shot Pack</h2>
-      <p>Generate each shot as a 3-5 second vertical 9:16 image-to-video clip from approved character reference stills. Edit together with hard Duanju cuts.</p>
-      <div class="shot-grid">
-        <article class="card"><h3>Shot 01: Marco Enters With Pina</h3><div class="meta">0:00-0:04 - Marco, Pina, Stella</div><div class="field"><strong>Action</strong>Marco enters holding Pina's hand while Stella recognizes him.</div><div class="field"><strong>Expression</strong>Stella happy to stunned; Marco confident to guarded.</div><div class="field"><strong>Camera</strong>Fast push from Stella reaction to Marco and Pina.</div><div class="prompt">Mango Marco enters tropical fruit villa holding Pina Pineapple's hand, Stella Strawberry waiting by pool recognizes him from last night's audition, glossy humanoid fruit reality drama, shocked reaction, vertical 9:16.</div></article>
-        <article class="card"><h3>Shot 02: Public Denial</h3><div class="meta">0:04-0:07 - Marco, Stella</div><div class="field"><strong>Action</strong>Marco publicly says he has never met Stella.</div><div class="field"><strong>Expression</strong>Marco fake polite smile; Stella hurt but controlled.</div><div class="field"><strong>Camera</strong>Tight shot-reverse-shot.</div><div class="prompt">Mango Marco close-up with fake charming smile saying he has never met Stella, Stella Strawberry stunned in background, premium 3D animated humanoid fruit style.</div></article>
-        <article class="card"><h3>Shot 03: Pina Takes His Arm</h3><div class="meta">0:07-0:11 - Pina, Marco, Stella</div><div class="field"><strong>Action</strong>Pina pulls Marco closer in front of Stella.</div><div class="field"><strong>Expression</strong>Pina smug to uncertain.</div><div class="field"><strong>Camera</strong>Medium two-shot with Stella visible between them.</div><div class="prompt">Pina Pineapple holds Mango Marco's arm possessively, Stella Strawberry watches from poolside, tropical villa contestants reacting.</div></article>
-        <article class="card"><h3>Shot 04: Nice To Meet Me?</h3><div class="meta">0:11-0:15 - Stella</div><div class="field"><strong>Action</strong>Stella repeats Marco's fake greeting back at him.</div><div class="field"><strong>Expression</strong>Hurt smile becomes sharp disbelief.</div><div class="field"><strong>Camera</strong>Close-up on Stella's face and necklace chain.</div><div class="prompt">Stella Strawberry close-up, glossy red fruit skin, expressive green eyes, necklace chain visible, she looks wounded but composed.</div></article>
-        <article class="card"><h3>Shot 05: Stella Shows Her Necklace</h3><div class="meta">0:15-0:20 - Stella, Marco</div><div class="field"><strong>Action</strong>Stella lifts her seed-heart necklace from last night's audition toward camera.</div><div class="field"><strong>Expression</strong>Stella calm; Marco's smile drops.</div><div class="field"><strong>Camera</strong>Insert on necklace, rack focus to Marco.</div><div class="prompt">Stella Strawberry holds up seed-heart necklace from last night's audition, tiny engraving visible, Mango Marco shocked behind her, warm sunset villa lighting.</div></article>
-        <article class="card"><h3>Shot 06: Marco Laughs Too Loud</h3><div class="meta">0:20-0:28 - Marco, Pina, villa cast</div><div class="field"><strong>Action</strong>Marco laughs and dismisses the necklace.</div><div class="field"><strong>Expression</strong>Forced laugh to nervous glance.</div><div class="field"><strong>Camera</strong>Reality TV handheld push-in.</div><div class="prompt">Mango Marco laughs nervously beside Pina Pineapple, villa contestants gossip, tropical pool party, comedic tension.</div></article>
-        <article class="card"><h3>Shot 07: Bella Notices His Hand</h3><div class="meta">0:28-0:34 - Bella, Marco</div><div class="field"><strong>Action</strong>Bella sees Marco touching his hidden necklace.</div><div class="field"><strong>Expression</strong>Bella playful to detective.</div><div class="field"><strong>Camera</strong>Close-up on Marco's hand, snap to Bella's eyes.</div><div class="prompt">Bella Blueberry notices Mango Marco touching hidden necklace under floral shirt, detective expression, reality show zoom.</div></article>
-        <article class="card"><h3>Shot 08: Bella Flips The Necklace</h3><div class="meta">0:34-0:40 - Bella, Marco</div><div class="field"><strong>Action</strong>Bella flips Marco's necklace outward.</div><div class="field"><strong>Expression</strong>Marco panic; Bella triumph.</div><div class="field"><strong>Camera</strong>Fast hand close-up.</div><div class="prompt">Bella Blueberry flips Mango Marco's matching seed-heart necklace toward camera, Marco panics, glossy fruit-human characters.</div></article>
-        <article class="card"><h3>Shot 09: Engraving Proof</h3><div class="meta">0:40-0:46 - Bella, Pina, Stella</div><div class="field"><strong>Action</strong>Bella reads the engraving as Pina's confidence collapses.</div><div class="field"><strong>Expression</strong>Pina smug to humiliated; Stella quiet fury.</div><div class="field"><strong>Camera</strong>Macro insert plus reaction cuts.</div><div class="prompt">Close-up of necklace engraving reading S + M - 11:47 PM as clean edited overlay, Pina Pineapple shocked, Stella Strawberry silent.</div></article>
-        <article class="card"><h3>Shot 10: Benny Cuts Cameras</h3><div class="meta">0:46-0:52 - Benny, camera crew, Stella</div><div class="field"><strong>Action</strong>Benny tells the crew to cut Camera Three and not show the audition tape.</div><div class="field"><strong>Expression</strong>Benny host smile to panic.</div><div class="field"><strong>Camera</strong>Whip pan to Benny.</div><div class="prompt">Benny Banana host panics and says cut Camera Three, not the audition tape, Stella Strawberry turns toward him, tropical villa production chaos.</div></article>
-        <article class="card"><h3>Shot 11: Benny Knew</h3><div class="meta">0:52-0:55 - Bella, Benny, Stella</div><div class="field"><strong>Action</strong>Bella says Benny knew.</div><div class="field"><strong>Expression</strong>Benny frozen; Stella realizes the bigger betrayal.</div><div class="field"><strong>Camera</strong>Three-shot triangle.</div><div class="prompt">Bella Blueberry points at Benny Banana, Stella Strawberry realizes host was involved, dramatic sunset villa lighting.</div></article>
-        <article class="card"><h3>Shot 12: Roll The Tape</h3><div class="meta">0:55-1:00 - Stella, Benny, Marco</div><div class="field"><strong>Action</strong>Stella demands the audition tape.</div><div class="field"><strong>Expression</strong>Marco guilt turns fear; Benny tries to stop her.</div><div class="field"><strong>Camera</strong>Push on Stella, smash cut.</div><div class="prompt">Stella Strawberry points toward reality show camera and demands the audition tape from last night, Mango Marco scared, Benny Banana saying don't, cliffhanger.</div></article>
+    <section class="band two-col" id="cutdown">
+      <div>
+        <h2>18-Second FYP Test Cut</h2>
+        <ol>
+          <li><strong>0:00-0:03:</strong> Marco enters with Pina and denies knowing Stella.</li>
+          <li><strong>0:03-0:07:</strong> Stella shows her matching necklace.</li>
+          <li><strong>0:07-0:11:</strong> Bella catches Marco touching his hidden chain.</li>
+          <li><strong>0:11-0:15:</strong> Bella flips Marco's necklace. Overlay: <code>S + M - 11:47 PM</code>.</li>
+          <li><strong>0:15-0:18:</strong> Benny says, "Not the audition tape." Smash cut.</li>
+        </ol>
+      </div>
+      <div class="prompt-card">
+        <div class="prompt-head">
+          <div>
+            <div class="tag">FYP prompt</div>
+            <h3>18-Second Trailer</h3>
+          </div>
+          <button class="copy" type="button" data-copy-target="fypPrompt">Copy</button>
+        </div>
+        <div class="prompt-body"><pre id="fypPrompt">Vertical 9:16 premium 3D animated fruit reality microdrama trailer. Use approved character references for Stella Strawberry, Mango Marco, Pina Pineapple, Bella Blueberry, and Benny Banana exactly. Five hard cuts: Marco enters holding Pina's hand and denies knowing Stella; Stella lifts her matching seed-heart necklace; Bella notices Marco touching his hidden chain; Bella flips Marco's necklace toward camera; Benny Banana panics and tries to cut the cameras. Sunset tropical villa pool, glossy humanoid fruit characters, expressive faces and hands, dramatic reality-TV push-ins, clean edited overlay for S + M - 11:47 PM, no baked-in captions, no logos, no watermarks.</pre></div>
       </div>
     </section>
 
-    <section class="panel half" id="voices">
-      <h2>Voice Direction</h2>
-      <ul class="list">
-        <li>Benny: smooth reality-host voice, playful until the final panic.</li>
-        <li>Stella: soft at first, then controlled and cold.</li>
-        <li>Marco: charming but overacting; his laugh should sound fake.</li>
-        <li>Pina: confident, then embarrassed.</li>
-        <li>Bella: fast, amused, forensic.</li>
-      </ul>
+    <section class="band two-col" id="posting">
+      <div>
+        <h2>Audio, Caption, Lore</h2>
+        <table>
+          <tbody>
+            <tr><th>Original audio cue</th><td>Bright villa sting, silence on "Nice to meet me?", bass hit on "11:47 p.m."</td></tr>
+            <tr><th>Sound title</th><td>Stella's Theme - Nice To Meet Me</td></tr>
+            <tr><th>Search caption</th><td>Fruit villa drama where Mango Marco denies knowing Stella, but the necklace from last night's audition exposes him.</td></tr>
+            <tr><th>Comment bait</th><td>Did Marco betray Stella, or did Benny set them both up?</td></tr>
+            <tr><th>Lore comment</th><td>Look at Marco's hand before Bella says anything. He touches the necklace like he already knows it will ruin him.</td></tr>
+            <tr><th>Loop note</th><td>Cut Benny's "Stella, don't" directly back to Marco saying he has never met Stella.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="card">
+        <h3>Episode 2 Opening Answer</h3>
+        <p>Security footage from 11:47 p.m. shows Marco placing the necklace on Stella and saying, "If we enter together, they will know we passed the chemistry test." Benny steps into frame and says, "No. Tomorrow you enter with Pina. If Stella reacts, we keep the tape."</p>
+        <h3>Episode 2 Cliffhanger</h3>
+        <p>Pina watches the tape and whispers, "Then why is my name on the contract too?"</p>
+      </div>
     </section>
 
-    <section class="panel half" id="visuals">
-      <h2>Visual Target</h2>
-      <ul class="list">
-        <li>Human-like fruit bodies with expressive eyes, eyebrows, mouths, and hands.</li>
-        <li>Clearly non-human fruit identity through skin texture, leaf hair, seed details, and silhouettes.</li>
-        <li>Premium glossy 3D animated reality-show look.</li>
-        <li>Sunset tropical villa, pool, string lights, confession-booth energy.</li>
-        <li>The necklace timestamp must be a clean edited overlay or prop insert.</li>
+    <section class="band">
+      <h2>Render Checklist</h2>
+      <ul class="checklist">
+        <li>Generate character stills first, then image-to-video.</li>
+        <li>Keep every shot under 5 seconds unless it is an active reaction.</li>
+        <li>Add captions, timestamps, and necklace engraving in edit.</li>
+        <li>Compare fruit texture, eyes, hands, jewelry, and villa lighting to the reference pack.</li>
+        <li>Reject any shot where Marco's necklace disappears.</li>
+        <li>The final second must ask one question: what is on the audition tape?</li>
       </ul>
-    </section>
-
-    <section class="panel">
-      <h2>Critic Gate</h2>
-      <div class="pass">Sub-agent critic result: PASS for Episode 1 with fixes applied.</div>
-      <ul class="list">
-        <li>Replaced the confusing "After the Finale" engraving with the concrete timestamp "S + M - 11:47 PM".</li>
-        <li>Clarified that Stella and Marco met during the private villa audition last night, not in a long off-screen relationship.</li>
-        <li>Made production guilt direct: Benny says, "Cut Camera Three. Not the audition tape."</li>
-        <li>Kept Pina mostly visual so Episode 1 does not over-invest in a second subplot.</li>
-        <li>Ended before the tape plays, creating a specific Part 2 promise.</li>
-      </ul>
-      <p class="warn"><strong>Production caution:</strong> the necklace text is load-bearing. Do not rely on the video model to render it perfectly. Add the timestamp as a clean edited overlay during assembly.</p>
     </section>
   </main>
+
   <footer>
-    <div class="wrap">Readable script page for the paid visual test. Review MP4 before any TikTok post.</div>
+    <div class="wrap">Updated 2026-05-31. Writer dashboard for paid AI video generation. Trial review before any TikTok post.</div>
   </footer>
+
+  <script>
+    const characters = [
+      {
+        name: "Stella Strawberry",
+        dot: "berry",
+        role: "Wronged lead",
+        visual: "Red strawberry fruit head, visible seed texture, green leaf hair, large green eyes, red sequined villa dress, half seed-heart necklace engraved S.",
+        behavior: "Sweet first, surgical when embarrassed. She gets quieter as the room gets louder.",
+        rule: "Her necklace is visible from Shot 04 onward. She does not know about Benny's tape until he slips."
+      },
+      {
+        name: "Mango Marco",
+        dot: "mango",
+        role: "Bombshell liar",
+        visual: "Tall golden mango head, side leaf detail, open tropical shirt, white linen pants, gold chain, hidden matching seed-heart necklace engraved M.",
+        behavior: "Performs confidence for cameras, but panic leaks through his hands.",
+        rule: "He is guilty of denial, not of planning the whole production setup."
+      },
+      {
+        name: "Pina Pineapple",
+        dot: "leaf",
+        role: "Public betrayal image",
+        visual: "Golden pineapple head, tall green crown leaves, hoop earrings, lime-gold resort dress, stacked bracelets.",
+        behavior: "Smug until the proof appears, then confused and embarrassed.",
+        rule: "She believes Marco came in with her voluntarily."
+      },
+      {
+        name: "Bella Blueberry",
+        dot: "blue",
+        role: "Gossip detective",
+        visual: "Round blueberry-purple head, glossy blue skin, bright eyes, violet leaf accents, cobalt cropped jacket, silver jewelry, phone in hand.",
+        behavior: "Fast, amused, precise. Notices tiny physical details before everyone else.",
+        rule: "She exposes the clue; she does not already know the entire secret."
+      },
+      {
+        name: "Benny Banana",
+        dot: "pool",
+        role: "Producer-host",
+        visual: "Tall banana head, cream host suit, green pocket square, cue cards, hidden earpiece, polished smile that snaps into panic.",
+        behavior: "Smiles too long before giving an order.",
+        rule: "He knows about the audition tape and is trying to keep it buried."
+      }
+    ];
+
+    const stillPrompts = [
+      ["Stella Strawberry", "Vertical 9:16 premium 3D animated character reference for Fruit Crush Villa. Stella Strawberry, a humanoid strawberry woman with glossy red strawberry fruit head, tiny seed texture, green leaf hair swept to one side, large green expressive eyes, eyelids, eyebrows, detailed mouth, human-like shoulders, arms, hands, and confident posture. Red sequined villa dress, delicate gold chain with half seed-heart necklace, soft warm sunset pool lighting, tropical luxury villa background, charming non-human character design, consistent front-facing full body."],
+      ["Mango Marco", "Vertical 9:16 premium 3D animated character reference for Fruit Crush Villa. Mango Marco, a tall humanoid mango man with golden orange mango fruit head, subtle leaf detail, expressive dark eyes, charming overconfident smile, athletic human-like body and hands. Open tropical floral shirt, white linen pants, gold chain with hidden half seed-heart necklace under collar, polished villa bombshell styling, sunset pool background, glossy fruit texture, readable silhouette, non-human but emotionally expressive."],
+      ["Pina Pineapple", "Vertical 9:16 premium 3D animated character reference for Fruit Crush Villa. Pina Pineapple, a glamorous humanoid pineapple woman with golden pineapple fruit head, tall green crown leaves, hoop earrings, sharp expressive eyes, confident smile, human-like body and hands. Lime-gold resort dress, stacked bracelets, tropical villa pool at sunset, premium glossy 3D animation, elegant but slightly absurd, clear pineapple silhouette."],
+      ["Bella Blueberry", "Vertical 9:16 premium 3D animated character reference for Fruit Crush Villa. Bella Blueberry, a compact humanoid blueberry woman with round glossy blue-purple fruit head, bright forensic eyes, expressive brows, violet leaf accents, human-like body and hands. Cobalt cropped jacket, silver jewelry, small phone in hand, playful detective expression, sunset villa lounge background, premium glossy 3D style, charming non-human character."],
+      ["Benny Banana", "Vertical 9:16 premium 3D animated character reference for Fruit Crush Villa. Benny Banana, a tall humanoid banana host with bright yellow banana fruit head, expressive eyes, wide polished smile, human-like body and hands. Cream host suit, green pocket square, cue cards, tiny earpiece, tropical villa ceremony set at sunset, glossy 3D animation, charming but secretly nervous."],
+      ["Ensemble Reference", "Vertical 9:16 premium 3D animated ensemble reference for Fruit Crush Villa. Stella Strawberry, Mango Marco, Pina Pineapple, Bella Blueberry, and Benny Banana standing together by the sunset villa pool. Each character keeps their exact fruit head shape, outfit, jewelry, body scale, and expression style. Reality-show ceremony lighting, clear spacing, full bodies visible, no extra characters, no logos, no captions."]
+    ];
+
+    const beats = [
+      ["0:00-0:07", "Public Denial", "Marco enters holding Pina's hand. Stella recognizes him instantly.", "Benny: New bombshell in the villa... Mango Marco.\nStella: Marco?\nMarco: I have never met that strawberry in my life.", "He said he never met her."],
+      ["0:07-0:15", "Pina Claims Him", "Pina pulls Marco closer. The room turns toward Stella.", "Pina: That's awkward. He came in with me.\nMarco: Stella, right? Nice to meet you.\nStella: Nice to meet me?", "Nice to meet me?"],
+      ["0:15-0:25", "Stella Shows Her Half", "Stella lifts her half of the seed-heart necklace.", "Stella: Then why am I wearing your promise?\nMarco: A lot of people wear necklaces.\nStella: Not from last night's audition.", "Then why am I wearing your promise?"],
+      ["0:25-0:34", "Marco's Tell", "Marco laughs too loudly and touches the necklace under his collar.", "Marco: Every mango has charm.\nBella: Then why are you hiding yours?\nMarco: I'm not hiding anything.", "Why are you hiding yours?"],
+      ["0:34-0:46", "The Engraving", "Bella flips Marco's necklace outward. Add clean edited overlay.", "Bella: It says S plus M.\nPina: That could mean anything.\nBella: It also says... 11:47 p.m.", "S + M. 11:47 p.m."],
+      ["0:46-0:55", "Benny Slips", "Benny's host smile breaks. He accidentally names the hidden tape.", "Benny: Cut Camera Three. Not the audition tape.\nStella: Why?\nBella: Because he knew.", "Benny knew."],
+      ["0:55-1:00", "Cliffhanger", "Stella faces Benny. Marco looks more afraid of Benny than of Stella.", "Stella: Roll the audition tape.\nBenny: Stella, don't.\nCUT.", "Part 2 opens on the tape."]
+    ];
+
+    const shots = [
+      ["Shot 01", "Marco Enters With Pina", "0:00-0:04", "Mango Marco, Pina Pineapple, Stella Strawberry", "Vertical 9:16 premium 3D animated reality-show microdrama. Use approved references for Mango Marco, Pina Pineapple, and Stella Strawberry exactly. Tropical luxury villa pool at sunset. Marco enters through palm shadows holding Pina's hand while Stella waits by the pool and recognizes him. Stella's face changes from hopeful to stunned, Marco's smile stays too polished, Pina looks proud. Fast reality-TV push from Stella's reaction to Marco and Pina, natural walking motion, hand contact, blinking, clothing movement, no captions or logos."],
+      ["Shot 02", "The Denial Close-Up", "0:04-0:07", "Mango Marco, Stella Strawberry", "Vertical 9:16 premium 3D animated reality-show microdrama. Use approved references for Mango Marco and Stella Strawberry exactly. Tight close-up on Marco's mango face as he gives a fake charming smile and publicly denies knowing Stella. Stella is blurred behind him, frozen by the pool. Camera does a small handheld push-in as Marco's eyes dart for one frame. Story beat: he is lying in front of everyone. No embedded subtitles, no logos."],
+      ["Shot 03", "Pina Pulls Him Closer", "0:07-0:11", "Pina Pineapple, Mango Marco, Stella Strawberry", "Vertical 9:16 premium 3D animated reality-show microdrama. Use approved references for Pina Pineapple, Mango Marco, and Stella Strawberry exactly. Pina tightens her grip on Marco's arm and steps half a pace in front of him, trying to claim the entrance moment. Stella remains visible between them in the background. Pina's expression shifts from smug to slightly unsure as she sees Stella's face. Medium two-shot, resort pool lights, clear hand acting, no extra characters."],
+      ["Shot 04", "Nice To Meet Me", "0:11-0:15", "Stella Strawberry", "Vertical 9:16 premium 3D animated reality-show microdrama. Use approved reference for Stella Strawberry exactly. Close-up on Stella's strawberry face and visible gold necklace chain. Her hurt smile tightens into cold disbelief as she repeats the fake greeting back at Marco. Small breath, eye shine, eyelids narrowing, one controlled head tilt. Background softly blurred sunset villa. No text in frame."],
+      ["Shot 05", "Stella Shows Her Half", "0:15-0:20", "Stella Strawberry, Mango Marco", "Vertical 9:16 premium 3D animated reality-show microdrama. Use approved references for Stella Strawberry and Mango Marco exactly. Stella lifts her half of a seed-heart necklace toward camera; the prop catches warm pool light. Rack focus from the necklace to Marco in the background as his smile drops. Stella remains calm and steady. Add exact engraving later in edit, do not generate readable tiny text. No logos, no captions."],
+      ["Shot 06", "Marco Laughs Too Loud", "0:20-0:28", "Mango Marco, Pina Pineapple", "Vertical 9:16 premium 3D animated reality-show microdrama. Use approved references for Mango Marco and Pina Pineapple exactly. Marco laughs too loudly beside Pina and waves off Stella's necklace, but his fingers drift toward the chain hidden under his shirt collar. Pina's confident smile flickers. Reality-TV handheld push-in, villa contestants only as soft background silhouettes, natural mouth movement and nervous hand acting."],
+      ["Shot 07", "Bella Notices The Tell", "0:28-0:34", "Bella Blueberry, Mango Marco", "Vertical 9:16 premium 3D animated reality-show microdrama. Use approved references for Bella Blueberry and Mango Marco exactly. Close-up on Marco's hand touching the hidden necklace under his floral shirt, then snap focus to Bella Blueberry noticing it with a playful detective expression. Bella leans into frame with bright eyes and a tiny smile. Quick reality-show zoom, crisp prop visibility, no extra text."],
+      ["Shot 08", "Bella Flips The Necklace", "0:34-0:40", "Bella Blueberry, Mango Marco", "Vertical 9:16 premium 3D animated reality-show microdrama. Use approved references for Bella Blueberry and Mango Marco exactly. Bella steps behind Marco and flips his matching seed-heart necklace outward toward the camera. Marco's mango face panics, shoulders tightening. Bella looks triumphant but amused. Fast hand close-up, necklace clearly visible, do not attempt readable engraved text in generation."],
+      ["Shot 09", "Pina Realizes", "0:40-0:46", "Pina Pineapple, Stella Strawberry, Bella Blueberry", "Vertical 9:16 premium 3D animated reality-show microdrama. Use approved references for Pina Pineapple, Stella Strawberry, and Bella Blueberry exactly. Reaction triangle by the villa pool: Bella points at Marco's necklace, Pina's smug expression collapses into embarrassed confusion, Stella watches silently with controlled fury. Add clean overlay in edit reading S + M - 11:47 PM. Camera cuts from necklace insert to Pina to Stella, no baked-in subtitles."],
+      ["Shot 10", "Benny Cuts Cameras", "0:46-0:52", "Benny Banana, Stella Strawberry", "Vertical 9:16 premium 3D animated reality-show microdrama. Use approved references for Benny Banana and Stella Strawberry exactly. Benny Banana's polished host smile breaks as he turns toward offscreen camera crew and makes a sharp cut gesture with his cue cards. Stella turns toward him, suddenly realizing the host knows more. Whip pan to Benny, earpiece visible, tropical production chaos, no logos."],
+      ["Shot 11", "Benny Knew", "0:52-0:55", "Bella Blueberry, Benny Banana, Stella Strawberry", "Vertical 9:16 premium 3D animated reality-show microdrama. Use approved references for Bella Blueberry, Benny Banana, and Stella Strawberry exactly. Bella points at Benny with forensic confidence, Stella's eyes shift from Marco to Benny, Benny freezes with his host smile stuck halfway. Three-character triangle composition, sunset pool ceremony lighting, sharp reaction cuts, no captions in the generated clip."],
+      ["Shot 12", "Roll The Tape", "0:55-1:00", "Stella Strawberry, Benny Banana, Mango Marco", "Vertical 9:16 premium 3D animated reality-show microdrama. Use approved references for Stella Strawberry, Benny Banana, and Mango Marco exactly. Stella points toward the reality-show camera and demands the audition tape. Benny reaches one hand forward, panicked, trying to stop her. Marco stands behind them looking more scared than guilty. Slow push on Stella, smash cut mid-motion, designed to loop back to Marco's denial. No embedded subtitles or logos."]
+    ];
+
+    function escapeHtml(value) {
+      return String(value)
+        .replaceAll("&", "&amp;")
+        .replaceAll("<", "&lt;")
+        .replaceAll(">", "&gt;")
+        .replaceAll('"', "&quot;");
+    }
+
+    function promptCard(title, subtitle, body, id) {
+      return `<article class="prompt-card">
+        <div class="prompt-head">
+          <div><div class="tag">${escapeHtml(subtitle)}</div><h3>${escapeHtml(title)}</h3></div>
+          <button class="copy" type="button" data-copy-target="${id}">Copy</button>
+        </div>
+        <div class="prompt-body"><pre id="${id}">${escapeHtml(body)}</pre></div>
+      </article>`;
+    }
+
+    document.getElementById("characterGrid").innerHTML = characters.map((item) => `
+      <article class="card">
+        <div class="character-name"><span class="dot ${item.dot}"></span><h3>${escapeHtml(item.name)}</h3></div>
+        <div class="tag">${escapeHtml(item.role)}</div>
+        <p><strong>Visual:</strong> ${escapeHtml(item.visual)}</p>
+        <p><strong>Behavior:</strong> ${escapeHtml(item.behavior)}</p>
+        <p><strong>Rule:</strong> ${escapeHtml(item.rule)}</p>
+      </article>
+    `).join("");
+
+    document.getElementById("stillGrid").innerHTML = stillPrompts.map((item, index) =>
+      promptCard(item[0], "Reference still", item[1], `stillPrompt${index}`)
+    ).join("");
+
+    document.getElementById("beatGrid").innerHTML = beats.map((item) => `
+      <article class="beat">
+        <div class="tag">${escapeHtml(item[0])}</div>
+        <h3>${escapeHtml(item[1])}</h3>
+        <p>${escapeHtml(item[2])}</p>
+        <div class="script-line">${escapeHtml(item[3])}</div>
+        <p style="margin:10px 0 0;"><strong>Caption:</strong> ${escapeHtml(item[4])}</p>
+      </article>
+    `).join("");
+
+    document.getElementById("shotGrid").innerHTML = shots.map((item, index) =>
+      promptCard(`${item[0]}: ${item[1]}`, `${item[2]} - ${item[3]}`, item[4], `shotPrompt${index}`)
+    ).join("");
+
+    document.addEventListener("click", async (event) => {
+      const button = event.target.closest("button.copy");
+      if (!button) return;
+      const target = document.getElementById(button.dataset.copyTarget);
+      if (!target) return;
+      try {
+        await navigator.clipboard.writeText(target.textContent.trim());
+        const old = button.textContent;
+        button.textContent = "Copied";
+        setTimeout(() => { button.textContent = old; }, 1100);
+      } catch {
+        button.textContent = "Select";
+      }
+    });
+  </script>
 </body>
 </html>
