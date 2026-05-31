@@ -57,18 +57,30 @@ If API automation is required immediately, use one unified API route for early t
 
 ## Kling Plan Decision
 
-Buy Kling Pro monthly first. Do not buy annual, Ultra, or an enterprise/API commitment until one paid fruit-character render test passes.
+Buy Kling Premier monthly as the final first-month plan. Do not buy annual, Ultra, or an enterprise/API commitment until one paid fruit-character render test passes.
 
-Why Pro:
+Why Premier:
 
-- Standard is too small for this project because we need failed generations, alternate motion prompts, close-up tests, and character-consistency trials.
-- Pro should be enough for the first real validation batch: 10-20 short character/scene tests plus one 30-45 second proof-of-concept assembled from the best clips.
-- Premier is the next upgrade only if Pro credits are exhausted quickly and the outputs pass the quality gate.
+- Kling's official paid-service terms say activated Paid Services, Membership Services, and Credit services are non-refundable, so starting too low and hoping to upgrade later is not a clean risk-reduction strategy.
+- Standard and Pro are too small for this project because we need bad-output budget: alternate motion prompts, close-up tests, lip-sync tests, character-lock tests, and scene retries.
+- Premier should cover a serious first validation batch: 20-40 short character/scene attempts plus one 30-60 second proof-of-concept assembled from the best clips.
 - Ultra is not justified until the channel has a repeatable format and posted videos show retention/share signals.
+- Monthly is still the right term because annual creates unnecessary lock-in before one format proves itself.
 
-At checkout, choose the smallest monthly Kling membership that includes watermark-free export, Kling 3.0/O1 image-to-video, Element Reference/Lock, native audio or lip-sync, and at least 1080p export. If those capabilities are gated above Pro in the current checkout UI, choose Premier instead of Pro.
+At checkout, choose Premier monthly if it includes watermark-free export, Kling 3.0/O1 image-to-video, Element Reference/Lock, native audio or lip-sync, and at least 1080p export. If the current checkout UI gates any essential character-reference or 1080p feature above Premier, do not jump to Ultra automatically; use one-time purchased credits or a third-party aggregator test instead.
 
 Current planning assumption from public membership references: Standard is roughly 660 credits/month, Pro roughly 3,000 credits/month, Premier roughly 8,000 credits/month, and Ultra roughly 26,000 credits/month. Treat those as budget estimates only; the checkout page is the source of truth.
+
+Premier vs Ultra:
+
+| Plan | Approx monthly credits | Approx monthly price range found | Rough 720p 10s marketing-equivalent clips | Practical role |
+|---|---:|---:|---:|---|
+| Premier | 8,000 | ~$65-$92 | ~400 | Best first serious validation month for a solo channel build |
+| Ultra | 26,000 | ~$128-$180 | ~1,300 | Heavy daily production, 4K/early-access workflows, or agency/client volume |
+
+Ultra gives about 3.25x the credits of Premier. It may also include the highest queue/early-access/4K privileges depending on the current checkout UI. That is useful after a format works, but it is premature before the first paid fruit-character proof passes review.
+
+Operational rule: after buying Premier monthly, immediately verify auto-renew controls and calendar a cancellation/review before renewal. The first month is for proving whether Kling can deliver the fruit-character quality bar, not for committing to a long-term vendor.
 
 ## Kling vs Veo For Fruit Reality Drama
 
@@ -97,6 +109,8 @@ For this project, Veo should not replace Kling unless it clearly produces better
 Sources checked:
 
 - Kling image-to-video feature page: image animation, character consistency, native audio/lip-sync, 15s duration, 4K/pro/social-use claims.
+- Kling paid-service terms: activated Paid Services, Membership Services, and Credit services are non-refundable.
+- Kling credits policy: membership subscription credits are valid for one month, purchased credits are valid for two years, failed generations refund credits, and purchased credits cannot be exchanged for membership or cash.
 - Kling public membership references: plan tiers and approximate credit amounts for Standard, Pro, Premier, and Ultra.
 - Google Vertex AI Veo 3.1 docs: Veo supports 9:16 output, image/reference workflows, and 4/6/8 second API video lengths.
 - Google Gemini API pricing: Veo 3.1 Lite/Fast/Standard prices are listed per generated second.
