@@ -94,7 +94,7 @@ Recommended starting options:
 - Script API: `ANTHROPIC_API_KEY` or `OPENAI_API_KEY`
 - Avatar video: `HEYGEN_API_KEY` and `HEYGEN_AVATAR_ID`
 - Local visuals: `COMFYUI_BASE_URL`
-- Cloud visuals: `OPENAI_API_KEY` for Sora while available, `REPLICATE_API_TOKEN`, `RUNWAY_API_KEY`, `KLING_API_KEY`, `LUMA_API_KEY`, `GOOGLE_APPLICATION_CREDENTIALS`, or `PIKA_API_KEY`
+- Cloud visuals: `RUNWAYML_API_SECRET`, `OPENAI_API_KEY` for Sora while available, `REPLICATE_API_TOKEN`, `KLING_API_KEY`, `LUMA_API_KEY`, `GOOGLE_APPLICATION_CREDENTIALS`, or `PIKA_API_KEY`
 - Voice: `ELEVENLABS_API_KEY` and `ELEVENLABS_VOICE_ID`, `OPENAI_API_KEY`, Kokoro, or Piper
 
 Generate object-character packages before visual/provider work:
@@ -120,6 +120,16 @@ PYTHONPATH=src python3 -m ai_story_pipeline --collect-comfyui-outputs "$PACKAGE_
 ```
 
 The collector reads each submitted job's `prompt_id`, fetches ComfyUI history, and writes the first matching output to the `target_path` from `visual_asset_plan.json`.
+
+Use Runway for paid image-to-video scene tests:
+
+```bash
+PYTHONPATH=src python3 -m ai_story_pipeline --submit-runway-plan "$PACKAGE_DIR/visual_asset_plan.json" --runway-job-limit 2
+PYTHONPATH=src python3 -m ai_story_pipeline --submit-runway-plan "$PACKAGE_DIR/visual_asset_plan.json" --runway-execute --runway-job-limit 2
+PYTHONPATH=src python3 -m ai_story_pipeline --collect-runway-outputs "$PACKAGE_DIR/runway_submissions/runway_submissions.json" --runway-collect-execute
+```
+
+`--submit-runway-plan` is dry-run by default. Execution requires `RUNWAYML_API_SECRET`. The adapter uploads the local scene image or first character reference as a Runway ephemeral upload, starts `/v1/image_to_video`, stores task IDs, and collects completed MP4s back to `assets/video/scene_###.mp4`.
 
 Use Sora for optional scene-video dry runs or execution:
 

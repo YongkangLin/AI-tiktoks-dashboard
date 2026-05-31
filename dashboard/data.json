@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-05-31T02:34:54.304116+00:00",
+  "generated_at": "2026-05-31T02:59:13.124046+00:00",
   "campaign": {
-    "generated_at": "2026-05-31T02:34:29.864912+00:00",
+    "generated_at": "2026-05-31T02:59:07.679315+00:00",
     "campaign_name": "daily",
     "run_id": "story-episode-001",
     "content_format": "story",
@@ -59,7 +59,7 @@
     }
   },
   "readiness": {
-    "generated_at": "2026-05-31T02:34:29.866066+00:00",
+    "generated_at": "2026-05-31T02:59:07.680506+00:00",
     "status": "ready_for_trial_review",
     "run_root": "outputs/locked_story_review/daily/story-episode-001",
     "review_mode": "trial",
@@ -78,7 +78,7 @@
       {
         "id": "final_video",
         "status": "pass",
-        "detail": "1 final MP4 file(s) exist: final.mp4=7280973 bytes"
+        "detail": "1 final MP4 file(s) exist: final.mp4=11901859 bytes"
       },
       {
         "id": "character_visuals",
@@ -115,7 +115,7 @@
       "show_id": "fruit_crush_villa",
       "episode_number": "1",
       "title": "The Sour Receipt",
-      "description": "A wet smoothie-bar receipt exposes that Mango Marco entered the villa before his official arrival, then points the blame at Benny Banana. Watch to the last second: the receipt is signed by the host.",
+      "description": "A wet smoothie-bar receipt unravels the first day of Fruit Crush Villa: Marco was inside before his bombshell entrance, Stella helped rehearse the lie, Bella has timestamps, Gina has a rehearsal-day secret, and Benny Banana may have staged the entire fight as a loyalty test. Watch to the last second: the receipt is signed by the host.",
       "hashtags": "#fruitdrama #aifruit #animateddrama #storytime #cliffhanger #aistory #minidrama",
       "final_path": "outputs/locked_story_review/daily/story-episode-001/fruit_crush_villa/episode-001-the-sour-receipt/exports/final.mp4",
       "package_path": "outputs/locked_story_review/daily/story-episode-001/fruit_crush_villa/episode-001-the-sour-receipt",
@@ -123,8 +123,8 @@
       "audit_risk_level": "low",
       "ai_disclosure_required": "yes",
       "audio_rights_required": "yes",
-      "visual_assets_used": "13",
-      "visual_assets_required": "13",
+      "visual_assets_used": "20",
+      "visual_assets_required": "20",
       "visual_readiness": "character_visuals_complete",
       "quality_gate_status": "blocked_quality_gate",
       "quality_gate_score": "42",
@@ -140,10 +140,10 @@
       "title": "The Sour Receipt",
       "show": "Fruit Crush Villa",
       "hook": "Stella holds up a wet receipt and says, \"Marco, why is your name on a drink order from before you entered the villa?\"",
-      "logline": "A wet smoothie-bar receipt exposes that Mango Marco entered the villa before his official arrival, then points the blame at Benny Banana.",
-      "cta": "The receipt is not signed by Marco or Stella. It is signed by Benny, the host.",
+      "logline": "A wet smoothie-bar receipt unravels the first day of Fruit Crush Villa: Marco was inside before his bombshell entrance, Stella helped rehearse the lie, Bella has timestamps, Gina has a rehearsal-day secret, and Benny Banana may have staged the entire fight as a loyalty test.",
+      "cta": "The receipt is not signed by Marco or Stella. It is signed by Benny, the host, and the back of it says: TEST SUBJECT - STELLA.",
       "location": "tropical fruit villa",
-      "runtime_seconds": 150,
+      "runtime_seconds": 240,
       "video_href": "dashboard/assets/videos/episode-001-the-sour-receipt.mp4",
       "quality_status": "blocked_quality_gate",
       "quality_score": 42,
@@ -156,7 +156,7 @@
         "Strengthen the joke, stakes, or cliffhanger, then mark story_value as pass.",
         "Strengthen the opening three seconds, then mark retention_hook as pass."
       ],
-      "visual_assets_used": 13,
+      "visual_assets_used": 20,
       "references": [
         {
           "name": "Stella Strawberry",
@@ -231,6 +231,34 @@
         {
           "scene": 13,
           "href": "dashboard/assets/scenes/episode-001-the-sour-receipt-scene-13.png"
+        },
+        {
+          "scene": 14,
+          "href": "dashboard/assets/scenes/episode-001-the-sour-receipt-scene-14.png"
+        },
+        {
+          "scene": 15,
+          "href": "dashboard/assets/scenes/episode-001-the-sour-receipt-scene-15.png"
+        },
+        {
+          "scene": 16,
+          "href": "dashboard/assets/scenes/episode-001-the-sour-receipt-scene-16.png"
+        },
+        {
+          "scene": 17,
+          "href": "dashboard/assets/scenes/episode-001-the-sour-receipt-scene-17.png"
+        },
+        {
+          "scene": 18,
+          "href": "dashboard/assets/scenes/episode-001-the-sour-receipt-scene-18.png"
+        },
+        {
+          "scene": 19,
+          "href": "dashboard/assets/scenes/episode-001-the-sour-receipt-scene-19.png"
+        },
+        {
+          "scene": 20,
+          "href": "dashboard/assets/scenes/episode-001-the-sour-receipt-scene-20.png"
         }
       ],
       "package_path": "fruit_crush_villa/episode-001-the-sour-receipt"
@@ -255,7 +283,7 @@
     {
       "label": "Scene Images",
       "status": "complete",
-      "detail": "13 scene frame(s) copied"
+      "detail": "20 scene frame(s) copied"
     },
     {
       "label": "Final MP4",

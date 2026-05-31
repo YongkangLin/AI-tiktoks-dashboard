@@ -98,7 +98,15 @@ Pick the provider based on:
 
 ## Repo Integration Target
 
-The next code milestone is a `kling.py` adapter parallel to `sora.py`:
+The first paid-provider code path is the Runway adapter because it can already automate local reference upload, image-to-video task creation, polling, and MP4 collection from the same `visual_asset_plan.json` used by the local animatic. Run it as:
+
+```bash
+PYTHONPATH=src python3 -m ai_story_pipeline --submit-runway-plan "$PACKAGE_DIR/visual_asset_plan.json" --runway-job-limit 2
+PYTHONPATH=src python3 -m ai_story_pipeline --submit-runway-plan "$PACKAGE_DIR/visual_asset_plan.json" --runway-execute --runway-job-limit 2
+PYTHONPATH=src python3 -m ai_story_pipeline --collect-runway-outputs "$PACKAGE_DIR/runway_submissions/runway_submissions.json" --runway-collect-execute
+```
+
+The next code milestone is a `kling.py` adapter parallel to `runway.py` and `sora.py`:
 
 - Read `visual_asset_plan.json`.
 - Select video jobs only.

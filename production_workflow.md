@@ -40,6 +40,18 @@ PYTHONPATH=src python3 -m ai_story_pipeline --run-campaign --campaign-format sto
 
 This makes `docs/story_episode_001.json` the source story, writes a package for `The Sour Receipt`, assembles a review MP4, creates the visual asset plan, blocks TikTok upload in trial mode, and writes the operator review/dashboard files.
 
+To turn that visual plan into the first paid Runway scene-video test:
+
+```bash
+PACKAGE_DIR=outputs/locked_story_review/daily/story-episode-001/fruit_crush_villa/episode-001-the-sour-receipt
+PYTHONPATH=src python3 -m ai_story_pipeline --submit-runway-plan "$PACKAGE_DIR/visual_asset_plan.json" --runway-job-limit 2
+PYTHONPATH=src python3 -m ai_story_pipeline --submit-runway-plan "$PACKAGE_DIR/visual_asset_plan.json" --runway-execute --runway-job-limit 2
+PYTHONPATH=src python3 -m ai_story_pipeline --collect-runway-outputs "$PACKAGE_DIR/runway_submissions/runway_submissions.json" --runway-collect-execute
+PYTHONPATH=src python3 -m ai_story_pipeline --assemble-package "$PACKAGE_DIR" --provider local_character_animatic
+```
+
+The first Runway command is a dry run that writes exact job payloads. The execute/collect commands require `RUNWAYML_API_SECRET` and write finished clips to `assets/video/scene_###.mp4`; the final assemble step rebuilds `exports/final.mp4` from collected clips when present.
+
 ```bash
 python3 -m ai_story_pipeline --show fruit_crush_villa --episodes 2 --seed week-01
 ```

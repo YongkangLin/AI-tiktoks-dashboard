@@ -5,36 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Fruit Crush Villa Episode 1 Story Lock</title>
   <style>
-    :root {
-      --ink: #17212b;
-      --muted: #66717d;
-      --line: #d9dfdf;
-      --paper: #fbfaf6;
-      --panel: #ffffff;
-      --green: #1f8a70;
-      --amber: #b66d12;
-    }
+    :root { --ink:#17212b; --muted:#66717d; --line:#d9dfdf; --paper:#fbfaf6; --panel:#fff; --green:#1f8a70; --amber:#b66d12; --red:#b33b3b; --teal:#1f6f78; }
     * { box-sizing: border-box; }
-    body { margin: 0; font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: var(--paper); color: var(--ink); }
-    header { background: #fff; border-bottom: 1px solid var(--line); }
-    main, .wrap { max-width: 1120px; margin: 0 auto; padding: 24px; }
-    h1 { margin: 0; font-size: clamp(30px, 5vw, 56px); line-height: 1.02; letter-spacing: 0; }
-    h2 { margin: 30px 0 12px; font-size: 24px; letter-spacing: 0; }
-    h3 { margin: 0 0 8px; font-size: 18px; letter-spacing: 0; }
-    p, li { line-height: 1.55; }
-    a { color: #1f6f78; font-weight: 700; }
-    .sub { color: var(--muted); max-width: 780px; }
-    .badge { display: inline-flex; border: 1px solid rgba(31, 138, 112, .25); border-radius: 999px; padding: 7px 11px; color: var(--green); background: #eef8f4; font-weight: 800; }
-    .grid { display: grid; gap: 14px; }
-    .cards { grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); }
-    .card, .scene { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 16px; }
-    .scene { margin-bottom: 12px; }
-    .label { color: var(--muted); font-size: 12px; font-weight: 800; text-transform: uppercase; }
-    .line { border-left: 4px solid var(--amber); padding-left: 12px; margin: 10px 0; }
-    code { background: #eef0ed; border-radius: 4px; padding: 2px 5px; overflow-wrap: anywhere; }
-    table { width: 100%; border-collapse: collapse; background: #fff; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
-    th, td { border-bottom: 1px solid var(--line); padding: 10px; text-align: left; vertical-align: top; }
-    th { color: var(--muted); font-size: 12px; text-transform: uppercase; }
+    body { margin:0; font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background:var(--paper); color:var(--ink); }
+    header { background:#fff; border-bottom:1px solid var(--line); }
+    main, .wrap { max-width:1120px; margin:0 auto; padding:24px; }
+    h1 { margin:0; font-size:clamp(30px,5vw,56px); line-height:1.02; letter-spacing:0; }
+    h2 { margin:30px 0 12px; font-size:24px; letter-spacing:0; }
+    h3 { margin:0 0 8px; font-size:18px; letter-spacing:0; }
+    p, li { line-height:1.55; }
+    a { color:var(--teal); font-weight:700; }
+    .sub { color:var(--muted); max-width:820px; }
+    .badge { display:inline-flex; border:1px solid rgba(31,138,112,.25); border-radius:999px; padding:7px 11px; color:var(--green); background:#eef8f4; font-weight:800; margin-bottom:12px; }
+    .grid { display:grid; gap:14px; }
+    .cards { grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); }
+    .card, .scene { background:var(--panel); border:1px solid var(--line); border-radius:8px; padding:16px; }
+    .scene { margin-bottom:12px; }
+    .label { color:var(--muted); font-size:12px; font-weight:800; text-transform:uppercase; }
+    .line { border-left:4px solid var(--amber); padding-left:12px; margin:10px 0; }
+    .act { border-left:4px solid var(--teal); }
+    code { background:#eef0ed; border-radius:4px; padding:2px 5px; overflow-wrap:anywhere; }
+    table { width:100%; border-collapse:collapse; background:#fff; border:1px solid var(--line); border-radius:8px; overflow:hidden; }
+    th, td { border-bottom:1px solid var(--line); padding:10px; text-align:left; vertical-align:top; }
+    th { color:var(--muted); font-size:12px; text-transform:uppercase; }
   </style>
 </head>
 <body>
@@ -42,7 +35,7 @@
     <div class="wrap">
       <span class="badge">locked render story</span>
       <h1>Fruit Crush Villa Episode 1: The Sour Receipt</h1>
-      <p class="sub">A production-ready story lock for the first paid render test. This is the story to turn into video before spending on a full season.</p>
+      <p class="sub">A detailed multi-minute story lock for the first paid render test. It is deep enough for character motivation and continuity, but still bounded to one episode before spending on a full season.</p>
       <p><a href="index.html">Back to dashboard</a> | <a href="story_episode_001.json">Open JSON story file</a></p>
     </div>
   </header>
@@ -50,155 +43,256 @@
     <section>
       <h2>Core</h2>
       <div class="grid cards">
-        <div class="card"><span class="label">Runtime</span><p>Target 150 seconds. Paid test can render the first 45 seconds first.</p></div>
-        <div class="card"><span class="label">Hook</span><p>Stella holds up a wet receipt and says, "Marco, why is your name on a drink order from before you entered the villa?"</p></div>
-        <div class="card"><span class="label">Stakes</span><p>The winner of the first challenge gets the Golden Peel bracelet and chooses first at recoupling.</p></div>
-        <div class="card"><span class="label">Cliffhanger</span><p>The receipt is not signed by Marco or Stella. It is signed by Benny, the host.</p></div>
+        <div class="card"><span class="label">Runtime</span><p>Target 240 seconds. Paid test should render the first 2-3 strongest scenes before the full episode.</p></div>
+        <div class="card"><span class="label">Hook</span><p>Stella holds up a wet receipt and says, &quot;Marco, why is your name on a drink order from before you entered the villa?&quot;</p></div>
+        <div class="card"><span class="label">Stakes</span><p>The winner of the first challenge gets the Golden Peel bracelet, chooses first at recoupling, and earns private access to the locked Juice Room where one production clue is hidden.</p></div>
+        <div class="card"><span class="label">Cliffhanger</span><p>The receipt is not signed by Marco or Stella. It is signed by Benny, the host, and the back of it says: TEST SUBJECT - STELLA.</p></div>
       </div>
     </section>
-
+    <section>
+      <h2>Logline</h2>
+      <p>A wet smoothie-bar receipt unravels the first day of Fruit Crush Villa: Marco was inside before his bombshell entrance, Stella helped rehearse the lie, Bella has timestamps, Gina has a rehearsal-day secret, and Benny Banana may have staged the entire fight as a loyalty test.</p>
+    </section>
+    <section>
+      <h2>Act Structure</h2>
+      <div class="grid cards">
+        <div class="card act">
+          <span class="label">Act 1 · 0-56</span>
+          <p>Open with the receipt accusation, then rewind to show Marco&#x27;s too-polished entrance and Stella&#x27;s delayed reaction.</p>
+        </div>
+        <div class="card act">
+          <span class="label">Act 2 · 56-132</span>
+          <p>Turn the challenge into a real game with the Golden Peel, the Juice Room, and visible evidence that Marco touched the prize before anyone else.</p>
+        </div>
+        <div class="card act">
+          <span class="label">Act 3 · 132-204</span>
+          <p>Let Bella and Gina expose separate clues so the story becomes bigger than Marco and Stella flirting.</p>
+        </div>
+        <div class="card act">
+          <span class="label">Act 4 · 204-240</span>
+          <p>Flip the target from Marco to Benny, reveal the TEST SUBJECT note, and promise a specific Part 2 answer.</p>
+        </div>
+      </div>
+    </section>
     <section>
       <h2>Character Motives</h2>
       <div class="grid cards">
-        <div class="card"><h3>Stella Strawberry</h3><p>Wants to look sweet while controlling the first vote. She knows Marco from before the show, but she does not want the villa to know she helped him rehearse his entrance.</p></div>
-        <div class="card"><h3>Mango Marco</h3><p>Wants to be the bombshell everyone chooses. He is not purely fake: he came in liking Stella, then panicked when he realized the pre-show receipt could make both of them look staged.</p></div>
-        <div class="card"><h3>Bella Blueberry</h3><p>Looks like gossip, but her real motive is self-protection. She was humiliated in a previous villa and now records every production clue so she never gets blindsided again.</p></div>
-        <div class="card"><h3>Gina Grape</h3><p>Knows villa secrets because she arrived during rehearsal day. She lets the others fight until the evidence points toward production itself.</p></div>
-        <div class="card"><h3>Benny Banana</h3><p>Comic host who acts harmless. Episode 1 ends by implying he is running a loyalty test on the cast, not just hosting the show.</p></div>
+        <div class="card">
+          <h3>Stella Strawberry</h3>
+          <p><strong>Motive:</strong> Look sweet while controlling the first vote.</p>
+          <p><strong>Secret:</strong> She helped Marco rehearse his entrance before the show.</p>
+        </div>
+        <div class="card">
+          <h3>Mango Marco</h3>
+          <p><strong>Motive:</strong> Become the bombshell everyone chooses.</p>
+          <p><strong>Secret:</strong> He entered the villa before his official arrival and panicked when the receipt could expose it.</p>
+        </div>
+        <div class="card">
+          <h3>Bella Blueberry</h3>
+          <p><strong>Motive:</strong> Protect herself by noticing every production clue.</p>
+          <p><strong>Secret:</strong> She records every confessional door click after being blindsided in a previous villa.</p>
+        </div>
+        <div class="card">
+          <h3>Gina Grape</h3>
+          <p><strong>Motive:</strong> Expose who came for love and who came for screen time.</p>
+          <p><strong>Secret:</strong> She arrived during rehearsal day and heard more than she admits.</p>
+        </div>
+        <div class="card">
+          <h3>Benny Banana</h3>
+          <p><strong>Motive:</strong> Run the villa like a comic game master while hiding producer-level influence.</p>
+          <p><strong>Secret:</strong> He signed the 2:16 a.m. smoothie receipt.</p>
+        </div>
       </div>
     </section>
-
+    <section>
+      <h2>Continuity Rules</h2>
+      <ul>
+        <li>Part 2 must answer why Benny signed the receipt before introducing a new twist.</li>
+        <li>Stella cannot be purely innocent; she rehearsed with Marco, but she may not know she was the test subject.</li>
+        <li>Marco cannot be purely fake; he likes Stella and panics because the receipt makes his real feelings look produced.</li>
+        <li>Bella must remain useful, not just noisy: every accusation needs a timestamp, audio, or physical clue.</li>
+        <li>Gina knows more than she says because she arrived on rehearsal day.</li>
+      </ul>
+    </section>
     <section>
       <h2>Full Episode Script</h2>
-
       <article class="scene">
-        <span class="label">Scene 1 · 0-7s · Cold open</span>
-        <h3>The receipt hits the table</h3>
-        <p class="line"><strong>Stella:</strong> "Marco, why is your name on a drink order from before you entered the villa?"</p>
-        <p><strong>Visual:</strong> Stella Strawberry slaps a wet smoothie-bar receipt onto a glass table. Mango Marco smiles for half a second, then loses it. Bella Blueberry leans into frame like she has been waiting all day.</p>
-        <p><strong>Caption:</strong> He was not supposed to be here yet.</p>
+        <span class="label">Scene 1 · 0-8s · Cold open</span>
+        <h3>Cold open</h3>
+        <p class="line"><strong>Stella:</strong> Marco, why is your name on a drink order from before you entered the villa?</p>
+        <p><strong>Visual:</strong> Stella Strawberry slaps a wet smoothie-bar receipt onto a glass table. Mango Marco smiles for half a second, then loses it. Bella Blueberry leans into frame.</p>
+        <p><strong>Caption:</strong> He was inside before the villa opened.</p>
       </article>
-
       <article class="scene">
-        <span class="label">Scene 2 · 7-16s · Twelve hours earlier</span>
-        <h3>Marco enters too confidently</h3>
-        <p class="line"><strong>Narrator:</strong> "Twelve hours earlier, Mango Marco walked in like the villa had already voted for him."</p>
-        <p class="line"><strong>Marco:</strong> "I do not chase attention. Attention just gets thirsty."</p>
-        <p><strong>Visual:</strong> Marco steps through palm shadows in an open linen shirt. The camera pushes in like a reality-show bombshell entrance. Stella claps too late, like she recognizes him and is trying to hide it.</p>
-        <p><strong>Caption:</strong> Notice Stella's reaction.</p>
+        <span class="label">Scene 2 · 8-20s · Twelve hours earlier</span>
+        <h3>Twelve hours earlier</h3>
+        <p class="line"><strong>Narrator:</strong> Twelve hours earlier, Mango Marco walked in like the villa had already voted for him. The weird part was not his confidence. It was Stella&#x27;s face.</p>
+        <p class="line"><strong>Marco:</strong> I do not chase attention. Attention just gets thirsty.</p>
+        <p><strong>Visual:</strong> Marco steps through palm shadows in an open linen shirt. Everyone cheers on instinct. Stella freezes, looks at the smoothie bar, then claps two beats late.</p>
+        <p><strong>Caption:</strong> Notice Stella&#x27;s reaction.</p>
       </article>
-
       <article class="scene">
-        <span class="label">Scene 3 · 16-27s · Confessional</span>
-        <h3>Bella clocks the first lie</h3>
-        <p class="line"><strong>Bella:</strong> "Everyone screamed when Marco came in. Stella did not scream. She counted to two, then screamed. That is not excitement. That is math."</p>
-        <p><strong>Visual:</strong> Bella in a blue-lit confession booth, glossy eyes, tiny mic charm catching light. She taps twice on a notebook labeled villa clicks.</p>
+        <span class="label">Scene 3 · 20-32s · Bella confessional</span>
+        <h3>Bella confessional</h3>
+        <p class="line"><strong>Bella:</strong> Everyone screamed when Marco came in. Stella did not scream. She looked at the bar first. Then she counted to two. Then she screamed. That is not excitement. That is math.</p>
+        <p><strong>Visual:</strong> Bella sits in a blue-lit confession booth and taps twice on a notebook labeled villa clicks.</p>
         <p><strong>Caption:</strong> Bella records everything.</p>
       </article>
-
       <article class="scene">
-        <span class="label">Scene 4 · 27-39s · Challenge setup</span>
-        <h3>The Golden Peel rule</h3>
-        <p class="line"><strong>Benny:</strong> "First challenge. Make a smoothie for the fruit you trust most. Winner gets the Golden Peel and first pick tonight."</p>
-        <p><strong>Visual:</strong> Benny Banana rolls out a gold bracelet on a velvet tray. The bracelet is shaped like a peel. Everyone wants it, but Stella looks at the bracelet before Benny announces the prize.</p>
-        <p><strong>Caption:</strong> First pick at recoupling.</p>
+        <span class="label">Scene 4 · 32-44s · Golden Peel rule</span>
+        <h3>Golden Peel rule</h3>
+        <p class="line"><strong>Benny:</strong> First challenge. Make a smoothie for the fruit you trust most. Winner gets the Golden Peel, first pick tonight, and ten minutes in the locked Juice Room.</p>
+        <p><strong>Visual:</strong> Benny rolls out a gold bracelet on a velvet tray and taps a locked door behind the bar. Stella looks at the door before he explains it.</p>
+        <p><strong>Caption:</strong> First pick. Locked room. One clue.</p>
       </article>
-
       <article class="scene">
-        <span class="label">Scene 5 · 39-51s · Suspicious chemistry</span>
-        <h3>Stella and Marco match too fast</h3>
-        <p class="line"><strong>Marco:</strong> "Strawberry, lime, and a little salt. That is Stella's drink."</p>
-        <p class="line"><strong>Stella:</strong> "How would you know that?"</p>
-        <p class="line"><strong>Marco:</strong> "Lucky guess."</p>
-        <p><strong>Visual:</strong> Marco mixes Stella's exact favorite drink without asking. Stella smiles, then hides the smile behind her hand.</p>
+        <span class="label">Scene 5 · 44-56s · Suspicious chemistry</span>
+        <h3>Suspicious chemistry</h3>
+        <p class="line"><strong>Marco:</strong> Strawberry, lime, and a little salt. That is Stella&#x27;s drink.</p>
+        <p class="line"><strong>Stella:</strong> How would you know that?</p>
+        <p class="line"><strong>Marco:</strong> Lucky guess.</p>
+        <p><strong>Visual:</strong> Marco mixes Stella&#x27;s exact favorite drink without asking. Stella smiles, then hides the smile behind her hand.</p>
         <p><strong>Caption:</strong> Lucky guess?</p>
       </article>
-
       <article class="scene">
-        <span class="label">Scene 6 · 51-63s · Gina sees the prop</span>
-        <h3>The bracelet already has fingerprints</h3>
-        <p class="line"><strong>Gina:</strong> "That bracelet has mango pulp on it."</p>
-        <p class="line"><strong>Benny:</strong> "Gina, we are flirting, not doing forensics."</p>
-        <p><strong>Visual:</strong> Gina Grape tilts the Golden Peel bracelet toward the sun. A tiny orange smear glows on the clasp. Benny snatches the tray back too fast.</p>
+        <span class="label">Scene 6 · 56-68s · Gina sees the prop</span>
+        <h3>Gina sees the prop</h3>
+        <p class="line"><strong>Gina:</strong> That bracelet has mango pulp on it.</p>
+        <p class="line"><strong>Benny:</strong> Gina, we are flirting, not doing forensics.</p>
+        <p><strong>Visual:</strong> Gina tilts the Golden Peel bracelet toward the sun. A tiny orange smear glows on the clasp. Benny snatches the tray back too fast.</p>
         <p><strong>Caption:</strong> Why was the prize already touched?</p>
       </article>
-
       <article class="scene">
-        <span class="label">Scene 7 · 63-75s · First public choice</span>
-        <h3>Marco picks Stella and breaks the room</h3>
-        <p class="line"><strong>Marco:</strong> "My smoothie goes to Stella."</p>
-        <p class="line"><strong>Perry Peach:</strong> "You have known her for eight minutes."</p>
-        <p class="line"><strong>Marco:</strong> "Some fruit ripens fast."</p>
-        <p><strong>Visual:</strong> The cast laughs except Bella. Stella takes the drink with both hands, almost sentimental, then remembers the cameras.</p>
+        <span class="label">Scene 7 · 68-80s · First public choice</span>
+        <h3>First public choice</h3>
+        <p class="line"><strong>Marco:</strong> My smoothie goes to Stella.</p>
+        <p class="line"><strong>Perry:</strong> You have known her for eight minutes.</p>
+        <p class="line"><strong>Marco:</strong> Some fruit ripens fast.</p>
+        <p><strong>Visual:</strong> Marco gives Stella the smoothie. The cast laughs except Bella. Stella takes the drink with both hands, almost sentimental, then remembers the cameras.</p>
         <p><strong>Caption:</strong> The villa turns.</p>
       </article>
-
       <article class="scene">
-        <span class="label">Scene 8 · 75-88s · Bella's door-click clue</span>
-        <h3>Confessional booth timestamp</h3>
-        <p class="line"><strong>Bella:</strong> "The booth door clicked at 2:13 a.m. Production said nobody was inside. But someone ordered two mango mocktails at 2:16."</p>
-        <p><strong>Visual:</strong> Bella plays a tiny audio recorder. We hear two clicks and a faint laugh. The shot cuts to the empty smoothie bar at night.</p>
+        <span class="label">Scene 8 · 80-92s · Perry gets hurt</span>
+        <h3>Perry gets hurt</h3>
+        <p class="line"><strong>Perry:</strong> I told Stella my drink on the ride in. Mango somehow knew it too.</p>
+        <p class="line"><strong>Stella:</strong> Perry, I did not tell him that.</p>
+        <p class="line"><strong>Perry:</strong> You did not have to. Someone did.</p>
+        <p><strong>Visual:</strong> Perry Peach steps forward holding a half-made peach-ginger smoothie. Stella turns defensive. Marco looks down at the blender like it betrayed him.</p>
+        <p><strong>Caption:</strong> Marco knew Perry&#x27;s drink too.</p>
+      </article>
+      <article class="scene">
+        <span class="label">Scene 9 · 92-104s · Marco private confessional</span>
+        <h3>Marco private confessional</h3>
+        <p class="line"><strong>Marco:</strong> I was told one thing. Come in strong. Pick Stella. Do not mention last night. I thought that was normal bombshell stuff. Now everyone is looking at me like I wrote the script.</p>
+        <p><strong>Visual:</strong> Marco sits alone in the orange confessional booth. His charm drops. He rubs his necklace and glances toward the door before saying last night.</p>
+        <p><strong>Caption:</strong> Marco says he was coached.</p>
+      </article>
+      <article class="scene">
+        <span class="label">Scene 10 · 104-118s · Bella&#x27;s timestamp clue</span>
+        <h3>Bella&#x27;s timestamp clue</h3>
+        <p class="line"><strong>Bella:</strong> The booth door clicked at 2:13 a.m. Production said nobody was inside. But someone ordered two mango mocktails at 2:16.</p>
+        <p class="line"><strong>Benny:</strong> Bella, maybe the printer was lonely.</p>
+        <p class="line"><strong>Bella:</strong> Then why did it print two straws?</p>
+        <p><strong>Visual:</strong> Bella plays a tiny audio recorder. We hear two clicks and a faint laugh. She lays down a straw wrapper beside the receipt.</p>
         <p><strong>Caption:</strong> 2:13 a.m. booth click.</p>
       </article>
-
       <article class="scene">
-        <span class="label">Scene 9 · 88-101s · Stella confronts Marco</span>
-        <h3>Private whisper by the pool</h3>
-        <p class="line"><strong>Stella:</strong> "You said nobody would find the receipt."</p>
-        <p class="line"><strong>Marco:</strong> "I said nobody would care if we acted normal."</p>
-        <p><strong>Visual:</strong> They whisper beside the pool while candles flicker. Marco reaches for Stella's wrist, revealing she already has a faint bracelet mark.</p>
+        <span class="label">Scene 11 · 118-132s · Private whisper</span>
+        <h3>Private whisper</h3>
+        <p class="line"><strong>Stella:</strong> You said nobody would find the receipt.</p>
+        <p class="line"><strong>Marco:</strong> I said nobody would care if we acted normal.</p>
+        <p><strong>Visual:</strong> Stella and Marco whisper beside the pool. Marco reaches for Stella&#x27;s wrist, revealing a faint bracelet mark. Stella pulls her hand back and looks toward the locked Juice Room.</p>
         <p><strong>Caption:</strong> They knew each other.</p>
       </article>
-
       <article class="scene">
-        <span class="label">Scene 10 · 101-114s · The villa ceremony</span>
-        <h3>The evidence goes public</h3>
-        <p class="line"><strong>Benny:</strong> "Before first pick, any final truths?"</p>
-        <p class="line"><strong>Bella:</strong> "Yeah. Ask the smoothie printer."</p>
-        <p><strong>Visual:</strong> Bella raises the wet receipt. The villa goes quiet. Stella does not look at the receipt. She looks at Benny.</p>
+        <span class="label">Scene 12 · 132-144s · Gina rehearsal-day memory</span>
+        <h3>Gina rehearsal-day memory</h3>
+        <p class="line"><strong>Gina:</strong> Funny. When I arrived for wardrobe yesterday, that Juice Room was not locked.</p>
+        <p class="line"><strong>Benny:</strong> Gina, rehearsal day is not canon.</p>
+        <p class="line"><strong>Gina:</strong> Receipts are.</p>
+        <p><strong>Visual:</strong> Gina Grape steps from the lounge shadows and points at the Juice Room. Benny&#x27;s host smile twitches when she says wardrobe yesterday.</p>
+        <p><strong>Caption:</strong> Gina was here yesterday.</p>
+      </article>
+      <article class="scene">
+        <span class="label">Scene 13 · 144-156s · Juice Room entry</span>
+        <h3>Juice Room entry</h3>
+        <p class="line"><strong>Stella:</strong> If the bracelet opens that room, give it to me.</p>
+        <p class="line"><strong>Perry:</strong> You have not won.</p>
+        <p class="line"><strong>Stella:</strong> No. But I have already been inside.</p>
+        <p><strong>Visual:</strong> Stella reaches for the Golden Peel bracelet. The villa goes silent. Perry steps back like the sentence hurt more than the lie.</p>
+        <p><strong>Caption:</strong> Stella admits she was inside.</p>
+      </article>
+      <article class="scene">
+        <span class="label">Scene 14 · 156-168s · The locked drawer</span>
+        <h3>The locked drawer</h3>
+        <p class="line"><strong>Narrator:</strong> Inside the Juice Room, the cameras found exactly one thing that did not belong to any contestant.</p>
+        <p class="line"><strong>Bella:</strong> A printer log.</p>
+        <p class="line"><strong>Gina:</strong> And there is Benny&#x27;s name again.</p>
+        <p><strong>Visual:</strong> A drawer opens under the smoothie printer. Bella pulls out a damp printer log while Gina blocks Benny from stepping closer.</p>
+        <p><strong>Caption:</strong> The printer log has Benny&#x27;s name.</p>
+      </article>
+      <article class="scene">
+        <span class="label">Scene 15 · 168-180s · Stella reveals her reason</span>
+        <h3>Stella reveals her reason</h3>
+        <p class="line"><strong>Stella:</strong> I practiced with Marco because I wanted one person here who would not make me beg to be picked.</p>
+        <p class="line"><strong>Perry:</strong> You could have just told me.</p>
+        <p class="line"><strong>Stella:</strong> I was scared you would believe the sweet version of me more than the real one.</p>
+        <p><strong>Visual:</strong> Stella stands between Marco and Perry. Her confident posture breaks for the first time. Marco stops trying to defend himself and listens.</p>
+        <p><strong>Caption:</strong> Stella&#x27;s lie had a reason.</p>
+      </article>
+      <article class="scene">
+        <span class="label">Scene 16 · 180-192s · Benny redirects blame</span>
+        <h3>Benny redirects blame</h3>
+        <p class="line"><strong>Benny:</strong> Beautiful honesty. Messy, fruity, legally not my problem.</p>
+        <p class="line"><strong>Bella:</strong> You signed the receipt.</p>
+        <p class="line"><strong>Benny:</strong> I sign many things. Photos. Waivers. Emotional damage.</p>
+        <p><strong>Visual:</strong> Benny laughs too loudly and lifts both hands like a harmless host. Bella does not blink. The cast stops laughing one by one.</p>
+        <p><strong>Caption:</strong> Benny jokes when cornered.</p>
+      </article>
+      <article class="scene">
+        <span class="label">Scene 17 · 192-204s · Villa ceremony evidence</span>
+        <h3>Villa ceremony evidence</h3>
+        <p class="line"><strong>Benny:</strong> Before first pick, any final truths?</p>
+        <p class="line"><strong>Bella:</strong> Yeah. Ask the smoothie printer.</p>
+        <p><strong>Visual:</strong> Bella raises the wet receipt beside the printer log. The villa goes quiet. Stella looks at Benny instead of the receipt.</p>
         <p><strong>Caption:</strong> Ask the printer.</p>
       </article>
-
       <article class="scene">
-        <span class="label">Scene 11 · 114-127s · Stella flips the accusation</span>
-        <h3>Stella stops pretending</h3>
-        <p class="line"><strong>Stella:</strong> "Marco did come early. But he did not invite himself."</p>
-        <p class="line"><strong>Marco:</strong> "Stella, don't."</p>
-        <p><strong>Visual:</strong> Stella steps into the center of the ceremony circle. Her sweet smile drops. The camera moves from Stella to Marco to Benny.</p>
+        <span class="label">Scene 18 · 204-216s · Stella flips the accusation</span>
+        <h3>Stella flips the accusation</h3>
+        <p class="line"><strong>Stella:</strong> Marco did come early. But he did not invite himself.</p>
+        <p class="line"><strong>Marco:</strong> Stella, don&#x27;t.</p>
+        <p><strong>Visual:</strong> Stella steps into the ceremony circle. Her sweet smile drops. The camera moves from Stella to Marco to Benny. Marco nods once, finally choosing truth over charm.</p>
         <p><strong>Caption:</strong> He did not invite himself.</p>
       </article>
-
       <article class="scene">
-        <span class="label">Scene 12 · 127-139s · The receipt reveal</span>
-        <h3>Not Marco's signature</h3>
-        <p class="line"><strong>Gina:</strong> "Everybody is reading the drink order. Nobody is reading the signature."</p>
-        <p><strong>Visual:</strong> Gina turns the receipt over. There is a signature line. It reads: Benny B.</p>
-        <p><strong>Caption:</strong> BENNY B.</p>
+        <span class="label">Scene 19 · 216-228s · Receipt signature</span>
+        <h3>Receipt signature</h3>
+        <p class="line"><strong>Gina:</strong> Everybody is reading the drink order. Nobody is reading the signature.</p>
+        <p><strong>Visual:</strong> Gina turns the receipt over. The signature line reads Benny B. Under it, in smudged red ink, it says TEST SUBJECT - STELLA.</p>
+        <p><strong>Caption:</strong> BENNY B. / TEST SUBJECT - STELLA</p>
       </article>
-
       <article class="scene">
-        <span class="label">Scene 13 · 139-150s · Loop cliffhanger</span>
-        <h3>Benny smiles</h3>
-        <p class="line"><strong>Benny:</strong> "Tomorrow night, we find out who came for love... and who came for instructions."</p>
-        <p class="line"><strong>Stella:</strong> "Then start with your own."</p>
-        <p><strong>Visual:</strong> Benny's smile holds too long. Marco reaches for the receipt, but Stella pulls it away. Cut as the Golden Peel bracelet drops into the pool.</p>
+        <span class="label">Scene 20 · 228-240s · Loop cliffhanger</span>
+        <h3>Loop cliffhanger</h3>
+        <p class="line"><strong>Benny:</strong> Tomorrow night, we find out who came for love... and who came with instructions.</p>
+        <p class="line"><strong>Stella:</strong> No. Part 2 starts with who made me the test.</p>
+        <p><strong>Visual:</strong> Benny smiles too long. Marco reaches for the receipt, Stella pulls it away, and the Golden Peel bracelet drops into the pool.</p>
         <p><strong>Caption:</strong> Part 2 starts with Benny.</p>
       </article>
     </section>
-
     <section>
       <h2>Part 2 Payoff</h2>
-      <p>Part 2 must not dodge the cliffhanger. It opens at the pool with Benny admitting he invited Marco early as a "loyalty test," then reveals Stella agreed because she wanted Perry Peach to show jealousy. The bigger twist: Bella's 2:13 a.m. audio includes Gina's laugh, meaning Gina knew about the test and waited to expose it at the most damaging moment.</p>
+      <p>Part 2 must open on the pool, not a recap. Benny admits he invited Marco early as a loyalty test, but claims Stella volunteered because she wanted to see whether Perry Peach would get jealous. Stella denies volunteering. Bella then plays the full 2:13 a.m. booth audio, where Gina laughs and says, &#x27;Do not tell Stella what Benny promised Marco.&#x27; Episode 2 resolves Benny&#x27;s test before adding the next mystery.</p>
     </section>
-
     <section>
       <h2>Paid Render Priority</h2>
       <table>
         <thead><tr><th>Shot</th><th>Provider test</th><th>Why</th></tr></thead>
         <tbody>
-          <tr><td>Scene 1 receipt confrontation</td><td>Kling v3/Omni or Sora 2 Pro</td><td>Tests two-character acting, human-like body language, receipt prop, and high hook clarity.</td></tr>
-          <tr><td>Scene 3 Bella confessional</td><td>Runway Act-Two or LivePortrait</td><td>Tests expressive face, mouth movement, eyes, and performance-driven monologue.</td></tr>
-          <tr><td>Scene 12 receipt flip</td><td>Kling v3/Omni</td><td>Tests hand motion, prop reveal, and readable evidence without relying only on captions.</td></tr>
+          <tr><td>Scene 1</td><td>Kling v3/Omni or Sora 2 Pro</td><td>Tests two-character acting, human-like body language, receipt prop, and hook clarity.</td></tr>
+          <tr><td>Scene 3</td><td>Runway Act-Two or LivePortrait</td><td>Tests expressive close-up face, mouth movement, eyes, and performance-driven monologue.</td></tr>
+          <tr><td>Scene 12</td><td>Kling v3/Omni</td><td>Tests hand motion, prop reveal, readable evidence, and reaction cuts.</td></tr>
         </tbody>
       </table>
     </section>

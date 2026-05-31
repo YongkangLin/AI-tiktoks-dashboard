@@ -23,6 +23,7 @@ The repo now automates story package generation, monetization review, batch queu
 - Reference image planning for `assets/references/*_sheet.png` before scene generation.
 - ComfyUI API-format workflow dry-run and `/prompt` submission path.
 - ComfyUI output collection into package image/video asset paths.
+- Runway image-to-video submission and collection adapter, dry-run by default and credential-gated for paid execution.
 - Sora scene-video submission and collection adapter, dry-run by default and credential-gated for execution.
 - Final assembly regenerates previews from collected scene visual assets when present.
 - Publish queue generation for safe manual upload or future official API posting, blocked when character visuals or the quality gate are incomplete.
@@ -39,7 +40,7 @@ The repo now automates story package generation, monetization review, batch queu
 ## Not Automated Yet
 
 - Final AI image generation without a running ComfyUI server, cloud image provider, workflow template, and checkpoint.
-- Final AI video generation or character-consistent animation without a configured provider such as Kling, Runway, Veo, Luma, Sora, or ComfyUI.
+- Final AI video generation or character-consistent animation without a configured paid provider credential such as Runway, Kling, Veo, Luma, Sora, or ComfyUI.
 - Licensed music selection.
 - Final edit assembly with actual AI visuals, lip sync where required, motion polish, and licensed music.
 - Direct TikTok public posting without a valid access token, creator privacy selection, and approved/audited app.
