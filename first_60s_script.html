@@ -161,7 +161,7 @@
     <div class="wrap">
       <div class="eyebrow">10-minute Duanju narrator video</div>
       <h1>The Substitute Bride Contract</h1>
-      <p class="lead">Full plot prompt, ideal references, starting frame, ending frame, and detailed multi-shot prompts for a 10-minute narrator-led Duanju video.</p>
+      <p class="lead">Word-only production dashboard: full plot prompt, written character bible, starting and ending frame descriptions, and expanded 15-second multi-shot prompts.</p>
     </div>
   </header>
 
@@ -169,43 +169,47 @@
     <section class="panel">
       <div class="prompt-head">
         <div>
-          <h2>Ideal Character References</h2>
-          <p class="lead">Include these images as visual references for character quality, expressive faces, body acting, and rich micro-drama framing.</p>
+          <h2>Word-Only Character Bible</h2>
+          <p class="lead">Use these written designs for consistency. Do not attach or rely on image references.</p>
         </div>
+        <button class="copy" type="button" data-copy-target="characterBible">Copy bible</button>
       </div>
-      <div class="ref-grid">
-        <article class="ref-card">
-          <img src="dashboard/assets/ideal_examples/chat_reference_images/chat_ref_2026-05-31_01.png" alt="Expressive lead woman reference">
-          <p>Lead woman face detail</p>
-        </article>
-        <article class="ref-card">
-          <img src="dashboard/assets/ideal_examples/chat_reference_images/chat_ref_2026-05-31_02.png" alt="Confessional acting reference">
-          <p>Confessional acting</p>
-        </article>
-        <article class="ref-card">
-          <img src="dashboard/assets/ideal_examples/chat_reference_images/chat_ref_2026-05-31_03.png" alt="Glamorous rival reference">
-          <p>Glamorous rival energy</p>
-        </article>
-        <article class="ref-card">
-          <img src="dashboard/assets/ideal_examples/chat_reference_images/chat_ref_2026-05-31_05.png" alt="Male body acting reference">
-          <p>Male body reference</p>
-        </article>
-        <article class="ref-card">
-          <img src="dashboard/assets/ideal_examples/chat_reference_images/chat_ref_2026-05-31_07.png" alt="Heroine close-up reference">
-          <p>Heroine close-up</p>
-        </article>
-        <article class="ref-card">
-          <img src="dashboard/assets/ideal_examples/chat_reference_images/chat_ref_2026-05-31_06.png" alt="Couple blocking reference">
-          <p>Couple blocking</p>
-        </article>
-      </div>
+      <pre id="characterBible">Visual world:
+Anthropomorphic fruit-character Chinese Duanju. The characters have expressive fruit heads, human-like bodies, premium wealthy-family styling, and emotional micro-drama acting. Make them charming and readable, not mascot-flat and not photoreal human. Keep the same fruit species, clothing, jewelry, scale, and color palette in every shot.
+
+Su Qing:
+Strawberry heroine, 24, night-shift nurse. Soft red strawberry head with tiny seed texture, leafy green crown tucked under hair/veil styling, large green eyes, gentle but exhausted expression. Petite human-like body. Outfits: pale blue nurse scrubs, oversized ivory bridal gown, trench coat over gown, simple black gala dress. Always wears a small old green jade pendant.
+
+Lu Jincheng:
+Tall banana CEO, 30, cold billionaire groom. Smooth golden banana head, sharp dark brows, controlled gaze, athletic human-like body, black tailored wedding suit or black gala suit, sharp watch. He rarely smiles; his silence should feel strategic.
+
+Madam Zhao:
+Pineapple stepmother. Golden pineapple head, sharp leafy crown, emerald silk qipao, pearl necklace and bracelet. Polished smile, predatory eyes, elegant hand gestures. She hides threats behind manners.
+
+Su Man:
+Glossy red apple socialite. Red designer dress, diamond earrings, perfect makeup, smug expression, graceful but poisonous entrance energy. Carries an ultrasound envelope in the finale.
+
+Su Zhen:
+Pear father in a dark suit. Soft pear-shaped head, tired eyes, weak posture, avoids eye contact when betraying Su Qing.
+
+Attorney He:
+Lychee lawyer in a gray suit. Pale lychee head with subtle texture, calm expression, leather case, precise professional gestures.
+
+Lu Mingxuan:
+Older dark-plum Lu family elder. Deep purple plum head, silver leaf-like hair accent, navy suit, faint smile from the second row. He should look like he planned the final twist.
+
+Proof objects:
+Green jade pendant, covered contract clause, unpaid hospital deposit notice, mother's trust file, hidden transfer page, gala LED evidence video, blank DNA report for later overlay.
+
+Text rule:
+Do not generate readable legal text inside the image/video. Leave documents blank and add all captions, clauses, names, dates, and report labels in editing.</pre>
     </section>
 
     <section class="panel">
       <div class="prompt-head">
         <div>
           <h2>Starting And Ending Frames</h2>
-          <p class="lead">Use these as the visual bookends. The ending should loop back to the opening altar image.</p>
+          <p class="lead">Text descriptions only. Use these as written bookends for the first and final generated clips.</p>
         </div>
       </div>
       <div class="grid" id="frameGrid"></div>
@@ -219,33 +223,35 @@
         </div>
         <button class="copy" type="button" data-copy-target="masterPrompt">Copy prompt</button>
       </div>
-      <pre id="masterPrompt">Create a 10-minute vertical 9:16 Chinese Duanju-style micro drama called "The Substitute Bride Contract."
+      <pre id="masterPrompt">Create a 10-minute vertical 9:16 anthropomorphic fruit-character Chinese Duanju-style micro drama called "The Substitute Bride Contract."
 
 Format:
 - First-person narration from the main character, Su Qing.
 - Do not rely on characters having long conversations.
 - The narrator carries the story; visuals show emotional reactions, proof objects, documents, and reversals.
 - Tone: wealthy-family melodrama, betrayal, contract marriage, hidden inheritance, public humiliation reversal.
-- Visual style: cinematic realistic Chinese micro drama, luxury wedding ballroom, hospital night corridor, wealthy mansion, corporate charity gala, close-up emotional acting, hard Duanju cuts, clear proof objects, shallow depth of field.
+- Character style: anthropomorphic fruit characters with expressive fruit heads and human-like bodies. Serious Duanju acting, not parody mascot comedy. Use the Word-Only Character Bible for every shot.
+- Visual style: cinematic Chinese micro drama with fruit-character casting, luxury wedding ballroom, hospital night corridor, wealthy mansion, corporate charity gala, close-up emotional acting, hard Duanju cuts, clear proof objects, shallow depth of field.
+- Text rule: do not generate readable text inside documents or screens. Leave documents blank and add captions, legal clauses, names, and dates in editing.
 
 Story:
-Su Qing is a 24-year-old night-shift nurse. Her younger brother needs an urgent transplant deposit before sunrise. Her rich father and stepmother force her to replace her runaway stepsister Su Man at a billionaire wedding. They promise to pay the surgery deposit if Su Qing wears Su Man's wedding dress for one day.
+Su Qing is a strawberry heroine and 24-year-old night-shift nurse. Her younger brother needs an urgent transplant deposit before sunrise. Her pear father Su Zhen and pineapple stepmother Madam Zhao force her to replace her runaway red-apple stepsister Su Man at a billionaire wedding. They promise to pay the surgery deposit if Su Qing wears Su Man's wedding dress for one day.
 
-At the altar, cold CEO Lu Jincheng immediately realizes Su Qing is not Su Man. He notices Su Qing's old jade pendant but still completes the marriage. Guests humiliate Su Qing as the poor substitute bride. After the wedding, Su Qing learns the surgery money was never paid.
+At the altar, cold banana CEO Lu Jincheng immediately realizes Su Qing is not Su Man. He notices Su Qing's old jade pendant but still completes the marriage. Wealthy fruit guests humiliate Su Qing as the poor substitute bride. After the wedding, Su Qing learns the surgery money was never paid.
 
-Su Qing finds an old photo linking her dead mother to the Lu family. She follows her father and stepmother and discovers their real plan: after the wedding, they want her to sign away her mother's trust shares. Attorney He reveals the truth: Su Qing's mother left a trust that activates only if Su Qing legally marries the Lu heir under her real name. The marriage gives Su Qing control of 30 percent of Su Group.
+Su Qing finds an old photo linking her dead mother to the Lu family. She follows her father and stepmother and discovers their real plan: after the wedding, they want her to sign away her mother's trust shares. Lychee lawyer Attorney He reveals the truth: Su Qing's mother left a trust that activates only if Su Qing legally marries the Lu heir under her real name. The marriage gives Su Qing control of 30 percent of Su Group.
 
 Su Qing gathers evidence with a hidden camera in her jade pendant. At a charity gala, Madam Zhao tries to make Su Qing sign a public apology with a hidden transfer page underneath. Su Qing signs only one page, exposes the hidden transfer, and plays the recording on the gala LED screen. Attorney He enters with the trust file. Lu Jincheng stands beside Su Qing and reveals the covered clause always named Su Qing, not Su Man.
 
 Final cliffhanger:
-Su Man returns in a red dress holding an ultrasound envelope, claiming she is pregnant. Lu Jincheng calmly hands Su Qing a sealed DNA report. Su Qing opens it. The father is not Lu Jincheng. The report says: Lu Mingxuan. Cut to Lu Jincheng's uncle smiling from the second row. End with: "That was when I understood this marriage had not pulled me into one family war. It had pulled me into two."
+Su Man returns in a red dress holding an ultrasound envelope, claiming she is pregnant. Lu Jincheng calmly hands Su Qing a sealed DNA report. Su Qing opens it. The father is not Lu Jincheng. The report says: Lu Mingxuan. Cut to dark-plum Lu Mingxuan smiling from the second row. End with: "That was when I understood this marriage had not pulled me into one family war. It had pulled me into two."
 
 Scene-by-scene structure:
-Scene 01, 0:00-0:30, wedding hook. Start at the luxury wedding altar. Su Qing stands alone in an oversized ivory gown. Lu Jincheng looks cold. Guests whisper and raise phones. Narration reveals she is wearing her stepsister's dress. Caption: I married him as my sister's replacement.
+Scene 01, 0:00-0:30, wedding hook. Start at the luxury wedding altar. Strawberry Su Qing stands alone in an oversized ivory gown. Banana Lu Jincheng looks cold. Fruit guests whisper and raise phones. Narration reveals she is wearing her stepsister's dress. Caption: I married him as my sister's replacement.
 
 Scene 02, 0:30-1:00, hospital pressure. Cut to 12 hours earlier. Su Qing in nurse scrubs waits outside surgery with her brother's transplant file. Her phone keeps ringing from the Su family. Show unpaid hospital deposit notice. Narration explains the surgery deadline before sunrise.
 
-Scene 03, 1:00-1:30, the family offer. Su Qing enters the Su mansion. Madam Zhao slides a bridal veil and contract across the table. Su Zhen avoids eye contact. Narration explains Su Man ran away and the family needs a substitute bride.
+Scene 03, 1:00-1:30, the family offer. Su Qing enters the Su mansion. Pineapple Madam Zhao slides a bridal veil and contract across the table. Pear Su Zhen avoids eye contact. Narration explains red-apple Su Man ran away and the family needs a substitute bride.
 
 Scene 04, 1:30-2:00, contract trap. Close-up of the one-year marriage contract. Madam Zhao's pearl bracelet covers one clause. Su Qing signs because she thinks the surgery deposit will be paid. Show her hand hesitating over the pen.
 
@@ -279,7 +285,7 @@ Scene 18, 8:30-9:00, evidence on screen. The gala LED screen plays the pendant-c
 
 Scene 19, 9:00-9:30, legal wife reveal. Attorney He enters with the trust file. Lu Jincheng stops security and stands beside Su Qing. The marriage certificate and trust clause confirm the legal wife is Su Qing. Lu Jincheng reveals the covered clause always named Su Qing.
 
-Scene 20, 9:30-10:00, pregnancy and DNA cliffhanger. Su Man enters in red holding an ultrasound envelope. Guests turn. Lu Jincheng gives Su Qing a sealed DNA report. The father line says Lu Mingxuan, not Lu Jincheng. Cut to Lu Mingxuan smiling from the second row. End on Su Qing realizing she is inside two family wars.
+Scene 20, 9:30-10:00, pregnancy and DNA cliffhanger. Red-apple Su Man enters in red holding an ultrasound envelope. Guests turn. Lu Jincheng gives Su Qing a sealed DNA report. The father line says Lu Mingxuan, not Lu Jincheng. Cut to dark-plum Lu Mingxuan smiling from the second row. End on Su Qing realizing she is inside two family wars.
 
 Required proof objects:
 1. Su Qing's jade pendant.
@@ -301,23 +307,13 @@ Editing:
       <div class="prompt-head">
         <div>
           <h2>Multi-Shot Prompt Pack</h2>
-          <p class="lead">40 detailed shots for the whole 10-minute plot. Generate each as an individual clip, then assemble with first-person narration.</p>
+          <p class="lead">40 shots, each built as a full 15-second clip with opening composition, motion beats, ending frame, narration, and overlay.</p>
         </div>
       </div>
       <div id="shotGrid"></div>
     </section>
 
-    <section class="panel">
-      <div class="prompt-head">
-        <div>
-          <h2>Image Prompts</h2>
-          <p class="lead">Generate these images first. Use them as references for the full video.</p>
-        </div>
-      </div>
-      <div class="grid" id="imageGrid"></div>
-    </section>
-
-    <p class="note">If the image generator can keep characters consistent, use the character images as references for every scene. Add legal text overlays later in editing.</p>
+    <p class="note">This page is intentionally word-only. Use the written character bible for consistency, and add legal text overlays later in editing.</p>
   </main>
 
   <footer>
@@ -326,23 +322,8 @@ Editing:
 
   <script>
     const framePrompts = [
-      ["Starting Frame", "Vertical 9:16 cinematic Chinese Duanju opening frame. Su Qing, a tired but beautiful 24-year-old nurse forced into an oversized ivory bridal gown, stands alone at a luxury wedding altar beneath crystal chandeliers. Lu Jincheng, a cold billionaire CEO in a black wedding suit, faces her with an unreadable expression. Wealthy guests blur behind them, some raising phones. An empty front-row chair suggests the missing real bride. Mood: public humiliation, expensive silence, betrayal. No watermark, no platform UI, no readable text."],
-      ["Ending Frame", "Vertical 9:16 cinematic Chinese Duanju ending frame. At a corporate charity gala, Su Qing stands on stage holding an opened DNA report with controlled shock. Lu Jincheng stands beside her, cold and calm. In the second row, Lu Mingxuan, an elegant older Lu family man, smiles faintly like he planned everything. Su Man in a red dress clutches an ultrasound envelope near the ballroom doors. Mood: family-war cliffhanger, bass-hit reveal. Leave report text blank for later overlay: Father: Lu Mingxuan. No watermark, no platform UI."]
-    ];
-
-    const imagePrompts = [
-      ["Su Qing", "Vertical 9:16 cinematic Chinese micro drama character portrait. Su Qing, 24-year-old night-shift nurse, tired but beautiful, natural makeup, black hair loosely tied, pale blue hospital scrubs, hospital corridor lighting, quiet resilient eyes, realistic human drama style, no celebrity likeness, no watermark."],
-      ["Lu Jincheng", "Vertical 9:16 cinematic Chinese micro drama character portrait. Lu Jincheng, 30-year-old wealthy CEO, black tailored wedding suit, sharp watch, controlled cold expression, tired eyes, luxury hotel background, realistic high-end drama style, no celebrity likeness, no watermark."],
-      ["Madam Zhao", "Vertical 9:16 cinematic Chinese micro drama character portrait. Madam Zhao, elegant wealthy stepmother in emerald silk qipao and pearl necklace, polished smile, predatory calm eyes, luxury mansion interior, realistic micro drama lighting, no celebrity likeness, no watermark."],
-      ["Su Man", "Vertical 9:16 cinematic Chinese micro drama character portrait. Su Man, glamorous socialite in red designer dress, diamond earrings, perfect makeup, smug expression, luxury ballroom background, realistic wealthy-family melodrama, no celebrity likeness, no watermark."],
-      ["Wedding Hook", "Vertical 9:16 cinematic Chinese micro drama scene. Su Qing in oversized ivory bridal gown stands alone in a luxury hotel wedding ballroom under crystal chandeliers. Lu Jincheng in black suit faces her with a cold expression. Wealthy guests whisper in soft blur. Empty front-row chair. Tense elegant lighting, no watermark."],
-      ["Hospital Crisis", "Vertical 9:16 realistic hospital night corridor. Su Qing in pale blue nurse scrubs holds a medical file and phone outside a surgery room, exhausted eyes, fluorescent lighting, empty chairs, rain on window, urgent quiet mood, no readable brand UI, no watermark."],
-      ["Contract Trap", "Vertical 9:16 close-up legal contract on luxury table. Su Qing's hand hovers over a black pen. Madam Zhao's pearl bracelet partly covers one clause. Tense document detail, shallow depth of field, realistic hand acting. Leave document text blank for later overlay, no watermark."],
-      ["Jade Pendant Evidence", "Vertical 9:16 cinematic close-up. Su Qing hides an old green jade pendant under an ivory wedding dress, fingers tense, luxury bridal mirror background, emotional restraint, realistic Chinese micro drama lighting, no watermark."],
-      ["Trust File Reveal", "Vertical 9:16 cinematic legal reveal. Attorney He in gray suit hands Su Qing a sealed trust file envelope in an underground parking garage at dawn. Su Qing wears a trench coat over a bridal gown, exhausted but alert, cool blue lighting, no watermark."],
-      ["Gala Reversal", "Vertical 9:16 corporate charity gala stage. Su Qing in simple black evening dress lifts a hidden transfer page toward the cameras while Madam Zhao's smile freezes. LED screen behind them, wealthy guests reacting, public exposure moment, no watermark."],
-      ["Su Man Returns", "Vertical 9:16 gala ballroom doors swing open. Su Man in a red designer dress enters holding an ultrasound envelope, diamond earrings, smug smile, reporters and wealthy guests turn toward her, cliffhanger energy, no watermark."],
-      ["DNA Cliffhanger", "Vertical 9:16 final cliffhanger. Lu Jincheng hands Su Qing a sealed DNA report on a gala stage. Su Qing opens it, shocked but controlled. Cutaway composition includes a younger elegant Lu family man smiling from the second row. Leave report text blank for later overlay, no watermark."]
+      ["Starting Frame", "Vertical 9:16 anthropomorphic fruit-character Chinese Duanju opening frame description. Su Qing, the strawberry nurse heroine, stands alone at a luxury wedding altar in an oversized ivory bridal gown, her green jade pendant visible under the veil. Lu Jincheng, the tall banana CEO groom in a black wedding suit, faces her with a cold unreadable stare. Pineapple Madam Zhao smiles from the front row, pear Su Zhen avoids eye contact, wealthy fruit guests raise phones, and an empty front-row chair signals the missing real bride. Mood: public humiliation, expensive silence, betrayal. No generated readable text, no watermark, no platform UI."],
+      ["Ending Frame", "Vertical 9:16 anthropomorphic fruit-character Chinese Duanju ending frame description. At a corporate charity gala, strawberry Su Qing stands on stage in a simple black evening dress holding a blank DNA report with controlled shock. Banana Lu Jincheng stands beside her like a cold shield. Red-apple Su Man clutches an ultrasound envelope near the ballroom doors. Dark-plum Lu Mingxuan sits in the second row smiling faintly like he planned everything. Mood: family-war cliffhanger, bass-hit reveal. Leave report text blank for later overlay: Father: Lu Mingxuan. No generated readable text, no watermark, no platform UI."]
     ];
 
     const shotPrompts = [
@@ -396,17 +377,6 @@ Editing:
         .replaceAll('"', "&quot;");
     }
 
-    document.getElementById("imageGrid").innerHTML = imagePrompts.map((item, index) => `
-      <article class="image-card">
-        <div class="slot">Image ${String(index + 1).padStart(2, "0")}<br>${escapeHtml(item[0])}</div>
-        <div class="prompt-head">
-          <h3>${escapeHtml(item[0])}</h3>
-          <button class="copy" type="button" data-copy-target="imagePrompt${index}">Copy</button>
-        </div>
-        <pre id="imagePrompt${index}">${escapeHtml(item[1])}</pre>
-      </article>
-    `).join("");
-
     document.getElementById("frameGrid").innerHTML = framePrompts.map((item, index) => `
       <article class="image-card">
         <div class="slot">${escapeHtml(item[0])}</div>
@@ -418,8 +388,30 @@ Editing:
       </article>
     `).join("");
 
+    function buildShotBody(item) {
+      return `${item[0]} | ${item[1]}
+Beat: ${item[2]}
+Narration: ${item[4]}
+Text overlay: ${item[5]}
+
+Full 15-second video prompt:
+Use the Word-Only Character Bible. All named characters are anthropomorphic fruit characters, not photoreal humans. If a beat mentions a face, hands, body, scrubs, gown, suit, or gesture, render the fruit-character version with human-like acting and clothing. Create one complete vertical 9:16 Duanju clip.
+
+Opening frame, 0-3s:
+${item[3]} Establish the location immediately and make the emotional power dynamic readable in the first second.
+
+Motion beats, 3-12s:
+${item[6]} Stretch the action across the full clip with 2-3 Duanju micro-beats: a wide setup, a proof-object close-up, and a reaction close-up. Use restrained but expressive fruit-character facial acting, small hand gestures, and one clear emotional turn.
+
+Ending frame, 12-15s:
+Hold on the most important face or proof object from this beat for a clean edit point. The final frame should make the next shot feel necessary.
+
+Camera and edit:
+Vertical 9:16, cinematic wealthy-family micro-drama lighting, shallow depth of field, hard cuts, no generated readable text, no watermark, no platform UI. Add legal words, captions, dates, and document labels later in editing.`;
+    }
+
     document.getElementById("shotGrid").innerHTML = shotPrompts.map((item, index) => {
-      const body = `${item[0]} | ${item[1]}\nBeat: ${item[2]}\nVisual: ${item[3]}\nNarration: ${item[4]}\nText overlay: ${item[5]}\nVideo prompt: ${item[6]}`;
+      const body = buildShotBody(item);
       return `<article class="shot-card">
         <div>
           <div class="time">${escapeHtml(item[1])}</div>

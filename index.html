@@ -199,19 +199,20 @@
       <div>
         <div class="eyebrow">AI TikTok writing dashboard</div>
         <h1>The Substitute Bride Contract</h1>
-        <p class="lead">Home base for the full 10-minute Chinese Duanju plot: summary, ideal references, starting and ending frames, and the multi-shot prompt dashboard.</p>
+        <p class="lead">Home base for the full 10-minute Chinese Duanju plot: summary, written character bible, text-only frame descriptions, and the multi-shot prompt dashboard.</p>
         <div class="kpis">
           <div class="kpi"><strong>10m</strong><span>Narrator-led Duanju plot</span></div>
           <div class="kpi"><strong>40</strong><span>Detailed multi-shot prompts</span></div>
-          <div class="kpi"><strong>2</strong><span>Starting and ending frames</span></div>
-          <div class="kpi"><strong>12</strong><span>Character and scene images</span></div>
+          <div class="kpi"><strong>2</strong><span>Text frame descriptions</span></div>
+          <div class="kpi"><strong>0</strong><span>Image references needed</span></div>
         </div>
       </div>
-      <div class="hero-grid" aria-label="Uploaded references">
-        <img src="dashboard/assets/ideal_examples/chat_reference_images/chat_ref_2026-05-31_01.png" alt="Lead woman facial reference">
-        <img src="dashboard/assets/ideal_examples/chat_reference_images/chat_ref_2026-05-31_02.png" alt="Confessional acting reference">
-        <img src="dashboard/assets/ideal_examples/chat_reference_images/chat_ref_2026-05-31_03.png" alt="Glamorous rival reference">
-        <img src="dashboard/assets/ideal_examples/chat_reference_images/chat_ref_2026-05-31_06.png" alt="Couple blocking reference">
+      <div class="story-card">
+        <h2>Text-Only Build</h2>
+        <p>No generated frames, no character image references, and no separate image prompt gallery. The prompt pack now relies on written character continuity and detailed 15-second video prompts.</p>
+        <div class="actions">
+          <a href="first_60s_script.html">Open whole-plot dashboard</a>
+        </div>
       </div>
     </div>
   </header>
@@ -224,7 +225,7 @@
           <tr><th>Current project</th><td>A narrator-first Chinese micro drama about Su Qing, a nurse forced to replace her stepsister at a billionaire wedding.</td></tr>
           <tr><th>Core hook</th><td>The substitute bride discovers the marriage contract activates her dead mother's trust, then exposes her family at a charity gala.</td></tr>
           <tr><th>Dashboard link</th><td><a href="first_60s_script.html">Open the whole-plot prompt dashboard</a></td></tr>
-          <tr><th>Page contains</th><td>Ideal reference images, whole-plot master prompt, starting frame, ending frame, 40 detailed multi-shot prompts, and image prompts.</td></tr>
+          <tr><th>Page contains</th><td>Written character bible, whole-plot master prompt, text-only starting and ending frame descriptions, and 40 expanded 15-second multi-shot prompts.</td></tr>
         </tbody>
       </table>
     </section>
@@ -233,11 +234,11 @@
       <div class="story-card">
         <div>
           <h2>Whole Plot Prompt</h2>
-          <p>Su Qing accepts a substitute-bride contract to save her brother's surgery deposit. The promise is a lie, but the marriage reveals her mother's hidden trust, a covered contract clause, and a public gala trap she can turn against the family that used her.</p>
+          <p>Su Qing accepts a substitute-bride contract to save her brother's surgery deposit. The promise is a lie, but the marriage reveals her mother's hidden trust, a covered contract clause, and a public gala trap she can turn against the family that used her. The cast is written as anthropomorphic fruit characters for a stranger, more viral Duanju format.</p>
         </div>
         <table>
           <tbody>
-            <tr><th>Status</th><td>Writer locked for image generation and image-to-video assembly.</td></tr>
+            <tr><th>Status</th><td>Writer locked for text-prompt video generation and assembly.</td></tr>
             <tr><th>Hook</th><td>Su Qing stands at the altar in her stepsister's dress while the groom realizes she is not the intended bride.</td></tr>
             <tr><th>Proof objects</th><td>Jade pendant camera, covered contract clause, unpaid hospital notice, trust file, hidden transfer page, gala LED evidence, DNA report.</td></tr>
             <tr><th>Cliffhanger</th><td>Su Man returns pregnant, but the DNA report names Lu Mingxuan, not Lu Jincheng.</td></tr>
@@ -250,10 +251,16 @@
           <a href="microdrama_plot_bank.md">Plot bank</a>
         </div>
       </div>
-      <div>
-        <h2>Pipeline Artifact</h2>
-        <video controls preload="metadata" src="dashboard/assets/videos/episode-001-the-sour-receipt.mp4"></video>
-        <p>The older draft video remains only as a pipeline artifact. The current render target is the 10-minute Duanju prompt pack.</p>
+      <div class="story-card">
+        <h2>Output Shape</h2>
+        <p>The current render target is a 10-minute narrator-led Duanju assembled from 40 separate 15-second clips. Each clip prompt is text-only and includes the opening composition, motion beats, final held frame, narration, and overlay line.</p>
+        <table>
+          <tbody>
+            <tr><th>Mode</th><td>Text prompts only</td></tr>
+            <tr><th>Visual anchor</th><td>Written fruit-character bible</td></tr>
+            <tr><th>Clip unit</th><td>15 seconds per generated shot</td></tr>
+          </tbody>
+        </table>
       </div>
     </section>
 
@@ -267,7 +274,7 @@
           <tr>
             <td>Whole Plot: The Substitute Bride Contract</td>
             <td><a href="first_60s_script.html">first_60s_script.html</a></td>
-            <td>Whole-plot master prompt, ideal reference images, starting frame, ending frame, 40 multi-shot prompts, and image prompts.</td>
+            <td>Whole-plot master prompt, written character bible, starting frame description, ending frame description, and 40 expanded 15-second multi-shot prompts.</td>
             <td>Writer locked, ready for generation.</td>
           </tr>
           <tr>
@@ -283,25 +290,23 @@
     <section class="panel">
       <h2>Render Plan</h2>
       <div class="tiles">
-        <div class="tile"><div class="state">Step 1</div><h3>Character Stills</h3><p>Generate Su Qing, Lu Jincheng, Madam Zhao, Su Man, Attorney He, and the key proof objects.</p></div>
-        <div class="tile"><div class="state">Step 2</div><h3>Bookend Frames</h3><p>Generate the altar opening frame and DNA-report ending frame first to lock the visual arc.</p></div>
-        <div class="tile"><div class="state">Step 3</div><h3>40 Clips</h3><p>Render each 15-second shot as its own vertical clip, then assemble into a 10-minute narrator cut.</p></div>
+        <div class="tile"><div class="state">Step 1</div><h3>Character Bible</h3><p>Use the written fruit-character designs to keep Su Qing, Lu Jincheng, Madam Zhao, Su Man, Attorney He, and Lu Mingxuan consistent.</p></div>
+        <div class="tile"><div class="state">Step 2</div><h3>Text Frames</h3><p>Use the written altar opening frame and DNA-report ending frame descriptions as the bookends.</p></div>
+        <div class="tile"><div class="state">Step 3</div><h3>40 Clips</h3><p>Render each expanded 15-second shot as its own vertical clip, then assemble into a 10-minute narrator cut.</p></div>
         <div class="tile"><div class="state">Step 4</div><h3>Edit Layer</h3><p>Add first-person narration, legal overlays, silence on reveals, bass hit on the DNA cliffhanger, and loop cut.</p></div>
       </div>
     </section>
 
     <section class="panel">
-      <h2>Uploaded Visual References</h2>
-      <p>Use these as style anchors for paid generation: expressive close-ups, readable body acting, glamorous rival energy, couple blocking, and premium micro-drama lighting.</p>
-      <img class="contact-sheet" src="dashboard/assets/ideal_examples/chat_reference_images/chat_refs_contact_sheet.jpg" alt="Uploaded visual reference contact sheet">
-      <div class="gallery">
-        <figure><img src="dashboard/assets/ideal_examples/chat_reference_images/chat_ref_2026-05-31_01.png" alt="Lead woman face reference"><figcaption>Lead woman face detail</figcaption></figure>
-        <figure><img src="dashboard/assets/ideal_examples/chat_reference_images/chat_ref_2026-05-31_02.png" alt="Confessional acting reference"><figcaption>Confessional acting</figcaption></figure>
-        <figure><img src="dashboard/assets/ideal_examples/chat_reference_images/chat_ref_2026-05-31_03.png" alt="Glamorous rival reference"><figcaption>Glamorous rival energy</figcaption></figure>
-        <figure><img src="dashboard/assets/ideal_examples/chat_reference_images/chat_ref_2026-05-31_05.png" alt="Male body acting reference"><figcaption>Male body reference</figcaption></figure>
-        <figure><img src="dashboard/assets/ideal_examples/chat_reference_images/chat_ref_2026-05-31_07.png" alt="Heroine close-up reference"><figcaption>Heroine close-up</figcaption></figure>
-        <figure><img src="dashboard/assets/ideal_examples/chat_reference_images/chat_ref_2026-05-31_06.png" alt="Couple blocking reference"><figcaption>Couple blocking</figcaption></figure>
-      </div>
+      <h2>Word-Based Continuity</h2>
+      <p>The dashboard intentionally avoids generated images and reference-image dependency. Every visual requirement is written into the character bible and repeated inside each 15-second shot prompt.</p>
+      <table>
+        <tbody>
+          <tr><th>Character lock</th><td>Fruit species, outfits, jewelry, posture, and emotional role stay fixed across the whole plot.</td></tr>
+          <tr><th>Frame lock</th><td>The opening starts with public wedding humiliation; the ending holds on the blank DNA report and Lu Mingxuan reveal.</td></tr>
+          <tr><th>Clip lock</th><td>Each shot includes opening composition, motion beats, ending frame, camera direction, and overlay rules.</td></tr>
+        </tbody>
+      </table>
     </section>
 
     <section class="panel">
