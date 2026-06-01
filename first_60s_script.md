@@ -1,970 +1,315 @@
-# The Substitute Bride Contract
+# Bananita's Eviction Ticket
 
-Word-only production dashboard for a 10-minute narrator-led anthropomorphic fruit-character Chinese Duanju video. No generated frames, no image references, and no image prompt gallery.
+Word-only 60-second anthropomorphic fruit-character TikTok micro-drama prompt pack, based on the rhythm of the uploaded MOV references.
 
-## Word-Only Character Bible
+## Reference Pattern
 
-Visual world:
-Anthropomorphic fruit-character Chinese Duanju. The characters have expressive fruit heads, human-like bodies, premium wealthy-family styling, and emotional micro-drama acting. Make them charming and readable, not mascot-flat and not photoreal human. Keep the same fruit species, clothing, jewelry, scale, and color palette in every shot.
+- Length: 64-66 seconds; target 60 seconds plus outro/loop padding.
+- Shot rhythm: fast 3-6 second micro-scenes, not long scenes.
+- Captions: huge white all-caps chunks, 1-3 words at a time, slangy and punchy.
+- Story engine: poverty pressure, insult, tiny choice, miracle proof object, public reversal, final cliffhanger.
+- Character engine: same lead fruit character, outfit, chain, face shape, and body scale across the whole minute.
 
-Su Qing:
-Strawberry heroine, 24, night-shift nurse. Soft red strawberry head with tiny seed texture, leafy green crown tucked under hair/veil styling, large green eyes, gentle but exhausted expression. Petite human-like body. Outfits: pale blue nurse scrubs, oversized ivory bridal gown, trench coat over gown, simple black gala dress. Always wears a small old green jade pendant.
+## Character Bible
 
-Lu Jincheng:
-Tall banana CEO, 30, cold billionaire groom. Smooth golden banana head, sharp dark brows, controlled gaze, athletic human-like body, black tailored wedding suit or black gala suit, sharp watch. He rarely smiles; his silence should feel strategic.
+Visual style:
+Anthropomorphic fruit-character TikTok micro drama. Glossy expressive fruit heads, human-like bodies, urban streetwear, exaggerated eyes, gritty rooms, cinematic 3D lighting. Serious emotional acting with absurd characters. Do not make it cute mascot comedy.
 
-Madam Zhao:
-Pineapple stepmother. Golden pineapple head, sharp leafy crown, emerald silk qipao, pearl necklace and bracelet. Polished smile, predatory eyes, elegant hand gestures. She hides threats behind manners.
+Bananita:
+Charcoal-black banana underdog, early 20s, slim human-like body, anxious big eyes, tired eyelids, black hoodie with no readable logo, ripped dark jeans, chunky silver chain, cheap sneakers. He is broke but not stupid. Keep the same hoodie, chain, jeans, and face shape in every shot.
 
-Su Man:
-Glossy red apple socialite. Red designer dress, diamond earrings, perfect makeup, smug expression, graceful but poisonous entrance energy. Carries an ultrasound envelope in the finale.
+Strawbella:
+Red strawberry girlfriend, sharp lashes, black crop top, black leggings, hoop earrings, suspicious expression that can switch into fake sweetness. She loves status and hates being poor. Keep her strawberry seed texture and leafy crown visible.
 
-Su Zhen:
-Pear father in a dark suit. Soft pear-shaped head, tired eyes, weak posture, avoids eye contact when betraying Su Qing.
+Cherry Flex:
+Rich red cherry rival, muscular human-like body, black designer T-shirt, gold chains, luxury belt, smug grin. He represents the mansion life Strawbella wants.
 
-Attorney He:
-Lychee lawyer in a gray suit. Pale lychee head with subtle texture, calm expression, leather case, precise professional gestures.
+Grape Gary:
+Purple grape convenience-store clerk, tired eyes, green store vest, sarcastic grin. He throws away the winning ticket, then panics when it scans.
 
-Lu Mingxuan:
-Older dark-plum Lu family elder. Deep purple plum head, silver leaf-like hair accent, navy suit, faint smile from the second row. He should look like he planned the final twist.
+Officer Plum:
+Purple plum eviction officer in a dark uniform, round face, clipboard, stiff posture. He is not evil; he is just enforcing the notice.
 
 Proof objects:
-Green jade pendant, covered contract clause, unpaid hospital deposit notice, mother's trust file, hidden transfer page, gala LED evidence video, blank DNA report for later overlay.
+Five-dollar bill, milk carton, scratched lottery ticket, scanner screen, eviction notice, news camera, Cherry Flex's cash offer, purchase receipt.
 
-Text rule:
-Do not generate readable legal text inside the image/video. Leave documents blank and add all captions, clauses, names, dates, and report labels in editing.
-
-## Starting And Ending Frame Descriptions
-
-### Starting Frame
-
-Vertical 9:16 anthropomorphic fruit-character Chinese Duanju opening frame description. Su Qing, the strawberry nurse heroine, stands alone at a luxury wedding altar in an oversized ivory bridal gown, her green jade pendant visible under the veil. Lu Jincheng, the tall banana CEO groom in a black wedding suit, faces her with a cold unreadable stare. Pineapple Madam Zhao smiles from the front row, pear Su Zhen avoids eye contact, wealthy fruit guests raise phones, and an empty front-row chair signals the missing real bride. Mood: public humiliation, expensive silence, betrayal. No generated readable text, no watermark, no platform UI.
-
-### Ending Frame
-
-Vertical 9:16 anthropomorphic fruit-character Chinese Duanju ending frame description. At a corporate charity gala, strawberry Su Qing stands on stage in a simple black evening dress holding a blank DNA report with controlled shock. Banana Lu Jincheng stands beside her like a cold shield. Red-apple Su Man clutches an ultrasound envelope near the ballroom doors. Dark-plum Lu Mingxuan sits in the second row smiling faintly like he planned everything. Mood: family-war cliffhanger, bass-hit reveal. Leave report text blank for later overlay: Father: Lu Mingxuan. No generated readable text, no watermark, no platform UI.
+Caption rule:
+Use huge white all-caps captions in the lower middle. One to three words per caption. Add captions in editing; do not ask the image/video model to generate readable text inside the scene.
 
 ## Master Video Prompt
 
-Create a 10-minute vertical 9:16 anthropomorphic fruit-character Chinese Duanju-style micro drama called "The Substitute Bride Contract."
+Create a 60-second vertical 9:16 anthropomorphic fruit-character TikTok micro drama called "Bananita's Eviction Ticket."
 
-Format:
-- First-person narration from the main character, Su Qing.
-- Do not rely on characters having long conversations.
-- The narrator carries the story; visuals show emotional reactions, proof objects, documents, and reversals.
-- Tone: wealthy-family melodrama, betrayal, contract marriage, hidden inheritance, public humiliation reversal.
-- Character style: anthropomorphic fruit characters with expressive fruit heads and human-like bodies. Serious Duanju acting, not parody mascot comedy. Use the Word-Only Character Bible for every shot.
-- Visual style: cinematic Chinese micro drama with fruit-character casting, luxury wedding ballroom, hospital night corridor, wealthy mansion, corporate charity gala, close-up emotional acting, hard Duanju cuts, clear proof objects, shallow depth of field.
-- Text rule: do not generate readable text inside documents or screens. Leave documents blank and add captions, legal clauses, names, and dates in editing.
+Style:
+Use gritty, cinematic 3D fruit characters with human-like bodies, expressive eyes, streetwear, dramatic lighting, and fast TikTok micro-drama cuts. The tone is sad, funny, and tense at the same time. It should feel like a poor-underdog drama with absurd fruit characters, not a bright cartoon.
 
-Story:
-Su Qing is a strawberry heroine and 24-year-old night-shift nurse. Her younger brother needs an urgent transplant deposit before sunrise. Her pear father Su Zhen and pineapple stepmother Madam Zhao force her to replace her runaway red-apple stepsister Su Man at a billionaire wedding. They promise to pay the surgery deposit if Su Qing wears Su Man's wedding dress for one day.
+Script format:
+First-person narration from Bananita. No long conversations. Let the narrator carry the story while the visuals show proof objects, insults, reactions, and reversals. Captions should be huge white all-caps words, one to three words at a time, synced to the narration.
 
-At the altar, cold banana CEO Lu Jincheng immediately realizes Su Qing is not Su Man. He notices Su Qing's old jade pendant but still completes the marriage. Wealthy fruit guests humiliate Su Qing as the poor substitute bride. After the wedding, Su Qing learns the surgery money was never paid.
+Plot:
+Bananita is broke, holding his last five-dollar bill while Strawbella tells him not to come home broke. Rent is due, his little brother needs milk, and Officer Plum is already preparing an eviction notice. At the convenience store, Grape Gary mocks Bananita and tosses him a scratched lottery ticket as trash. Bananita scans it anyway. The scanner freezes: one million dollars. He runs home, but Strawbella is standing with Cherry Flex, calling Bananita a poor guy. Bananita hides the ticket under his silver chain until the news van arrives to confirm him as the winner. Cherry Flex offers him five hundred dollars to disappear. Strawbella suddenly acts sweet again. At the final second, Grape Gary whispers that the ticket was bought with Strawbella's card.
 
-Su Qing finds an old photo linking her dead mother to the Lu family. She follows her father and stepmother and discovers their real plan: after the wedding, they want her to sign away her mother's trust shares. Lychee lawyer Attorney He reveals the truth: Su Qing's mother left a trust that activates only if Su Qing legally marries the Lu heir under her real name. The marriage gives Su Qing control of 30 percent of Su Group.
+Characters:
+Use the Character Bible exactly. Bananita is the recurring lead. Strawbella is the betrayal/love-interest character. Cherry Flex is the rich rival. Grape Gary is the clerk who creates the cliffhanger. Officer Plum creates the eviction pressure.
 
-Su Qing gathers evidence with a hidden camera in her jade pendant. At a charity gala, Madam Zhao tries to make Su Qing sign a public apology with a hidden transfer page underneath. Su Qing signs only one page, exposes the hidden transfer, and plays the recording on the gala LED screen. Attorney He enters with the trust file. Lu Jincheng stands beside Su Qing and reveals the covered clause always named Su Qing, not Su Man.
+Ending:
+Do not resolve the ticket ownership. End on the receipt reveal and Bananita's shocked face. The final caption is: WHO BOUGHT IT?
 
-Final cliffhanger:
-Su Man returns in a red dress holding an ultrasound envelope, claiming she is pregnant. Lu Jincheng calmly hands Su Qing a sealed DNA report. Su Qing opens it. The father is not Lu Jincheng. The report says: Lu Mingxuan. Cut to dark-plum Lu Mingxuan smiling from the second row. End with: "That was when I understood this marriage had not pulled me into one family war. It had pulled me into two."
+Avoid:
+No photoreal humans, no long dialogue scene, no random extra main characters, no readable generated text on documents or screens, no platform UI, no watermark, no copied TikTok username.
 
-Scene-by-scene structure:
-Scene 01, 0:00-0:30, wedding hook. Start at the luxury wedding altar. Strawberry Su Qing stands alone in an oversized ivory gown. Banana Lu Jincheng looks cold. Fruit guests whisper and raise phones. Narration reveals she is wearing her stepsister's dress. Caption: I married him as my sister's replacement.
+## Exact Narration
 
-Scene 02, 0:30-1:00, hospital pressure. Cut to 12 hours earlier. Su Qing in nurse scrubs waits outside surgery with her brother's transplant file. Her phone keeps ringing from the Su family. Show unpaid hospital deposit notice. Narration explains the surgery deadline before sunrise.
+She told me, "If you come back broke, don't come home."
 
-Scene 03, 1:00-1:30, the family offer. Su Qing enters the Su mansion. Pineapple Madam Zhao slides a bridal veil and contract across the table. Pear Su Zhen avoids eye contact. Narration explains red-apple Su Man ran away and the family needs a substitute bride.
+I had five dollars, one eviction notice, and my little brother asking for milk.
 
-Scene 04, 1:30-2:00, contract trap. Close-up of the one-year marriage contract. Madam Zhao's pearl bracelet covers one clause. Su Qing signs because she thinks the surgery deposit will be paid. Show her hand hesitating over the pen.
+At the store, Grape Gary laughed and said, "Cuh, that ain't even enough."
 
-Scene 05, 2:00-2:30, erased identity. Bridal dressing room. Assistants remove Su Qing's nurse uniform and force her into Su Man's gown. Show the jade pendant hidden under the dress. Narration says the pendant is the only thing that knows her real name.
+Then he tossed a scratched ticket at me like trash.
 
-Scene 06, 2:30-3:00, cold groom recognizes the pendant. Back at the altar. Lu Jincheng notices Su Qing is not Su Man. His eyes stop on the jade pendant chain. He still places the ring on her finger. The mood should feel like he recognizes a clue, not romance.
+I scanned it because broke people check everything.
 
-Scene 07, 3:00-3:30, public humiliation. Guests record Su Qing. Madam Zhao smiles. Su Zhen looks away. Narration says shame is being used to make her easier to control. Show phones, whispers, and Su Qing staying silent.
+The machine froze.
 
-Scene 08, 3:30-4:00, side-room wife. Lu mansion at night. Su Qing is sent to a small side room, not the master bedroom. A housekeeper leaves her in a cold corridor. Narration says legal marriage does not mean real belonging.
+One million dollars.
 
-Scene 09, 4:00-4:30, west corridor discovery. Su Qing breaks the rule and enters the west corridor. In a storage room, she finds an old photo of her mother with Lu Grandfather. Back of photo says: protect Su Qing. Add this text in edit.
+I ran home with the ticket under my chain.
 
-Scene 10, 4:30-5:00, deposit lie. Hospital calls. The surgery deposit was never paid. Show Su Qing in bridal coat at the hospital payment desk. The file is stamped pending. Narration turns from fear to anger.
+Officer Plum was already at the door.
 
-Scene 11, 5:00-5:30, hidden transfer plan. Su Qing follows her father and Madam Zhao to a hotel service hallway. She secretly records them discussing a transfer document. Show the hidden page title: transfer of trust beneficiary rights. Add text in edit.
+Strawbella stood beside Cherry Flex and called me a poor guy.
 
-Scene 12, 5:30-6:00, Lu Jincheng silently helps. Lu Jincheng sees Su Qing hiding the recording phone. Instead of exposing her, he opens a security door loudly so she can escape. Narration says cold men are easy to hate, useful ones are harder.
+So I stayed quiet.
 
-Scene 13, 6:00-6:30, attorney appears. Dawn parking garage. Attorney He gives Su Qing her mother's sealed trust file. Su Qing wears a trench coat over the wedding dress. Mood: secret legal rescue, not romance.
+Then the news van pulled up.
 
-Scene 14, 6:30-7:00, trust reveal. Close-up of trust documents. The key clause says Su Qing gains 30 percent of Su Group if she legally marries the Lu heir under her real name. Add clean overlays for Su Qing, legal wife, 30 percent shares.
+Cherry offered me five hundred dollars to disappear.
 
-Scene 15, 7:00-7:30, evidence preparation. Su Qing hides a tiny camera in the jade pendant, copies documents, and keeps the unsigned transfer page. Narration: evidence first, tears later.
+Strawbella suddenly called me baby again.
 
-Scene 16, 7:30-8:00, gala trap. Charity gala stage. Madam Zhao publicly presents Su Qing as a shameless substitute bride and pushes an apology paper toward her. The transfer page is hidden underneath.
+Before I could answer, Gary whispered, "Bananita... that ticket was bought with her card."
 
-Scene 17, 8:00-8:30, signature reversal. Su Qing sees the two pages stuck together. She signs only the top apology page with her real name, separates the hidden transfer page, and lifts it to the cameras. Crowd goes silent.
+## Caption Tape
 
-Scene 18, 8:30-9:00, evidence on screen. The gala LED screen plays the pendant-camera recording of Madam Zhao and Su Zhen discussing the transfer. Madam Zhao panics. Su Zhen looks trapped. Su Qing stands still.
+DON'T / COME BACK / BROKE / $5 LEFT / MILK OR RENT / AIN'T ENOUGH / TRASH TICKET / SCAN IT CUH / $1,000,000 / EVICTED TODAY / POOR GUY / NEWS VAN / TAKE $500 / BABY? / HER CARD / WHO BOUGHT IT?
 
-Scene 19, 9:00-9:30, legal wife reveal. Attorney He enters with the trust file. Lu Jincheng stops security and stands beside Su Qing. The marriage certificate and trust clause confirm the legal wife is Su Qing. Lu Jincheng reveals the covered clause always named Su Qing.
+## 12-Shot 60s Prompt Pack
 
-Scene 20, 9:30-10:00, pregnancy and DNA cliffhanger. Red-apple Su Man enters in red holding an ultrasound envelope. Guests turn. Lu Jincheng gives Su Qing a sealed DNA report. The father line says Lu Mingxuan, not Lu Jincheng. Cut to dark-plum Lu Mingxuan smiling from the second row. End on Su Qing realizing she is inside two family wars.
+Generate each shot as a 4-6 second vertical clip, then assemble into the one-minute narrator episode.
 
-Required proof objects:
-1. Su Qing's jade pendant.
-2. The covered contract clause.
-3. The unpaid hospital deposit notice.
-4. The mother's trust file.
-5. The hidden transfer page.
-6. The gala LED evidence video.
-7. The DNA report naming Lu Mingxuan.
+### Shot 01 | 0:00-0:05
 
-Editing:
-- Use short captions only for key turns.
-- Add all legal text, dates, and report names in edit, not generated inside the image.
-- Music: low piano for humiliation, silence on document reveals, rising strings for the trust reveal, bass hit on the DNA cliffhanger.
-- Loop cut: cut from the DNA report reveal back to Su Qing standing alone at the wedding altar.
+Beat: Doorway insult
+Narration: She told me, if you come back broke, don't come home.
+Caption chunks: DON'T / COME BACK / BROKE
 
-## Multi-Shot Prompt Pack
+Video prompt:
+Use the Character Bible. Create a vertical 9:16 anthropomorphic fruit-character TikTok micro-drama clip, 4-6 seconds long.
 
-Each item below is a full 15-second text-only video prompt. Generate one vertical clip per shot, then assemble the narrator episode.
+Opening frame:
+Start in a dirty apartment doorway. Bananita stands half inside the room holding a crumpled five-dollar bill. Strawbella blocks the doorway with crossed arms, angry and embarrassed by him.
 
-### Shot 01 | 0:00-0:15
+Motion and camera:
+Camera starts tight on Bananita's anxious eyes, widens to show Strawbella and the messy apartment. End on the door almost closing in his face.
 
-Beat: Wedding altar cold open
-Narration: On my wedding day, my husband looked past me at the empty chair where my stepsister should have been.
-Text overlay: I married him as my sister's replacement.
+Style rules:
+Gritty cinematic 3D, glossy fruit heads, human-like streetwear bodies, expressive eyes, shallow depth of field, fast TikTok micro-drama cuts. Keep Bananita's hoodie, silver chain, ripped jeans, and anxious charcoal-banana face consistent. Do not generate readable document or screen text; add captions and proof labels in editing. No watermark, no platform UI.
 
-Full 15-second video prompt:
-Use the Word-Only Character Bible. All named characters are anthropomorphic fruit characters, not photoreal humans. If a beat mentions a face, hands, body, scrubs, gown, suit, or gesture, render the fruit-character version with human-like acting and clothing. Create one complete vertical 9:16 Duanju clip.
+### Shot 02 | 0:05-0:10
 
-Opening frame, 0-3s:
-Su Qing stands alone in the wrong wedding dress while guests whisper. Establish the location immediately and make the emotional power dynamic readable in the first second.
+Beat: Milk pressure
+Narration: I had five dollars, one eviction notice, and my little brother asking for milk.
+Caption chunks: $5 LEFT / MILK OR RENT
 
-Motion beats, 3-12s:
-Vertical 9:16 cinematic Chinese Duanju wedding altar. Su Qing in oversized ivory bridal gown stands alone under crystal chandeliers. Lu Jincheng faces her coldly. Empty front-row chair visible. Guests whisper in soft blur. Slow push-in on Su Qing's controlled humiliation. Stretch the action across the full clip with 2-3 Duanju micro-beats: a wide setup, a proof-object close-up, and a reaction close-up. Use restrained but expressive fruit-character facial acting, small hand gestures, and one clear emotional turn.
+Video prompt:
+Use the Character Bible. Create a vertical 9:16 anthropomorphic fruit-character TikTok micro-drama clip, 4-6 seconds long.
 
-Ending frame, 12-15s:
-Hold on the most important face or proof object from this beat for a clean edit point. The final frame should make the next shot feel necessary.
+Opening frame:
+Bananita walks through a wet street toward a convenience store. He looks at a milk carton display through the glass, then down at the five-dollar bill in his hand.
 
-Camera and edit:
-Vertical 9:16, cinematic wealthy-family micro-drama lighting, shallow depth of field, hard cuts, no generated readable text, no watermark, no platform UI. Add legal words, captions, dates, and document labels later in editing.
+Motion and camera:
+Use rain reflections, neon store lights, and a lonely over-the-shoulder push-in. End on the five-dollar bill beside the milk carton.
 
-### Shot 02 | 0:15-0:30
+Style rules:
+Gritty cinematic 3D, glossy fruit heads, human-like streetwear bodies, expressive eyes, shallow depth of field, fast TikTok micro-drama cuts. Keep Bananita's hoodie, silver chain, ripped jeans, and anxious charcoal-banana face consistent. Do not generate readable document or screen text; add captions and proof labels in editing. No watermark, no platform UI.
 
-Beat: Phones rise
-Narration: Their phones lifted before the vows ended. The poor daughter had replaced the real bride, and everyone wanted proof.
-Text overlay: The substitute bride.
+### Shot 03 | 0:10-0:15
 
-Full 15-second video prompt:
-Use the Word-Only Character Bible. All named characters are anthropomorphic fruit characters, not photoreal humans. If a beat mentions a face, hands, body, scrubs, gown, suit, or gesture, render the fruit-character version with human-like acting and clothing. Create one complete vertical 9:16 Duanju clip.
+Beat: Clerk mocks him
+Narration: At the store, Grape Gary laughed and said, cuh, that ain't even enough.
+Caption chunks: AIN'T ENOUGH
 
-Opening frame, 0-3s:
-Guests raise phones and record the substitute bride. Establish the location immediately and make the emotional power dynamic readable in the first second.
+Video prompt:
+Use the Character Bible. Create a vertical 9:16 anthropomorphic fruit-character TikTok micro-drama clip, 4-6 seconds long.
 
-Motion beats, 3-12s:
-Vertical 9:16 luxury wedding ballroom reaction shot. Wealthy guests raise phones, Su Qing stands still in the aisle, Madam Zhao smiles from the front row. Handheld reality-drama push-in, public shame, no platform UI. Stretch the action across the full clip with 2-3 Duanju micro-beats: a wide setup, a proof-object close-up, and a reaction close-up. Use restrained but expressive fruit-character facial acting, small hand gestures, and one clear emotional turn.
+Opening frame:
+Inside the store, Grape Gary leans over the counter with a bored grin. Bananita places the five-dollar bill down. The milk, lottery display, and scanner are visible.
 
-Ending frame, 12-15s:
-Hold on the most important face or proof object from this beat for a clean edit point. The final frame should make the next shot feel necessary.
+Motion and camera:
+Cut from Gary's smirk to Bananita's embarrassed face, then to the bill on the counter. Keep the convenience store cramped and fluorescent.
 
-Camera and edit:
-Vertical 9:16, cinematic wealthy-family micro-drama lighting, shallow depth of field, hard cuts, no generated readable text, no watermark, no platform UI. Add legal words, captions, dates, and document labels later in editing.
+Style rules:
+Gritty cinematic 3D, glossy fruit heads, human-like streetwear bodies, expressive eyes, shallow depth of field, fast TikTok micro-drama cuts. Keep Bananita's hoodie, silver chain, ripped jeans, and anxious charcoal-banana face consistent. Do not generate readable document or screen text; add captions and proof labels in editing. No watermark, no platform UI.
 
-### Shot 03 | 0:30-0:45
+### Shot 04 | 0:15-0:20
 
-Beat: Hospital twelve hours earlier
-Narration: Twelve hours earlier, I was not a bride. I was a nurse counting the seconds outside an operating room.
-Text overlay: 12 hours earlier.
+Beat: Trash ticket
+Narration: Then he tossed a scratched ticket at me like trash.
+Caption chunks: TRASH TICKET
 
-Full 15-second video prompt:
-Use the Word-Only Character Bible. All named characters are anthropomorphic fruit characters, not photoreal humans. If a beat mentions a face, hands, body, scrubs, gown, suit, or gesture, render the fruit-character version with human-like acting and clothing. Create one complete vertical 9:16 Duanju clip.
+Video prompt:
+Use the Character Bible. Create a vertical 9:16 anthropomorphic fruit-character TikTok micro-drama clip, 4-6 seconds long.
 
-Opening frame, 0-3s:
-Su Qing waits outside surgery in nurse scrubs. Establish the location immediately and make the emotional power dynamic readable in the first second.
+Opening frame:
+Gary sweeps a scratched lottery ticket off the counter toward Bananita like it is garbage. Bananita catches it against his hoodie.
 
-Motion beats, 3-12s:
-Vertical 9:16 rainy hospital night corridor. Su Qing in pale blue scrubs clutches a transplant file outside surgery. Fluorescent lights, empty chairs, rain on window, exhausted eyes, urgent quiet mood. Stretch the action across the full clip with 2-3 Duanju micro-beats: a wide setup, a proof-object close-up, and a reaction close-up. Use restrained but expressive fruit-character facial acting, small hand gestures, and one clear emotional turn.
+Motion and camera:
+Follow the ticket in slow motion for one second, then snap back to Bananita staring at it. End with the ticket in his hand.
 
-Ending frame, 12-15s:
-Hold on the most important face or proof object from this beat for a clean edit point. The final frame should make the next shot feel necessary.
+Style rules:
+Gritty cinematic 3D, glossy fruit heads, human-like streetwear bodies, expressive eyes, shallow depth of field, fast TikTok micro-drama cuts. Keep Bananita's hoodie, silver chain, ripped jeans, and anxious charcoal-banana face consistent. Do not generate readable document or screen text; add captions and proof labels in editing. No watermark, no platform UI.
 
-Camera and edit:
-Vertical 9:16, cinematic wealthy-family micro-drama lighting, shallow depth of field, hard cuts, no generated readable text, no watermark, no platform UI. Add legal words, captions, dates, and document labels later in editing.
+### Shot 05 | 0:20-0:25
 
-### Shot 04 | 0:45-1:00
+Beat: Scanner freeze
+Narration: I scanned it because broke people check everything.
+Caption chunks: SCAN IT CUH
 
-Beat: Deposit deadline
-Narration: My brother's deposit was due before sunrise. The hospital did not care that I had worked sixteen nights in a row.
-Text overlay: Deposit due before sunrise.
+Video prompt:
+Use the Character Bible. Create a vertical 9:16 anthropomorphic fruit-character TikTok micro-drama clip, 4-6 seconds long.
 
-Full 15-second video prompt:
-Use the Word-Only Character Bible. All named characters are anthropomorphic fruit characters, not photoreal humans. If a beat mentions a face, hands, body, scrubs, gown, suit, or gesture, render the fruit-character version with human-like acting and clothing. Create one complete vertical 9:16 Duanju clip.
+Opening frame:
+Bananita slides the ticket under the lottery scanner. Gary stops smiling. The scanner glows, but leave the screen blank for editing.
 
-Opening frame, 0-3s:
-Her phone shows calls from the Su family while the hospital file says pending. Establish the location immediately and make the emotional power dynamic readable in the first second.
+Motion and camera:
+Use a tight hand-and-scanner shot, then a reaction close-up. Add the scanner result later in edit; do not generate readable screen text.
 
-Motion beats, 3-12s:
-Vertical 9:16 close-up hospital payment desk. Su Qing's hand holds phone with repeated family calls, medical file stamped pending, cold fluorescent light, tense document detail, add payment text in edit. Stretch the action across the full clip with 2-3 Duanju micro-beats: a wide setup, a proof-object close-up, and a reaction close-up. Use restrained but expressive fruit-character facial acting, small hand gestures, and one clear emotional turn.
+Style rules:
+Gritty cinematic 3D, glossy fruit heads, human-like streetwear bodies, expressive eyes, shallow depth of field, fast TikTok micro-drama cuts. Keep Bananita's hoodie, silver chain, ripped jeans, and anxious charcoal-banana face consistent. Do not generate readable document or screen text; add captions and proof labels in editing. No watermark, no platform UI.
 
-Ending frame, 12-15s:
-Hold on the most important face or proof object from this beat for a clean edit point. The final frame should make the next shot feel necessary.
+### Shot 06 | 0:25-0:30
 
-Camera and edit:
-Vertical 9:16, cinematic wealthy-family micro-drama lighting, shallow depth of field, hard cuts, no generated readable text, no watermark, no platform UI. Add legal words, captions, dates, and document labels later in editing.
+Beat: Million-dollar proof
+Narration: The machine froze. One million dollars.
+Caption chunks: $1,000,000
 
-### Shot 05 | 1:00-1:15
+Video prompt:
+Use the Character Bible. Create a vertical 9:16 anthropomorphic fruit-character TikTok micro-drama clip, 4-6 seconds long.
 
-Beat: The veil on the table
-Narration: Madam Zhao did not ask how my brother was. She only pushed a veil toward me.
-Text overlay: Wear the dress.
+Opening frame:
+The store goes silent. Bananita's eyes widen. Gary's mouth drops open. The ticket shakes in Bananita's hand.
 
-Full 15-second video prompt:
-Use the Word-Only Character Bible. All named characters are anthropomorphic fruit characters, not photoreal humans. If a beat mentions a face, hands, body, scrubs, gown, suit, or gesture, render the fruit-character version with human-like acting and clothing. Create one complete vertical 9:16 Duanju clip.
+Motion and camera:
+Start on the blank scanner screen, cut to Gary panicking, then push into Bananita's stunned face. End on the ticket tucked under Bananita's silver chain.
 
-Opening frame, 0-3s:
-Madam Zhao slides a bridal veil across the mansion table. Establish the location immediately and make the emotional power dynamic readable in the first second.
+Style rules:
+Gritty cinematic 3D, glossy fruit heads, human-like streetwear bodies, expressive eyes, shallow depth of field, fast TikTok micro-drama cuts. Keep Bananita's hoodie, silver chain, ripped jeans, and anxious charcoal-banana face consistent. Do not generate readable document or screen text; add captions and proof labels in editing. No watermark, no platform UI.
 
-Motion beats, 3-12s:
-Vertical 9:16 wealthy mansion table confrontation. Madam Zhao in emerald qipao slides an ivory bridal veil toward Su Qing in scrubs. Su Zhen stands behind avoiding eye contact. Cold luxury lighting. Stretch the action across the full clip with 2-3 Duanju micro-beats: a wide setup, a proof-object close-up, and a reaction close-up. Use restrained but expressive fruit-character facial acting, small hand gestures, and one clear emotional turn.
+### Shot 07 | 0:30-0:35
 
-Ending frame, 12-15s:
-Hold on the most important face or proof object from this beat for a clean edit point. The final frame should make the next shot feel necessary.
+Beat: Eviction at home
+Narration: I ran home with the ticket under my chain. Officer Plum was already at the door.
+Caption chunks: EVICTED TODAY
 
-Camera and edit:
-Vertical 9:16, cinematic wealthy-family micro-drama lighting, shallow depth of field, hard cuts, no generated readable text, no watermark, no platform UI. Add legal words, captions, dates, and document labels later in editing.
+Video prompt:
+Use the Character Bible. Create a vertical 9:16 anthropomorphic fruit-character TikTok micro-drama clip, 4-6 seconds long.
 
-### Shot 06 | 1:15-1:30
+Opening frame:
+Bananita runs back through the apartment hallway. Officer Plum stands at the door with a clipboard and eviction notice. Strawbella watches from inside.
 
-Beat: The bargain
-Narration: If I wore Su Man's dress for one day, my brother would live. She made it sound like mercy.
-Text overlay: Save your brother.
+Motion and camera:
+Use handheld urgency. Show the notice as blank paper for later overlay. End with Bananita stopping short at the doorway.
 
-Full 15-second video prompt:
-Use the Word-Only Character Bible. All named characters are anthropomorphic fruit characters, not photoreal humans. If a beat mentions a face, hands, body, scrubs, gown, suit, or gesture, render the fruit-character version with human-like acting and clothing. Create one complete vertical 9:16 Duanju clip.
+Style rules:
+Gritty cinematic 3D, glossy fruit heads, human-like streetwear bodies, expressive eyes, shallow depth of field, fast TikTok micro-drama cuts. Keep Bananita's hoodie, silver chain, ripped jeans, and anxious charcoal-banana face consistent. Do not generate readable document or screen text; add captions and proof labels in editing. No watermark, no platform UI.
 
-Opening frame, 0-3s:
-Su Qing sees the wedding dress, hospital bill, and contract together. Establish the location immediately and make the emotional power dynamic readable in the first second.
+### Shot 08 | 0:35-0:40
 
-Motion beats, 3-12s:
-Vertical 9:16 mansion close-up montage: wedding dress bag, hospital bill, black pen, contract folder. Su Qing's tense hands enter frame. Wealthy-family melodrama, shallow depth of field. Stretch the action across the full clip with 2-3 Duanju micro-beats: a wide setup, a proof-object close-up, and a reaction close-up. Use restrained but expressive fruit-character facial acting, small hand gestures, and one clear emotional turn.
+Beat: Rich rival reveal
+Narration: Strawbella stood beside Cherry Flex and called me a poor guy.
+Caption chunks: POOR GUY
 
-Ending frame, 12-15s:
-Hold on the most important face or proof object from this beat for a clean edit point. The final frame should make the next shot feel necessary.
+Video prompt:
+Use the Character Bible. Create a vertical 9:16 anthropomorphic fruit-character TikTok micro-drama clip, 4-6 seconds long.
 
-Camera and edit:
-Vertical 9:16, cinematic wealthy-family micro-drama lighting, shallow depth of field, hard cuts, no generated readable text, no watermark, no platform UI. Add legal words, captions, dates, and document labels later in editing.
+Opening frame:
+Cherry Flex steps out from behind Strawbella wearing gold chains. He puts an arm around her while Bananita stands in the hall, still hiding the ticket.
 
-### Shot 07 | 1:30-1:45
+Motion and camera:
+Frame Cherry and Strawbella inside the warm apartment light, Bananita in cold hallway light. End on Strawbella's ashamed-but-smug expression.
 
-Beat: Covered clause
-Narration: The contract was short because cruelty does not need many pages. I read every line except the one she covered.
-Text overlay: She covered one clause.
+Style rules:
+Gritty cinematic 3D, glossy fruit heads, human-like streetwear bodies, expressive eyes, shallow depth of field, fast TikTok micro-drama cuts. Keep Bananita's hoodie, silver chain, ripped jeans, and anxious charcoal-banana face consistent. Do not generate readable document or screen text; add captions and proof labels in editing. No watermark, no platform UI.
 
-Full 15-second video prompt:
-Use the Word-Only Character Bible. All named characters are anthropomorphic fruit characters, not photoreal humans. If a beat mentions a face, hands, body, scrubs, gown, suit, or gesture, render the fruit-character version with human-like acting and clothing. Create one complete vertical 9:16 Duanju clip.
+### Shot 09 | 0:40-0:45
 
-Opening frame, 0-3s:
-The stepmother's pearl bracelet hides a clause on the contract. Establish the location immediately and make the emotional power dynamic readable in the first second.
+Beat: Silent winner
+Narration: So I stayed quiet.
+Caption chunks: NAH
 
-Motion beats, 3-12s:
-Vertical 9:16 macro legal contract on dark table. Pearl bracelet covers one clause, Su Qing's pen hovers. Realistic hand acting. Leave document text blank for later overlay. Stretch the action across the full clip with 2-3 Duanju micro-beats: a wide setup, a proof-object close-up, and a reaction close-up. Use restrained but expressive fruit-character facial acting, small hand gestures, and one clear emotional turn.
+Video prompt:
+Use the Character Bible. Create a vertical 9:16 anthropomorphic fruit-character TikTok micro-drama clip, 4-6 seconds long.
 
-Ending frame, 12-15s:
-Hold on the most important face or proof object from this beat for a clean edit point. The final frame should make the next shot feel necessary.
+Opening frame:
+Bananita looks down, touches the ticket hidden under his chain, and does not reveal it. Cherry laughs. Officer Plum waits awkwardly.
 
-Camera and edit:
-Vertical 9:16, cinematic wealthy-family micro-drama lighting, shallow depth of field, hard cuts, no generated readable text, no watermark, no platform UI. Add legal words, captions, dates, and document labels later in editing.
+Motion and camera:
+Hold the silence. Use a close-up of Bananita's hand pressing the chain against his hoodie. End on his eyes lifting toward the street.
 
-### Shot 08 | 1:45-2:00
+Style rules:
+Gritty cinematic 3D, glossy fruit heads, human-like streetwear bodies, expressive eyes, shallow depth of field, fast TikTok micro-drama cuts. Keep Bananita's hoodie, silver chain, ripped jeans, and anxious charcoal-banana face consistent. Do not generate readable document or screen text; add captions and proof labels in editing. No watermark, no platform UI.
 
-Beat: Signature under pressure
-Narration: I signed because fear can make a signature look voluntary.
-Text overlay: One signature. One trap.
+### Shot 10 | 0:45-0:50
 
-Full 15-second video prompt:
-Use the Word-Only Character Bible. All named characters are anthropomorphic fruit characters, not photoreal humans. If a beat mentions a face, hands, body, scrubs, gown, suit, or gesture, render the fruit-character version with human-like acting and clothing. Create one complete vertical 9:16 Duanju clip.
+Beat: News van arrival
+Narration: Then the news van pulled up.
+Caption chunks: NEWS VAN
 
-Opening frame, 0-3s:
-Su Qing signs with fear, not consent. Establish the location immediately and make the emotional power dynamic readable in the first second.
+Video prompt:
+Use the Character Bible. Create a vertical 9:16 anthropomorphic fruit-character TikTok micro-drama clip, 4-6 seconds long.
 
-Motion beats, 3-12s:
-Vertical 9:16 close-up of Su Qing signing contract, her hand shaking slightly. Madam Zhao's polished nails rest near the paper. Cold mansion light, tense silence. Stretch the action across the full clip with 2-3 Duanju micro-beats: a wide setup, a proof-object close-up, and a reaction close-up. Use restrained but expressive fruit-character facial acting, small hand gestures, and one clear emotional turn.
+Opening frame:
+Blue news lights wash across the hallway. A news crew arrives outside the building. Gary is visible behind them, terrified.
 
-Ending frame, 12-15s:
-Hold on the most important face or proof object from this beat for a clean edit point. The final frame should make the next shot feel necessary.
+Motion and camera:
+Start with flashing blue light on Bananita's face, cut to the van outside, then to Gary pointing toward Bananita. End with everyone turning.
 
-Camera and edit:
-Vertical 9:16, cinematic wealthy-family micro-drama lighting, shallow depth of field, hard cuts, no generated readable text, no watermark, no platform UI. Add legal words, captions, dates, and document labels later in editing.
+Style rules:
+Gritty cinematic 3D, glossy fruit heads, human-like streetwear bodies, expressive eyes, shallow depth of field, fast TikTok micro-drama cuts. Keep Bananita's hoodie, silver chain, ripped jeans, and anxious charcoal-banana face consistent. Do not generate readable document or screen text; add captions and proof labels in editing. No watermark, no platform UI.
 
-### Shot 09 | 2:00-2:15
+### Shot 11 | 0:50-0:55
 
-Beat: Scrubs removed
-Narration: They erased me carefully. My scrubs went into a trash bag.
-Text overlay: They erased me.
+Beat: Fake offer
+Narration: Cherry offered me five hundred dollars to disappear. Strawbella suddenly called me baby again.
+Caption chunks: TAKE $500 / BABY?
 
-Full 15-second video prompt:
-Use the Word-Only Character Bible. All named characters are anthropomorphic fruit characters, not photoreal humans. If a beat mentions a face, hands, body, scrubs, gown, suit, or gesture, render the fruit-character version with human-like acting and clothing. Create one complete vertical 9:16 Duanju clip.
+Video prompt:
+Use the Character Bible. Create a vertical 9:16 anthropomorphic fruit-character TikTok micro-drama clip, 4-6 seconds long.
 
-Opening frame, 0-3s:
-Assistants strip away Su Qing's nurse identity. Establish the location immediately and make the emotional power dynamic readable in the first second.
+Opening frame:
+Cherry Flex pulls out a small stack of cash and tries to press it into Bananita's chest. Strawbella's expression changes from disgust to panic.
 
-Motion beats, 3-12s:
-Vertical 9:16 bridal dressing room. Assistants pull pale blue scrubs away and replace them with ivory bridal fabric. Luxury mirrors, cold beauty lighting, Su Qing's face reflected, controlled humiliation. Stretch the action across the full clip with 2-3 Duanju micro-beats: a wide setup, a proof-object close-up, and a reaction close-up. Use restrained but expressive fruit-character facial acting, small hand gestures, and one clear emotional turn.
+Motion and camera:
+Use fast reaction cuts: cash, Cherry's grin, Strawbella grabbing Bananita's sleeve, Bananita looking through both of them.
 
-Ending frame, 12-15s:
-Hold on the most important face or proof object from this beat for a clean edit point. The final frame should make the next shot feel necessary.
+Style rules:
+Gritty cinematic 3D, glossy fruit heads, human-like streetwear bodies, expressive eyes, shallow depth of field, fast TikTok micro-drama cuts. Keep Bananita's hoodie, silver chain, ripped jeans, and anxious charcoal-banana face consistent. Do not generate readable document or screen text; add captions and proof labels in editing. No watermark, no platform UI.
 
-Camera and edit:
-Vertical 9:16, cinematic wealthy-family micro-drama lighting, shallow depth of field, hard cuts, no generated readable text, no watermark, no platform UI. Add legal words, captions, dates, and document labels later in editing.
+### Shot 12 | 0:55-1:00
 
-### Shot 10 | 2:15-2:30
+Beat: Receipt cliffhanger
+Narration: Before I could answer, Gary whispered, Bananita... that ticket was bought with her card.
+Caption chunks: HER CARD / WHO BOUGHT IT?
 
-Beat: Jade pendant hidden
-Narration: I kept my mother's jade pendant under the gown because it was the only thing that knew my real name.
-Text overlay: The jade knew my name.
+Video prompt:
+Use the Character Bible. Create a vertical 9:16 anthropomorphic fruit-character TikTok micro-drama clip, 4-6 seconds long.
 
-Full 15-second video prompt:
-Use the Word-Only Character Bible. All named characters are anthropomorphic fruit characters, not photoreal humans. If a beat mentions a face, hands, body, scrubs, gown, suit, or gesture, render the fruit-character version with human-like acting and clothing. Create one complete vertical 9:16 Duanju clip.
+Opening frame:
+Gary holds up a tiny receipt behind the news camera. Bananita turns slowly. Strawbella freezes. The ticket is still under Bananita's chain.
 
-Opening frame, 0-3s:
-Su Qing hides her mother's jade under the dress. Establish the location immediately and make the emotional power dynamic readable in the first second.
+Motion and camera:
+End on a three-way cliffhanger: Bananita shocked, Strawbella terrified, blank receipt held close to camera. Leave receipt text blank for overlay.
 
-Motion beats, 3-12s:
-Vertical 9:16 close-up of old green jade pendant hidden beneath ivory bridal bodice. Su Qing's fingers tense around it. Emotional restraint, realistic micro drama lighting. Stretch the action across the full clip with 2-3 Duanju micro-beats: a wide setup, a proof-object close-up, and a reaction close-up. Use restrained but expressive fruit-character facial acting, small hand gestures, and one clear emotional turn.
-
-Ending frame, 12-15s:
-Hold on the most important face or proof object from this beat for a clean edit point. The final frame should make the next shot feel necessary.
-
-Camera and edit:
-Vertical 9:16, cinematic wealthy-family micro-drama lighting, shallow depth of field, hard cuts, no generated readable text, no watermark, no platform UI. Add legal words, captions, dates, and document labels later in editing.
-
-### Shot 11 | 2:30-2:45
-
-Beat: Groom recognizes clue
-Narration: Lu Jincheng knew before the vows ended. His eyes stopped on my pendant.
-Text overlay: He recognized something.
-
-Full 15-second video prompt:
-Use the Word-Only Character Bible. All named characters are anthropomorphic fruit characters, not photoreal humans. If a beat mentions a face, hands, body, scrubs, gown, suit, or gesture, render the fruit-character version with human-like acting and clothing. Create one complete vertical 9:16 Duanju clip.
-
-Opening frame, 0-3s:
-Lu Jincheng sees Su Qing is not Su Man and notices the pendant. Establish the location immediately and make the emotional power dynamic readable in the first second.
-
-Motion beats, 3-12s:
-Vertical 9:16 wedding altar close-up. Lu Jincheng looks from Su Qing's face to the jade chain at her collar. His expression hardens into recognition, not romance. Guests blurred. Stretch the action across the full clip with 2-3 Duanju micro-beats: a wide setup, a proof-object close-up, and a reaction close-up. Use restrained but expressive fruit-character facial acting, small hand gestures, and one clear emotional turn.
-
-Ending frame, 12-15s:
-Hold on the most important face or proof object from this beat for a clean edit point. The final frame should make the next shot feel necessary.
-
-Camera and edit:
-Vertical 9:16, cinematic wealthy-family micro-drama lighting, shallow depth of field, hard cuts, no generated readable text, no watermark, no platform UI. Add legal words, captions, dates, and document labels later in editing.
-
-### Shot 12 | 2:45-3:00
-
-Beat: Ring like a file closing
-Narration: Then he put the ring on my finger like he was closing a file.
-Text overlay: Legal wife.
-
-Full 15-second video prompt:
-Use the Word-Only Character Bible. All named characters are anthropomorphic fruit characters, not photoreal humans. If a beat mentions a face, hands, body, scrubs, gown, suit, or gesture, render the fruit-character version with human-like acting and clothing. Create one complete vertical 9:16 Duanju clip.
-
-Opening frame, 0-3s:
-He places the ring anyway. Establish the location immediately and make the emotional power dynamic readable in the first second.
-
-Motion beats, 3-12s:
-Vertical 9:16 close-up ring placement. Lu Jincheng's hand places ring on Su Qing's finger. Su Qing's face in background, shocked but composed. Cold elegant wedding light. Stretch the action across the full clip with 2-3 Duanju micro-beats: a wide setup, a proof-object close-up, and a reaction close-up. Use restrained but expressive fruit-character facial acting, small hand gestures, and one clear emotional turn.
-
-Ending frame, 12-15s:
-Hold on the most important face or proof object from this beat for a clean edit point. The final frame should make the next shot feel necessary.
-
-Camera and edit:
-Vertical 9:16, cinematic wealthy-family micro-drama lighting, shallow depth of field, hard cuts, no generated readable text, no watermark, no platform UI. Add legal words, captions, dates, and document labels later in editing.
-
-### Shot 13 | 3:00-3:15
-
-Beat: Public shame
-Narration: My father did not defend me. Madam Zhao smiled because public shame was cheaper than a transfer agreement.
-Text overlay: They wanted me ashamed.
-
-Full 15-second video prompt:
-Use the Word-Only Character Bible. All named characters are anthropomorphic fruit characters, not photoreal humans. If a beat mentions a face, hands, body, scrubs, gown, suit, or gesture, render the fruit-character version with human-like acting and clothing. Create one complete vertical 9:16 Duanju clip.
-
-Opening frame, 0-3s:
-Guests laugh and record while Su Qing stands silent. Establish the location immediately and make the emotional power dynamic readable in the first second.
-
-Motion beats, 3-12s:
-Vertical 9:16 wedding guest reaction. Phones, whispers, Madam Zhao smiling, Su Zhen looking away, Su Qing alone in aisle. Hard Duanju cut energy. Stretch the action across the full clip with 2-3 Duanju micro-beats: a wide setup, a proof-object close-up, and a reaction close-up. Use restrained but expressive fruit-character facial acting, small hand gestures, and one clear emotional turn.
-
-Ending frame, 12-15s:
-Hold on the most important face or proof object from this beat for a clean edit point. The final frame should make the next shot feel necessary.
-
-Camera and edit:
-Vertical 9:16, cinematic wealthy-family micro-drama lighting, shallow depth of field, hard cuts, no generated readable text, no watermark, no platform UI. Add legal words, captions, dates, and document labels later in editing.
-
-### Shot 14 | 3:15-3:30
-
-Beat: Lu Jincheng walks away
-Narration: A legal marriage did not mean a real place beside him.
-Text overlay: Married. Alone.
-
-Full 15-second video prompt:
-Use the Word-Only Character Bible. All named characters are anthropomorphic fruit characters, not photoreal humans. If a beat mentions a face, hands, body, scrubs, gown, suit, or gesture, render the fruit-character version with human-like acting and clothing. Create one complete vertical 9:16 Duanju clip.
-
-Opening frame, 0-3s:
-The groom leaves without touching her. Establish the location immediately and make the emotional power dynamic readable in the first second.
-
-Motion beats, 3-12s:
-Vertical 9:16 post-ceremony ballroom. Lu Jincheng walks ahead, Su Qing trails behind in bridal gown, guests part around them. Lonely luxury, restrained sadness. Stretch the action across the full clip with 2-3 Duanju micro-beats: a wide setup, a proof-object close-up, and a reaction close-up. Use restrained but expressive fruit-character facial acting, small hand gestures, and one clear emotional turn.
-
-Ending frame, 12-15s:
-Hold on the most important face or proof object from this beat for a clean edit point. The final frame should make the next shot feel necessary.
-
-Camera and edit:
-Vertical 9:16, cinematic wealthy-family micro-drama lighting, shallow depth of field, hard cuts, no generated readable text, no watermark, no platform UI. Add legal words, captions, dates, and document labels later in editing.
-
-### Shot 15 | 3:30-3:45
-
-Beat: Side room
-Narration: The Lu mansion was quieter than the hospital, and somehow colder.
-Text overlay: Legal wife. Side room.
-
-Full 15-second video prompt:
-Use the Word-Only Character Bible. All named characters are anthropomorphic fruit characters, not photoreal humans. If a beat mentions a face, hands, body, scrubs, gown, suit, or gesture, render the fruit-character version with human-like acting and clothing. Create one complete vertical 9:16 Duanju clip.
-
-Opening frame, 0-3s:
-Su Qing is assigned a small room in the Lu mansion. Establish the location immediately and make the emotional power dynamic readable in the first second.
-
-Motion beats, 3-12s:
-Vertical 9:16 Lu mansion corridor at night. Housekeeper opens a small side bedroom, Su Qing holds wedding shoes, marble floor, dark wood doors, lonely rich-house atmosphere. Stretch the action across the full clip with 2-3 Duanju micro-beats: a wide setup, a proof-object close-up, and a reaction close-up. Use restrained but expressive fruit-character facial acting, small hand gestures, and one clear emotional turn.
-
-Ending frame, 12-15s:
-Hold on the most important face or proof object from this beat for a clean edit point. The final frame should make the next shot feel necessary.
-
-Camera and edit:
-Vertical 9:16, cinematic wealthy-family micro-drama lighting, shallow depth of field, hard cuts, no generated readable text, no watermark, no platform UI. Add legal words, captions, dates, and document labels later in editing.
-
-### Shot 16 | 3:45-4:00
-
-Beat: Forbidden west corridor
-Narration: I was told not to enter the west corridor, not to touch documents, and not to mistake this for belonging.
-Text overlay: Do not enter.
-
-Full 15-second video prompt:
-Use the Word-Only Character Bible. All named characters are anthropomorphic fruit characters, not photoreal humans. If a beat mentions a face, hands, body, scrubs, gown, suit, or gesture, render the fruit-character version with human-like acting and clothing. Create one complete vertical 9:16 Duanju clip.
-
-Opening frame, 0-3s:
-The housekeeper warns her away from family documents. Establish the location immediately and make the emotional power dynamic readable in the first second.
-
-Motion beats, 3-12s:
-Vertical 9:16 mansion corridor with locked west-wing door. Su Qing stands in bridal gown, housekeeper silhouette leaving. Suspenseful moonlit luxury. Stretch the action across the full clip with 2-3 Duanju micro-beats: a wide setup, a proof-object close-up, and a reaction close-up. Use restrained but expressive fruit-character facial acting, small hand gestures, and one clear emotional turn.
-
-Ending frame, 12-15s:
-Hold on the most important face or proof object from this beat for a clean edit point. The final frame should make the next shot feel necessary.
-
-Camera and edit:
-Vertical 9:16, cinematic wealthy-family micro-drama lighting, shallow depth of field, hard cuts, no generated readable text, no watermark, no platform UI. Add legal words, captions, dates, and document labels later in editing.
-
-### Shot 17 | 4:00-4:15
-
-Beat: Storage room photo
-Narration: I broke the first rule before midnight.
-Text overlay: My mother was here.
-
-Full 15-second video prompt:
-Use the Word-Only Character Bible. All named characters are anthropomorphic fruit characters, not photoreal humans. If a beat mentions a face, hands, body, scrubs, gown, suit, or gesture, render the fruit-character version with human-like acting and clothing. Create one complete vertical 9:16 Duanju clip.
-
-Opening frame, 0-3s:
-Su Qing opens a drawer and finds her mother's old photo. Establish the location immediately and make the emotional power dynamic readable in the first second.
-
-Motion beats, 3-12s:
-Vertical 9:16 dusty mansion storage room. Su Qing opens old drawer, finds a photo of her mother beside Lu Grandfather. Moonlight through blinds, close-up on photo. Stretch the action across the full clip with 2-3 Duanju micro-beats: a wide setup, a proof-object close-up, and a reaction close-up. Use restrained but expressive fruit-character facial acting, small hand gestures, and one clear emotional turn.
-
-Ending frame, 12-15s:
-Hold on the most important face or proof object from this beat for a clean edit point. The final frame should make the next shot feel necessary.
-
-Camera and edit:
-Vertical 9:16, cinematic wealthy-family micro-drama lighting, shallow depth of field, hard cuts, no generated readable text, no watermark, no platform UI. Add legal words, captions, dates, and document labels later in editing.
-
-### Shot 18 | 4:15-4:30
-
-Beat: Protect Su Qing
-Narration: On the back, in my mother's handwriting, were three words: protect Su Qing.
-Text overlay: Protect Su Qing.
-
-Full 15-second video prompt:
-Use the Word-Only Character Bible. All named characters are anthropomorphic fruit characters, not photoreal humans. If a beat mentions a face, hands, body, scrubs, gown, suit, or gesture, render the fruit-character version with human-like acting and clothing. Create one complete vertical 9:16 Duanju clip.
-
-Opening frame, 0-3s:
-She turns the photo and finds the note. Establish the location immediately and make the emotional power dynamic readable in the first second.
-
-Motion beats, 3-12s:
-Vertical 9:16 close-up of Su Qing holding old photo. Back of photo left blank for overlay: protect Su Qing. Her eyes shift from confusion to suspicion. Stretch the action across the full clip with 2-3 Duanju micro-beats: a wide setup, a proof-object close-up, and a reaction close-up. Use restrained but expressive fruit-character facial acting, small hand gestures, and one clear emotional turn.
-
-Ending frame, 12-15s:
-Hold on the most important face or proof object from this beat for a clean edit point. The final frame should make the next shot feel necessary.
-
-Camera and edit:
-Vertical 9:16, cinematic wealthy-family micro-drama lighting, shallow depth of field, hard cuts, no generated readable text, no watermark, no platform UI. Add legal words, captions, dates, and document labels later in editing.
-
-### Shot 19 | 4:30-4:45
-
-Beat: Hospital call
-Narration: At 1:06 a.m., the hospital called. The deposit had not arrived.
-Text overlay: Deposit not received.
-
-Full 15-second video prompt:
-Use the Word-Only Character Bible. All named characters are anthropomorphic fruit characters, not photoreal humans. If a beat mentions a face, hands, body, scrubs, gown, suit, or gesture, render the fruit-character version with human-like acting and clothing. Create one complete vertical 9:16 Duanju clip.
-
-Opening frame, 0-3s:
-Her phone rings in the Lu mansion. Establish the location immediately and make the emotional power dynamic readable in the first second.
-
-Motion beats, 3-12s:
-Vertical 9:16 night mansion bedroom. Su Qing answers phone in bridal gown, face lit by screen. Cold luxury room contrasts hospital urgency. Add call overlay in edit. Stretch the action across the full clip with 2-3 Duanju micro-beats: a wide setup, a proof-object close-up, and a reaction close-up. Use restrained but expressive fruit-character facial acting, small hand gestures, and one clear emotional turn.
-
-Ending frame, 12-15s:
-Hold on the most important face or proof object from this beat for a clean edit point. The final frame should make the next shot feel necessary.
-
-Camera and edit:
-Vertical 9:16, cinematic wealthy-family micro-drama lighting, shallow depth of field, hard cuts, no generated readable text, no watermark, no platform UI. Add legal words, captions, dates, and document labels later in editing.
-
-### Shot 20 | 4:45-5:00
-
-Beat: Back to hospital
-Narration: They had not bought my obedience. They had rented it for free.
-Text overlay: They lied.
-
-Full 15-second video prompt:
-Use the Word-Only Character Bible. All named characters are anthropomorphic fruit characters, not photoreal humans. If a beat mentions a face, hands, body, scrubs, gown, suit, or gesture, render the fruit-character version with human-like acting and clothing. Create one complete vertical 9:16 Duanju clip.
-
-Opening frame, 0-3s:
-She rushes to the payment desk in bridal coat. Establish the location immediately and make the emotional power dynamic readable in the first second.
-
-Motion beats, 3-12s:
-Vertical 9:16 hospital payment counter. Su Qing wears trench coat over wedding dress, clutches file stamped pending, anger replacing fear. Fluorescent realism. Stretch the action across the full clip with 2-3 Duanju micro-beats: a wide setup, a proof-object close-up, and a reaction close-up. Use restrained but expressive fruit-character facial acting, small hand gestures, and one clear emotional turn.
-
-Ending frame, 12-15s:
-Hold on the most important face or proof object from this beat for a clean edit point. The final frame should make the next shot feel necessary.
-
-Camera and edit:
-Vertical 9:16, cinematic wealthy-family micro-drama lighting, shallow depth of field, hard cuts, no generated readable text, no watermark, no platform UI. Add legal words, captions, dates, and document labels later in editing.
-
-### Shot 21 | 5:00-5:15
-
-Beat: Following father
-Narration: Desperate people forget quiet daughters have quiet footsteps.
-Text overlay: I followed them.
-
-Full 15-second video prompt:
-Use the Word-Only Character Bible. All named characters are anthropomorphic fruit characters, not photoreal humans. If a beat mentions a face, hands, body, scrubs, gown, suit, or gesture, render the fruit-character version with human-like acting and clothing. Create one complete vertical 9:16 Duanju clip.
-
-Opening frame, 0-3s:
-Su Qing follows Su Zhen through hotel service halls. Establish the location immediately and make the emotional power dynamic readable in the first second.
-
-Motion beats, 3-12s:
-Vertical 9:16 luxury hotel service corridor. Su Qing hides behind a door in bridal coat, watching Su Zhen and Madam Zhao enter a private hallway. Suspense. Stretch the action across the full clip with 2-3 Duanju micro-beats: a wide setup, a proof-object close-up, and a reaction close-up. Use restrained but expressive fruit-character facial acting, small hand gestures, and one clear emotional turn.
-
-Ending frame, 12-15s:
-Hold on the most important face or proof object from this beat for a clean edit point. The final frame should make the next shot feel necessary.
-
-Camera and edit:
-Vertical 9:16, cinematic wealthy-family micro-drama lighting, shallow depth of field, hard cuts, no generated readable text, no watermark, no platform UI. Add legal words, captions, dates, and document labels later in editing.
-
-### Shot 22 | 5:15-5:30
-
-Beat: Transfer document
-Narration: Behind the service doors, she held the page she had covered earlier.
-Text overlay: Trust transfer.
-
-Full 15-second video prompt:
-Use the Word-Only Character Bible. All named characters are anthropomorphic fruit characters, not photoreal humans. If a beat mentions a face, hands, body, scrubs, gown, suit, or gesture, render the fruit-character version with human-like acting and clothing. Create one complete vertical 9:16 Duanju clip.
-
-Opening frame, 0-3s:
-Madam Zhao reveals the hidden transfer agreement. Establish the location immediately and make the emotional power dynamic readable in the first second.
-
-Motion beats, 3-12s:
-Vertical 9:16 close-up document folder in Madam Zhao's hands, Su Zhen beside her, Su Qing secretly recording from shadow. Add transfer title in edit. Stretch the action across the full clip with 2-3 Duanju micro-beats: a wide setup, a proof-object close-up, and a reaction close-up. Use restrained but expressive fruit-character facial acting, small hand gestures, and one clear emotional turn.
-
-Ending frame, 12-15s:
-Hold on the most important face or proof object from this beat for a clean edit point. The final frame should make the next shot feel necessary.
-
-Camera and edit:
-Vertical 9:16, cinematic wealthy-family micro-drama lighting, shallow depth of field, hard cuts, no generated readable text, no watermark, no platform UI. Add legal words, captions, dates, and document labels later in editing.
-
-### Shot 23 | 5:30-5:45
-
-Beat: Recording phone
-Narration: I learned that survival did not mean silence. It meant documentation.
-Text overlay: Record everything.
-
-Full 15-second video prompt:
-Use the Word-Only Character Bible. All named characters are anthropomorphic fruit characters, not photoreal humans. If a beat mentions a face, hands, body, scrubs, gown, suit, or gesture, render the fruit-character version with human-like acting and clothing. Create one complete vertical 9:16 Duanju clip.
-
-Opening frame, 0-3s:
-Su Qing hides her phone in her sleeve. Establish the location immediately and make the emotional power dynamic readable in the first second.
-
-Motion beats, 3-12s:
-Vertical 9:16 close-up of Su Qing sliding phone into sleeve with recording light hidden, hallway reflected in metal door. Tense practical heroine energy. Stretch the action across the full clip with 2-3 Duanju micro-beats: a wide setup, a proof-object close-up, and a reaction close-up. Use restrained but expressive fruit-character facial acting, small hand gestures, and one clear emotional turn.
-
-Ending frame, 12-15s:
-Hold on the most important face or proof object from this beat for a clean edit point. The final frame should make the next shot feel necessary.
-
-Camera and edit:
-Vertical 9:16, cinematic wealthy-family micro-drama lighting, shallow depth of field, hard cuts, no generated readable text, no watermark, no platform UI. Add legal words, captions, dates, and document labels later in editing.
-
-### Shot 24 | 5:45-6:00
-
-Beat: Lu Jincheng covers escape
-Narration: Lu Jincheng saw me. Instead of exposing me, he covered my escape.
-Text overlay: He saw. He helped.
-
-Full 15-second video prompt:
-Use the Word-Only Character Bible. All named characters are anthropomorphic fruit characters, not photoreal humans. If a beat mentions a face, hands, body, scrubs, gown, suit, or gesture, render the fruit-character version with human-like acting and clothing. Create one complete vertical 9:16 Duanju clip.
-
-Opening frame, 0-3s:
-He sees her, then opens a loud security door. Establish the location immediately and make the emotional power dynamic readable in the first second.
-
-Motion beats, 3-12s:
-Vertical 9:16 hotel hallway. Lu Jincheng notices Su Qing hiding phone, then pushes security door open loudly while looking away. Su Qing escapes behind him. Stretch the action across the full clip with 2-3 Duanju micro-beats: a wide setup, a proof-object close-up, and a reaction close-up. Use restrained but expressive fruit-character facial acting, small hand gestures, and one clear emotional turn.
-
-Ending frame, 12-15s:
-Hold on the most important face or proof object from this beat for a clean edit point. The final frame should make the next shot feel necessary.
-
-Camera and edit:
-Vertical 9:16, cinematic wealthy-family micro-drama lighting, shallow depth of field, hard cuts, no generated readable text, no watermark, no platform UI. Add legal words, captions, dates, and document labels later in editing.
-
-### Shot 25 | 6:00-6:15
-
-Beat: Attorney in garage
-Narration: By dawn, Attorney He was waiting with my mother's trust file.
-Text overlay: Trust file.
-
-Full 15-second video prompt:
-Use the Word-Only Character Bible. All named characters are anthropomorphic fruit characters, not photoreal humans. If a beat mentions a face, hands, body, scrubs, gown, suit, or gesture, render the fruit-character version with human-like acting and clothing. Create one complete vertical 9:16 Duanju clip.
-
-Opening frame, 0-3s:
-Attorney He waits with a sealed envelope. Establish the location immediately and make the emotional power dynamic readable in the first second.
-
-Motion beats, 3-12s:
-Vertical 9:16 underground parking garage at dawn. Attorney He in gray suit hands sealed envelope to Su Qing wearing trench over bridal gown. Cool blue light. Stretch the action across the full clip with 2-3 Duanju micro-beats: a wide setup, a proof-object close-up, and a reaction close-up. Use restrained but expressive fruit-character facial acting, small hand gestures, and one clear emotional turn.
-
-Ending frame, 12-15s:
-Hold on the most important face or proof object from this beat for a clean edit point. The final frame should make the next shot feel necessary.
-
-Camera and edit:
-Vertical 9:16, cinematic wealthy-family micro-drama lighting, shallow depth of field, hard cuts, no generated readable text, no watermark, no platform UI. Add legal words, captions, dates, and document labels later in editing.
-
-### Shot 26 | 6:15-6:30
-
-Beat: Mother's defense
-Narration: The trust was not a gift. It was my mother's last defense.
-Text overlay: My mother's defense.
-
-Full 15-second video prompt:
-Use the Word-Only Character Bible. All named characters are anthropomorphic fruit characters, not photoreal humans. If a beat mentions a face, hands, body, scrubs, gown, suit, or gesture, render the fruit-character version with human-like acting and clothing. Create one complete vertical 9:16 Duanju clip.
-
-Opening frame, 0-3s:
-Su Qing opens the file on the car hood. Establish the location immediately and make the emotional power dynamic readable in the first second.
-
-Motion beats, 3-12s:
-Vertical 9:16 close-up trust documents spread across car hood. Su Qing's hands tremble. Dawn light, legal reveal mood. Leave text blank for overlays. Stretch the action across the full clip with 2-3 Duanju micro-beats: a wide setup, a proof-object close-up, and a reaction close-up. Use restrained but expressive fruit-character facial acting, small hand gestures, and one clear emotional turn.
-
-Ending frame, 12-15s:
-Hold on the most important face or proof object from this beat for a clean edit point. The final frame should make the next shot feel necessary.
-
-Camera and edit:
-Vertical 9:16, cinematic wealthy-family micro-drama lighting, shallow depth of field, hard cuts, no generated readable text, no watermark, no platform UI. Add legal words, captions, dates, and document labels later in editing.
-
-### Shot 27 | 6:30-6:45
-
-Beat: Thirty percent shares
-Narration: If Su Qing legally married the Lu heir, thirty percent of Su Group returned to her.
-Text overlay: 30 percent activated.
-
-Full 15-second video prompt:
-Use the Word-Only Character Bible. All named characters are anthropomorphic fruit characters, not photoreal humans. If a beat mentions a face, hands, body, scrubs, gown, suit, or gesture, render the fruit-character version with human-like acting and clothing. Create one complete vertical 9:16 Duanju clip.
-
-Opening frame, 0-3s:
-The legal clause activates under Su Qing's real name. Establish the location immediately and make the emotional power dynamic readable in the first second.
-
-Motion beats, 3-12s:
-Vertical 9:16 macro trust clause, Su Qing's name highlighted by later overlay, Attorney He pointing calmly. Emotional realization, no fake text. Stretch the action across the full clip with 2-3 Duanju micro-beats: a wide setup, a proof-object close-up, and a reaction close-up. Use restrained but expressive fruit-character facial acting, small hand gestures, and one clear emotional turn.
-
-Ending frame, 12-15s:
-Hold on the most important face or proof object from this beat for a clean edit point. The final frame should make the next shot feel necessary.
-
-Camera and edit:
-Vertical 9:16, cinematic wealthy-family micro-drama lighting, shallow depth of field, hard cuts, no generated readable text, no watermark, no platform UI. Add legal words, captions, dates, and document labels later in editing.
-
-### Shot 28 | 6:45-7:00
-
-Beat: Not Su Man
-Narration: Not Su Man. Not Madam Zhao. Not my father. Me.
-Text overlay: The trust named me.
-
-Full 15-second video prompt:
-Use the Word-Only Character Bible. All named characters are anthropomorphic fruit characters, not photoreal humans. If a beat mentions a face, hands, body, scrubs, gown, suit, or gesture, render the fruit-character version with human-like acting and clothing. Create one complete vertical 9:16 Duanju clip.
-
-Opening frame, 0-3s:
-Su Qing realizes why they needed her signature. Establish the location immediately and make the emotional power dynamic readable in the first second.
-
-Motion beats, 3-12s:
-Vertical 9:16 Su Qing close-up in parking garage, tears held back, eyes hardening into resolve. Trust papers in foreground, cinematic dawn. Stretch the action across the full clip with 2-3 Duanju micro-beats: a wide setup, a proof-object close-up, and a reaction close-up. Use restrained but expressive fruit-character facial acting, small hand gestures, and one clear emotional turn.
-
-Ending frame, 12-15s:
-Hold on the most important face or proof object from this beat for a clean edit point. The final frame should make the next shot feel necessary.
-
-Camera and edit:
-Vertical 9:16, cinematic wealthy-family micro-drama lighting, shallow depth of field, hard cuts, no generated readable text, no watermark, no platform UI. Add legal words, captions, dates, and document labels later in editing.
-
-### Shot 29 | 7:00-7:15
-
-Beat: Pendant camera
-Narration: I put a camera inside my jade clasp.
-Text overlay: Evidence first.
-
-Full 15-second video prompt:
-Use the Word-Only Character Bible. All named characters are anthropomorphic fruit characters, not photoreal humans. If a beat mentions a face, hands, body, scrubs, gown, suit, or gesture, render the fruit-character version with human-like acting and clothing. Create one complete vertical 9:16 Duanju clip.
-
-Opening frame, 0-3s:
-She hides a camera in the jade clasp. Establish the location immediately and make the emotional power dynamic readable in the first second.
-
-Motion beats, 3-12s:
-Vertical 9:16 preparation close-up. Su Qing opens jade pendant, inserts tiny camera, copies documents with phone. Determined hands, clean suspense. Stretch the action across the full clip with 2-3 Duanju micro-beats: a wide setup, a proof-object close-up, and a reaction close-up. Use restrained but expressive fruit-character facial acting, small hand gestures, and one clear emotional turn.
-
-Ending frame, 12-15s:
-Hold on the most important face or proof object from this beat for a clean edit point. The final frame should make the next shot feel necessary.
-
-Camera and edit:
-Vertical 9:16, cinematic wealthy-family micro-drama lighting, shallow depth of field, hard cuts, no generated readable text, no watermark, no platform UI. Add legal words, captions, dates, and document labels later in editing.
-
-### Shot 30 | 7:15-7:30
-
-Beat: Black dress transformation
-Narration: If they wanted a quiet bride, they should not have chosen a nurse trained to read small print.
-Text overlay: Tears later.
-
-Full 15-second video prompt:
-Use the Word-Only Character Bible. All named characters are anthropomorphic fruit characters, not photoreal humans. If a beat mentions a face, hands, body, scrubs, gown, suit, or gesture, render the fruit-character version with human-like acting and clothing. Create one complete vertical 9:16 Duanju clip.
-
-Opening frame, 0-3s:
-She changes into a simple black evening dress. Establish the location immediately and make the emotional power dynamic readable in the first second.
-
-Motion beats, 3-12s:
-Vertical 9:16 mirror shot. Su Qing in simple black evening dress fastens jade pendant, wedding dress hanging behind her. Calm strategic transformation. Stretch the action across the full clip with 2-3 Duanju micro-beats: a wide setup, a proof-object close-up, and a reaction close-up. Use restrained but expressive fruit-character facial acting, small hand gestures, and one clear emotional turn.
-
-Ending frame, 12-15s:
-Hold on the most important face or proof object from this beat for a clean edit point. The final frame should make the next shot feel necessary.
-
-Camera and edit:
-Vertical 9:16, cinematic wealthy-family micro-drama lighting, shallow depth of field, hard cuts, no generated readable text, no watermark, no platform UI. Add legal words, captions, dates, and document labels later in editing.
-
-### Shot 31 | 7:30-7:45
-
-Beat: Gala execution
-Narration: That night, Madam Zhao chose a charity gala for my execution.
-Text overlay: Public apology.
-
-Full 15-second video prompt:
-Use the Word-Only Character Bible. All named characters are anthropomorphic fruit characters, not photoreal humans. If a beat mentions a face, hands, body, scrubs, gown, suit, or gesture, render the fruit-character version with human-like acting and clothing. Create one complete vertical 9:16 Duanju clip.
-
-Opening frame, 0-3s:
-Madam Zhao speaks at the charity gala. Establish the location immediately and make the emotional power dynamic readable in the first second.
-
-Motion beats, 3-12s:
-Vertical 9:16 corporate charity gala stage. Madam Zhao at microphone, wealthy guests, LED screen, Su Qing below stage in black dress. Public exposure setup. Stretch the action across the full clip with 2-3 Duanju micro-beats: a wide setup, a proof-object close-up, and a reaction close-up. Use restrained but expressive fruit-character facial acting, small hand gestures, and one clear emotional turn.
-
-Ending frame, 12-15s:
-Hold on the most important face or proof object from this beat for a clean edit point. The final frame should make the next shot feel necessary.
-
-Camera and edit:
-Vertical 9:16, cinematic wealthy-family micro-drama lighting, shallow depth of field, hard cuts, no generated readable text, no watermark, no platform UI. Add legal words, captions, dates, and document labels later in editing.
-
-### Shot 32 | 7:45-8:00
-
-Beat: Hidden page under apology
-Narration: The apology page was on top. The transfer page was under it.
-Text overlay: Hidden transfer.
-
-Full 15-second video prompt:
-Use the Word-Only Character Bible. All named characters are anthropomorphic fruit characters, not photoreal humans. If a beat mentions a face, hands, body, scrubs, gown, suit, or gesture, render the fruit-character version with human-like acting and clothing. Create one complete vertical 9:16 Duanju clip.
-
-Opening frame, 0-3s:
-The apology paper hides the transfer page. Establish the location immediately and make the emotional power dynamic readable in the first second.
-
-Motion beats, 3-12s:
-Vertical 9:16 gala podium close-up. Stack of papers, black pen, Madam Zhao's hand pushing documents toward Su Qing. Two pages slightly stuck at corner. Stretch the action across the full clip with 2-3 Duanju micro-beats: a wide setup, a proof-object close-up, and a reaction close-up. Use restrained but expressive fruit-character facial acting, small hand gestures, and one clear emotional turn.
-
-Ending frame, 12-15s:
-Hold on the most important face or proof object from this beat for a clean edit point. The final frame should make the next shot feel necessary.
-
-Camera and edit:
-Vertical 9:16, cinematic wealthy-family micro-drama lighting, shallow depth of field, hard cuts, no generated readable text, no watermark, no platform UI. Add legal words, captions, dates, and document labels later in editing.
-
-### Shot 33 | 8:00-8:15
-
-Beat: Glue dot clue
-Narration: I saw the glue dot because hospital consent forms taught me where desperate families hide tricks.
-Text overlay: Two pages. One trap.
-
-Full 15-second video prompt:
-Use the Word-Only Character Bible. All named characters are anthropomorphic fruit characters, not photoreal humans. If a beat mentions a face, hands, body, scrubs, gown, suit, or gesture, render the fruit-character version with human-like acting and clothing. Create one complete vertical 9:16 Duanju clip.
-
-Opening frame, 0-3s:
-Su Qing notices the two pages are stuck. Establish the location immediately and make the emotional power dynamic readable in the first second.
-
-Motion beats, 3-12s:
-Vertical 9:16 macro shot of paper corner with subtle glue dot, Su Qing's eyes narrowing in background. Suspenseful document detail. Stretch the action across the full clip with 2-3 Duanju micro-beats: a wide setup, a proof-object close-up, and a reaction close-up. Use restrained but expressive fruit-character facial acting, small hand gestures, and one clear emotional turn.
-
-Ending frame, 12-15s:
-Hold on the most important face or proof object from this beat for a clean edit point. The final frame should make the next shot feel necessary.
-
-Camera and edit:
-Vertical 9:16, cinematic wealthy-family micro-drama lighting, shallow depth of field, hard cuts, no generated readable text, no watermark, no platform UI. Add legal words, captions, dates, and document labels later in editing.
-
-### Shot 34 | 8:15-8:30
-
-Beat: Signs only one page
-Narration: I signed one page, and only one page.
-Text overlay: I signed one page only.
-
-Full 15-second video prompt:
-Use the Word-Only Character Bible. All named characters are anthropomorphic fruit characters, not photoreal humans. If a beat mentions a face, hands, body, scrubs, gown, suit, or gesture, render the fruit-character version with human-like acting and clothing. Create one complete vertical 9:16 Duanju clip.
-
-Opening frame, 0-3s:
-She signs the top page, then separates the transfer page. Establish the location immediately and make the emotional power dynamic readable in the first second.
-
-Motion beats, 3-12s:
-Vertical 9:16 gala stage. Su Qing signs top page, separates hidden transfer page, lifts it toward cameras. Madam Zhao's smile freezes. Crowd silent. Stretch the action across the full clip with 2-3 Duanju micro-beats: a wide setup, a proof-object close-up, and a reaction close-up. Use restrained but expressive fruit-character facial acting, small hand gestures, and one clear emotional turn.
-
-Ending frame, 12-15s:
-Hold on the most important face or proof object from this beat for a clean edit point. The final frame should make the next shot feel necessary.
-
-Camera and edit:
-Vertical 9:16, cinematic wealthy-family micro-drama lighting, shallow depth of field, hard cuts, no generated readable text, no watermark, no platform UI. Add legal words, captions, dates, and document labels later in editing.
-
-### Shot 35 | 8:30-8:45
-
-Beat: Evidence plays
-Narration: My pendant camera did not need to be dramatic. It only needed to be clear.
-Text overlay: Recorded evidence.
-
-Full 15-second video prompt:
-Use the Word-Only Character Bible. All named characters are anthropomorphic fruit characters, not photoreal humans. If a beat mentions a face, hands, body, scrubs, gown, suit, or gesture, render the fruit-character version with human-like acting and clothing. Create one complete vertical 9:16 Duanju clip.
-
-Opening frame, 0-3s:
-The LED screen shows the hallway recording. Establish the location immediately and make the emotional power dynamic readable in the first second.
-
-Motion beats, 3-12s:
-Vertical 9:16 gala LED screen plays surveillance-style hallway footage of Madam Zhao and Su Zhen. Real Madam Zhao panics on stage. Add timestamp in edit. Stretch the action across the full clip with 2-3 Duanju micro-beats: a wide setup, a proof-object close-up, and a reaction close-up. Use restrained but expressive fruit-character facial acting, small hand gestures, and one clear emotional turn.
-
-Ending frame, 12-15s:
-Hold on the most important face or proof object from this beat for a clean edit point. The final frame should make the next shot feel necessary.
-
-Camera and edit:
-Vertical 9:16, cinematic wealthy-family micro-drama lighting, shallow depth of field, hard cuts, no generated readable text, no watermark, no platform UI. Add legal words, captions, dates, and document labels later in editing.
-
-### Shot 36 | 8:45-9:00
-
-Beat: Father trapped
-Narration: My father stood beside her on the screen, nodding like a man selling his daughter for the second time.
-Text overlay: He sold me twice.
-
-Full 15-second video prompt:
-Use the Word-Only Character Bible. All named characters are anthropomorphic fruit characters, not photoreal humans. If a beat mentions a face, hands, body, scrubs, gown, suit, or gesture, render the fruit-character version with human-like acting and clothing. Create one complete vertical 9:16 Duanju clip.
-
-Opening frame, 0-3s:
-Su Zhen is exposed in front of guests. Establish the location immediately and make the emotional power dynamic readable in the first second.
-
-Motion beats, 3-12s:
-Vertical 9:16 reaction shot. Su Zhen sweating under gala lights, guests turn coldly, Su Qing remains still. Wealthy-family public downfall. Stretch the action across the full clip with 2-3 Duanju micro-beats: a wide setup, a proof-object close-up, and a reaction close-up. Use restrained but expressive fruit-character facial acting, small hand gestures, and one clear emotional turn.
-
-Ending frame, 12-15s:
-Hold on the most important face or proof object from this beat for a clean edit point. The final frame should make the next shot feel necessary.
-
-Camera and edit:
-Vertical 9:16, cinematic wealthy-family micro-drama lighting, shallow depth of field, hard cuts, no generated readable text, no watermark, no platform UI. Add legal words, captions, dates, and document labels later in editing.
-
-### Shot 37 | 9:00-9:15
-
-Beat: Attorney enters
-Narration: Attorney He arrived exactly when he said he would.
-Text overlay: The trust enters.
-
-Full 15-second video prompt:
-Use the Word-Only Character Bible. All named characters are anthropomorphic fruit characters, not photoreal humans. If a beat mentions a face, hands, body, scrubs, gown, suit, or gesture, render the fruit-character version with human-like acting and clothing. Create one complete vertical 9:16 Duanju clip.
-
-Opening frame, 0-3s:
-Attorney He arrives with the trust file. Establish the location immediately and make the emotional power dynamic readable in the first second.
-
-Motion beats, 3-12s:
-Vertical 9:16 gala entrance. Attorney He walks in carrying leather case. Security steps forward. Lu Jincheng raises one hand to stop them. Crowd parts. Stretch the action across the full clip with 2-3 Duanju micro-beats: a wide setup, a proof-object close-up, and a reaction close-up. Use restrained but expressive fruit-character facial acting, small hand gestures, and one clear emotional turn.
-
-Ending frame, 12-15s:
-Hold on the most important face or proof object from this beat for a clean edit point. The final frame should make the next shot feel necessary.
-
-Camera and edit:
-Vertical 9:16, cinematic wealthy-family micro-drama lighting, shallow depth of field, hard cuts, no generated readable text, no watermark, no platform UI. Add legal words, captions, dates, and document labels later in editing.
-
-### Shot 38 | 9:15-9:30
-
-Beat: Legal wife reveal
-Narration: The marriage certificate did not say Su Man. It said Su Qing.
-Text overlay: Legal wife: Su Qing.
-
-Full 15-second video prompt:
-Use the Word-Only Character Bible. All named characters are anthropomorphic fruit characters, not photoreal humans. If a beat mentions a face, hands, body, scrubs, gown, suit, or gesture, render the fruit-character version with human-like acting and clothing. Create one complete vertical 9:16 Duanju clip.
-
-Opening frame, 0-3s:
-The marriage certificate and trust clause confirm Su Qing. Establish the location immediately and make the emotional power dynamic readable in the first second.
-
-Motion beats, 3-12s:
-Vertical 9:16 gala podium legal reveal. Attorney He presents marriage certificate and trust clause, Su Qing's name added later as overlay. Lu Jincheng stands beside her. Stretch the action across the full clip with 2-3 Duanju micro-beats: a wide setup, a proof-object close-up, and a reaction close-up. Use restrained but expressive fruit-character facial acting, small hand gestures, and one clear emotional turn.
-
-Ending frame, 12-15s:
-Hold on the most important face or proof object from this beat for a clean edit point. The final frame should make the next shot feel necessary.
-
-Camera and edit:
-Vertical 9:16, cinematic wealthy-family micro-drama lighting, shallow depth of field, hard cuts, no generated readable text, no watermark, no platform UI. Add legal words, captions, dates, and document labels later in editing.
-
-### Shot 39 | 9:30-9:45
-
-Beat: Su Man returns pregnant
-Narration: Then the doors opened. Su Man returned wearing red, carrying the only accusation that could still poison my marriage.
-Text overlay: She came back pregnant.
-
-Full 15-second video prompt:
-Use the Word-Only Character Bible. All named characters are anthropomorphic fruit characters, not photoreal humans. If a beat mentions a face, hands, body, scrubs, gown, suit, or gesture, render the fruit-character version with human-like acting and clothing. Create one complete vertical 9:16 Duanju clip.
-
-Opening frame, 0-3s:
-Su Man enters in red with ultrasound envelope. Establish the location immediately and make the emotional power dynamic readable in the first second.
-
-Motion beats, 3-12s:
-Vertical 9:16 gala doors swing open. Su Man in red designer dress holds ultrasound envelope, smug expression, guests and reporters turn. Cliffhanger energy. Stretch the action across the full clip with 2-3 Duanju micro-beats: a wide setup, a proof-object close-up, and a reaction close-up. Use restrained but expressive fruit-character facial acting, small hand gestures, and one clear emotional turn.
-
-Ending frame, 12-15s:
-Hold on the most important face or proof object from this beat for a clean edit point. The final frame should make the next shot feel necessary.
-
-Camera and edit:
-Vertical 9:16, cinematic wealthy-family micro-drama lighting, shallow depth of field, hard cuts, no generated readable text, no watermark, no platform UI. Add legal words, captions, dates, and document labels later in editing.
-
-### Shot 40 | 9:45-10:00
-
-Beat: DNA report
-Narration: The father was not Lu Jincheng. It was Lu Mingxuan. That was when I understood this marriage had pulled me into two family wars.
-Text overlay: Father: Lu Mingxuan. Part 2.
-
-Full 15-second video prompt:
-Use the Word-Only Character Bible. All named characters are anthropomorphic fruit characters, not photoreal humans. If a beat mentions a face, hands, body, scrubs, gown, suit, or gesture, render the fruit-character version with human-like acting and clothing. Create one complete vertical 9:16 Duanju clip.
-
-Opening frame, 0-3s:
-Lu Jincheng gives Su Qing the DNA report naming Lu Mingxuan. Establish the location immediately and make the emotional power dynamic readable in the first second.
-
-Motion beats, 3-12s:
-Vertical 9:16 final cliffhanger. Lu Jincheng hands Su Qing DNA report; she opens it, shocked but controlled. Cutaway composition shows Lu Mingxuan smiling from second row. Leave report text blank for overlay. Stretch the action across the full clip with 2-3 Duanju micro-beats: a wide setup, a proof-object close-up, and a reaction close-up. Use restrained but expressive fruit-character facial acting, small hand gestures, and one clear emotional turn.
-
-Ending frame, 12-15s:
-Hold on the most important face or proof object from this beat for a clean edit point. The final frame should make the next shot feel necessary.
-
-Camera and edit:
-Vertical 9:16, cinematic wealthy-family micro-drama lighting, shallow depth of field, hard cuts, no generated readable text, no watermark, no platform UI. Add legal words, captions, dates, and document labels later in editing.
+Style rules:
+Gritty cinematic 3D, glossy fruit heads, human-like streetwear bodies, expressive eyes, shallow depth of field, fast TikTok micro-drama cuts. Keep Bananita's hoodie, silver chain, ripped jeans, and anxious charcoal-banana face consistent. Do not generate readable document or screen text; add captions and proof labels in editing. No watermark, no platform UI.

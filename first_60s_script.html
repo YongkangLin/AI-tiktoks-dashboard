@@ -3,16 +3,17 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>The Substitute Bride Contract - Prompt</title>
+  <title>60-Second Fruit Drama Prompt Pack</title>
   <style>
     :root {
       --ink: #17191f;
-      --muted: #5e6672;
+      --muted: #5f6670;
       --line: #d9dde4;
-      --paper: #f6f5f2;
+      --paper: #f5f4ef;
       --panel: #ffffff;
-      --red: #b9263e;
-      --blue: #234f75;
+      --gold: #b97a19;
+      --red: #b82f46;
+      --green: #2f7a4f;
       --shadow: 0 12px 28px rgba(20, 23, 31, .08);
     }
     * { box-sizing: border-box; }
@@ -22,20 +23,33 @@
       background: var(--paper);
       font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     }
-    .wrap { width: min(1040px, calc(100% - 32px)); margin: 0 auto; }
-    header { padding: 30px 0 20px; border-bottom: 1px solid var(--line); background: #fff; }
+    .wrap { width: min(1060px, calc(100% - 32px)); margin: 0 auto; }
+    header { padding: 30px 0 22px; border-bottom: 1px solid var(--line); background: #fff; }
     main { padding: 22px 0 42px; }
     h1 { margin: 0 0 10px; font-size: clamp(34px, 6vw, 58px); line-height: 1; letter-spacing: 0; }
     h2 { margin: 0 0 14px; font-size: 26px; letter-spacing: 0; }
     h3 { margin: 0 0 8px; font-size: 18px; letter-spacing: 0; }
-    p, li { line-height: 1.55; }
-    a { color: var(--blue); font-weight: 800; }
+    p, li, td, th { line-height: 1.55; }
+    a { color: var(--green); font-weight: 800; }
     pre {
       margin: 0;
       white-space: pre-wrap;
       overflow-wrap: anywhere;
       font: 14px/1.55 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
       color: #20242b;
+    }
+    table { width: 100%; border-collapse: collapse; }
+    th, td {
+      padding: 10px 8px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+    th {
+      width: 24%;
+      color: var(--muted);
+      font-size: 12px;
+      text-transform: uppercase;
     }
     .eyebrow {
       margin-bottom: 8px;
@@ -45,7 +59,7 @@
       text-transform: uppercase;
       letter-spacing: .04em;
     }
-    .lead { margin: 0; max-width: 760px; color: var(--muted); font-size: 18px; }
+    .lead { margin: 0; max-width: 820px; color: var(--muted); font-size: 18px; }
     .panel {
       margin-bottom: 18px;
       padding: 20px;
@@ -77,80 +91,45 @@
       grid-template-columns: repeat(2, minmax(0, 1fr));
       gap: 14px;
     }
-    .ref-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-      gap: 12px;
-    }
-    .ref-card {
-      overflow: hidden;
-      border: 1px solid var(--line);
-      border-radius: 8px;
-      background: #fff;
-    }
-    .ref-card img {
-      display: block;
-      width: 100%;
-      aspect-ratio: 1 / 1;
-      object-fit: cover;
-      background: #111;
-    }
-    .ref-card p {
-      margin: 0;
-      padding: 9px 10px 11px;
-      color: var(--muted);
-      font-size: 13px;
-    }
-    .image-card {
-      display: grid;
-      gap: 12px;
-      padding: 16px;
-      border: 1px solid var(--line);
-      border-radius: 8px;
-      background: #fff;
-    }
     .shot-card {
       display: grid;
-      grid-template-columns: 150px minmax(0, 1fr);
+      grid-template-columns: 135px minmax(0, 1fr);
       gap: 14px;
       padding: 16px;
       margin-bottom: 14px;
       border: 1px solid var(--line);
-      border-left: 6px solid var(--red);
+      border-left: 6px solid var(--gold);
       border-radius: 8px;
       background: #fff;
     }
-    .shot-card:nth-child(2n) { border-left-color: var(--blue); }
+    .shot-card:nth-child(2n) { border-left-color: var(--red); }
     .time {
       color: var(--red);
       font-weight: 900;
       font-size: 17px;
     }
-    .slot {
-      display: grid;
-      min-height: 190px;
-      place-items: center;
-      border: 1px dashed #c7cdd5;
-      border-radius: 8px;
-      background:
-        linear-gradient(135deg, rgba(185, 38, 62, .10), rgba(35, 79, 117, .10)),
-        #f7f8f8;
+    .pill {
+      display: inline-block;
+      margin: 4px 6px 4px 0;
+      padding: 4px 8px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: #f8f8f5;
       color: var(--muted);
-      text-align: center;
-      padding: 18px;
+      font-size: 12px;
       font-weight: 800;
+      text-transform: uppercase;
     }
     .note {
       padding: 14px 16px;
-      border-left: 5px solid var(--red);
+      border-left: 5px solid var(--gold);
       background: #fff;
       border-radius: 8px;
       color: var(--muted);
     }
     footer { padding: 24px 0 34px; color: var(--muted); border-top: 1px solid var(--line); }
     @media (max-width: 760px) {
-      .grid { grid-template-columns: 1fr; }
-      .shot-card { grid-template-columns: 1fr; }
+      .grid, .shot-card { grid-template-columns: 1fr; }
       .prompt-head { flex-direction: column; align-items: stretch; }
       .copy { width: 100%; }
     }
@@ -159,161 +138,162 @@
 <body>
   <header>
     <div class="wrap">
-      <div class="eyebrow">10-minute Duanju narrator video</div>
-      <h1>The Substitute Bride Contract</h1>
-      <p class="lead">Word-only production dashboard: full plot prompt, written character bible, starting and ending frame descriptions, and expanded 15-second multi-shot prompts.</p>
+      <div class="eyebrow">60-second fruit drama format</div>
+      <h1>Bananita's Eviction Ticket</h1>
+      <p class="lead">A word-only prompt dashboard for making one-minute anthropomorphic fruit videos like the MOV references: gritty, fast-captioned, character-consistent, and built around a poor-underdog money reversal.</p>
     </div>
   </header>
 
   <main class="wrap">
     <section class="panel">
-      <div class="prompt-head">
-        <div>
-          <h2>Word-Only Character Bible</h2>
-          <p class="lead">Use these written designs for consistency. Do not attach or rely on image references.</p>
-        </div>
-        <button class="copy" type="button" data-copy-target="characterBible">Copy bible</button>
-      </div>
-      <pre id="characterBible">Visual world:
-Anthropomorphic fruit-character Chinese Duanju. The characters have expressive fruit heads, human-like bodies, premium wealthy-family styling, and emotional micro-drama acting. Make them charming and readable, not mascot-flat and not photoreal human. Keep the same fruit species, clothing, jewelry, scale, and color palette in every shot.
-
-Su Qing:
-Strawberry heroine, 24, night-shift nurse. Soft red strawberry head with tiny seed texture, leafy green crown tucked under hair/veil styling, large green eyes, gentle but exhausted expression. Petite human-like body. Outfits: pale blue nurse scrubs, oversized ivory bridal gown, trench coat over gown, simple black gala dress. Always wears a small old green jade pendant.
-
-Lu Jincheng:
-Tall banana CEO, 30, cold billionaire groom. Smooth golden banana head, sharp dark brows, controlled gaze, athletic human-like body, black tailored wedding suit or black gala suit, sharp watch. He rarely smiles; his silence should feel strategic.
-
-Madam Zhao:
-Pineapple stepmother. Golden pineapple head, sharp leafy crown, emerald silk qipao, pearl necklace and bracelet. Polished smile, predatory eyes, elegant hand gestures. She hides threats behind manners.
-
-Su Man:
-Glossy red apple socialite. Red designer dress, diamond earrings, perfect makeup, smug expression, graceful but poisonous entrance energy. Carries an ultrasound envelope in the finale.
-
-Su Zhen:
-Pear father in a dark suit. Soft pear-shaped head, tired eyes, weak posture, avoids eye contact when betraying Su Qing.
-
-Attorney He:
-Lychee lawyer in a gray suit. Pale lychee head with subtle texture, calm expression, leather case, precise professional gestures.
-
-Lu Mingxuan:
-Older dark-plum Lu family elder. Deep purple plum head, silver leaf-like hair accent, navy suit, faint smile from the second row. He should look like he planned the final twist.
-
-Proof objects:
-Green jade pendant, covered contract clause, unpaid hospital deposit notice, mother's trust file, hidden transfer page, gala LED evidence video, blank DNA report for later overlay.
-
-Text rule:
-Do not generate readable legal text inside the image/video. Leave documents blank and add all captions, clauses, names, dates, and report labels in editing.</pre>
+      <h2>Reference Pattern</h2>
+      <table>
+        <tbody>
+          <tr><th>Length</th><td>64-66 seconds. Treat 60 seconds as the target and leave a few seconds for TikTok outro or loop padding.</td></tr>
+          <tr><th>Shot rhythm</th><td>Fast micro-scenes, usually 3-6 seconds each. The clip should feel like a chain of visual proof beats, not one long scene.</td></tr>
+          <tr><th>Caption style</th><td>Huge white all-caps captions, 1-3 words at a time, often slangy: CUH, BRUV, AIN'T, NAH, F**K, POOR GUY. Captions land like punchlines.</td></tr>
+          <tr><th>Story engine</th><td>Poverty pressure, insult, tiny choice, miracle proof object, public reversal, then a final "wait, what?" cliffhanger.</td></tr>
+          <tr><th>Character engine</th><td>Same lead fruit character across the whole minute. Outfit, chain, face shape, body scale, and expression style must stay locked.</td></tr>
+          <tr><th>Visual world</th><td>Gritty apartment, convenience store, eviction door, pawn counter, news van, rich rival mansion. Glossy fruit heads, human-like hands and bodies, dramatic 3D lighting.</td></tr>
+        </tbody>
+      </table>
     </section>
 
     <section class="panel">
       <div class="prompt-head">
         <div>
-          <h2>Starting And Ending Frames</h2>
-          <p class="lead">Text descriptions only. Use these as written bookends for the first and final generated clips.</p>
+          <h2>Character Bible</h2>
+          <p class="lead">Use this to keep the minute-long episode consistent.</p>
         </div>
+        <button class="copy" type="button" data-copy-target="characterBible">Copy bible</button>
       </div>
-      <div class="grid" id="frameGrid"></div>
+      <pre id="characterBible">Visual style:
+Anthropomorphic fruit-character TikTok micro drama. Glossy expressive fruit heads, human-like bodies, urban streetwear, exaggerated eyes, gritty rooms, cinematic 3D lighting. Serious emotional acting with absurd characters. Do not make it cute mascot comedy.
+
+Bananita:
+Charcoal-black banana underdog, early 20s, slim human-like body, anxious big eyes, tired eyelids, black hoodie with no readable logo, ripped dark jeans, chunky silver chain, cheap sneakers. He is broke but not stupid. Keep the same hoodie, chain, jeans, and face shape in every shot.
+
+Strawbella:
+Red strawberry girlfriend, sharp lashes, black crop top, black leggings, hoop earrings, suspicious expression that can switch into fake sweetness. She loves status and hates being poor. Keep her strawberry seed texture and leafy crown visible.
+
+Cherry Flex:
+Rich red cherry rival, muscular human-like body, black designer T-shirt, gold chains, luxury belt, smug grin. He represents the mansion life Strawbella wants.
+
+Grape Gary:
+Purple grape convenience-store clerk, tired eyes, green store vest, sarcastic grin. He throws away the winning ticket, then panics when it scans.
+
+Officer Plum:
+Purple plum eviction officer in a dark uniform, round face, clipboard, stiff posture. He is not evil; he is just enforcing the notice.
+
+Proof objects:
+Five-dollar bill, milk carton, scratched lottery ticket, scanner screen, eviction notice, news camera, Cherry Flex's cash offer, purchase receipt.
+
+Caption rule:
+Use huge white all-caps captions in the lower middle. One to three words per caption. Add captions in editing; do not ask the image/video model to generate readable text inside the scene.</pre>
     </section>
 
     <section class="panel">
       <div class="prompt-head">
         <div>
           <h2>Master Video Prompt</h2>
-          <p class="lead">Paste this into the video/story generator.</p>
+          <p class="lead">Paste this into the generator for the whole one-minute video.</p>
         </div>
         <button class="copy" type="button" data-copy-target="masterPrompt">Copy prompt</button>
       </div>
-      <pre id="masterPrompt">Create a 10-minute vertical 9:16 anthropomorphic fruit-character Chinese Duanju-style micro drama called "The Substitute Bride Contract."
+      <pre id="masterPrompt">Create a 60-second vertical 9:16 anthropomorphic fruit-character TikTok micro drama called "Bananita's Eviction Ticket."
 
-Format:
-- First-person narration from the main character, Su Qing.
-- Do not rely on characters having long conversations.
-- The narrator carries the story; visuals show emotional reactions, proof objects, documents, and reversals.
-- Tone: wealthy-family melodrama, betrayal, contract marriage, hidden inheritance, public humiliation reversal.
-- Character style: anthropomorphic fruit characters with expressive fruit heads and human-like bodies. Serious Duanju acting, not parody mascot comedy. Use the Word-Only Character Bible for every shot.
-- Visual style: cinematic Chinese micro drama with fruit-character casting, luxury wedding ballroom, hospital night corridor, wealthy mansion, corporate charity gala, close-up emotional acting, hard Duanju cuts, clear proof objects, shallow depth of field.
-- Text rule: do not generate readable text inside documents or screens. Leave documents blank and add captions, legal clauses, names, and dates in editing.
+Style:
+Use gritty, cinematic 3D fruit characters with human-like bodies, expressive eyes, streetwear, dramatic lighting, and fast TikTok micro-drama cuts. The tone is sad, funny, and tense at the same time. It should feel like a poor-underdog drama with absurd fruit characters, not a bright cartoon.
 
-Story:
-Su Qing is a strawberry heroine and 24-year-old night-shift nurse. Her younger brother needs an urgent transplant deposit before sunrise. Her pear father Su Zhen and pineapple stepmother Madam Zhao force her to replace her runaway red-apple stepsister Su Man at a billionaire wedding. They promise to pay the surgery deposit if Su Qing wears Su Man's wedding dress for one day.
+Script format:
+First-person narration from Bananita. No long conversations. Let the narrator carry the story while the visuals show proof objects, insults, reactions, and reversals. Captions should be huge white all-caps words, one to three words at a time, synced to the narration.
 
-At the altar, cold banana CEO Lu Jincheng immediately realizes Su Qing is not Su Man. He notices Su Qing's old jade pendant but still completes the marriage. Wealthy fruit guests humiliate Su Qing as the poor substitute bride. After the wedding, Su Qing learns the surgery money was never paid.
+Plot:
+Bananita is broke, holding his last five-dollar bill while Strawbella tells him not to come home broke. Rent is due, his little brother needs milk, and Officer Plum is already preparing an eviction notice. At the convenience store, Grape Gary mocks Bananita and tosses him a scratched lottery ticket as trash. Bananita scans it anyway. The scanner freezes: one million dollars. He runs home, but Strawbella is standing with Cherry Flex, calling Bananita a poor guy. Bananita hides the ticket under his silver chain until the news van arrives to confirm him as the winner. Cherry Flex offers him five hundred dollars to disappear. Strawbella suddenly acts sweet again. At the final second, Grape Gary whispers that the ticket was bought with Strawbella's card.
 
-Su Qing finds an old photo linking her dead mother to the Lu family. She follows her father and stepmother and discovers their real plan: after the wedding, they want her to sign away her mother's trust shares. Lychee lawyer Attorney He reveals the truth: Su Qing's mother left a trust that activates only if Su Qing legally marries the Lu heir under her real name. The marriage gives Su Qing control of 30 percent of Su Group.
+Characters:
+Use the Character Bible exactly. Bananita is the recurring lead. Strawbella is the betrayal/love-interest character. Cherry Flex is the rich rival. Grape Gary is the clerk who creates the cliffhanger. Officer Plum creates the eviction pressure.
 
-Su Qing gathers evidence with a hidden camera in her jade pendant. At a charity gala, Madam Zhao tries to make Su Qing sign a public apology with a hidden transfer page underneath. Su Qing signs only one page, exposes the hidden transfer, and plays the recording on the gala LED screen. Attorney He enters with the trust file. Lu Jincheng stands beside Su Qing and reveals the covered clause always named Su Qing, not Su Man.
+Ending:
+Do not resolve the ticket ownership. End on the receipt reveal and Bananita's shocked face. The final caption is: WHO BOUGHT IT?
 
-Final cliffhanger:
-Su Man returns in a red dress holding an ultrasound envelope, claiming she is pregnant. Lu Jincheng calmly hands Su Qing a sealed DNA report. Su Qing opens it. The father is not Lu Jincheng. The report says: Lu Mingxuan. Cut to dark-plum Lu Mingxuan smiling from the second row. End with: "That was when I understood this marriage had not pulled me into one family war. It had pulled me into two."
-
-Scene-by-scene structure:
-Scene 01, 0:00-0:30, wedding hook. Start at the luxury wedding altar. Strawberry Su Qing stands alone in an oversized ivory gown. Banana Lu Jincheng looks cold. Fruit guests whisper and raise phones. Narration reveals she is wearing her stepsister's dress. Caption: I married him as my sister's replacement.
-
-Scene 02, 0:30-1:00, hospital pressure. Cut to 12 hours earlier. Su Qing in nurse scrubs waits outside surgery with her brother's transplant file. Her phone keeps ringing from the Su family. Show unpaid hospital deposit notice. Narration explains the surgery deadline before sunrise.
-
-Scene 03, 1:00-1:30, the family offer. Su Qing enters the Su mansion. Pineapple Madam Zhao slides a bridal veil and contract across the table. Pear Su Zhen avoids eye contact. Narration explains red-apple Su Man ran away and the family needs a substitute bride.
-
-Scene 04, 1:30-2:00, contract trap. Close-up of the one-year marriage contract. Madam Zhao's pearl bracelet covers one clause. Su Qing signs because she thinks the surgery deposit will be paid. Show her hand hesitating over the pen.
-
-Scene 05, 2:00-2:30, erased identity. Bridal dressing room. Assistants remove Su Qing's nurse uniform and force her into Su Man's gown. Show the jade pendant hidden under the dress. Narration says the pendant is the only thing that knows her real name.
-
-Scene 06, 2:30-3:00, cold groom recognizes the pendant. Back at the altar. Lu Jincheng notices Su Qing is not Su Man. His eyes stop on the jade pendant chain. He still places the ring on her finger. The mood should feel like he recognizes a clue, not romance.
-
-Scene 07, 3:00-3:30, public humiliation. Guests record Su Qing. Madam Zhao smiles. Su Zhen looks away. Narration says shame is being used to make her easier to control. Show phones, whispers, and Su Qing staying silent.
-
-Scene 08, 3:30-4:00, side-room wife. Lu mansion at night. Su Qing is sent to a small side room, not the master bedroom. A housekeeper leaves her in a cold corridor. Narration says legal marriage does not mean real belonging.
-
-Scene 09, 4:00-4:30, west corridor discovery. Su Qing breaks the rule and enters the west corridor. In a storage room, she finds an old photo of her mother with Lu Grandfather. Back of photo says: protect Su Qing. Add this text in edit.
-
-Scene 10, 4:30-5:00, deposit lie. Hospital calls. The surgery deposit was never paid. Show Su Qing in bridal coat at the hospital payment desk. The file is stamped pending. Narration turns from fear to anger.
-
-Scene 11, 5:00-5:30, hidden transfer plan. Su Qing follows her father and Madam Zhao to a hotel service hallway. She secretly records them discussing a transfer document. Show the hidden page title: transfer of trust beneficiary rights. Add text in edit.
-
-Scene 12, 5:30-6:00, Lu Jincheng silently helps. Lu Jincheng sees Su Qing hiding the recording phone. Instead of exposing her, he opens a security door loudly so she can escape. Narration says cold men are easy to hate, useful ones are harder.
-
-Scene 13, 6:00-6:30, attorney appears. Dawn parking garage. Attorney He gives Su Qing her mother's sealed trust file. Su Qing wears a trench coat over the wedding dress. Mood: secret legal rescue, not romance.
-
-Scene 14, 6:30-7:00, trust reveal. Close-up of trust documents. The key clause says Su Qing gains 30 percent of Su Group if she legally marries the Lu heir under her real name. Add clean overlays for Su Qing, legal wife, 30 percent shares.
-
-Scene 15, 7:00-7:30, evidence preparation. Su Qing hides a tiny camera in the jade pendant, copies documents, and keeps the unsigned transfer page. Narration: evidence first, tears later.
-
-Scene 16, 7:30-8:00, gala trap. Charity gala stage. Madam Zhao publicly presents Su Qing as a shameless substitute bride and pushes an apology paper toward her. The transfer page is hidden underneath.
-
-Scene 17, 8:00-8:30, signature reversal. Su Qing sees the two pages stuck together. She signs only the top apology page with her real name, separates the hidden transfer page, and lifts it to the cameras. Crowd goes silent.
-
-Scene 18, 8:30-9:00, evidence on screen. The gala LED screen plays the pendant-camera recording of Madam Zhao and Su Zhen discussing the transfer. Madam Zhao panics. Su Zhen looks trapped. Su Qing stands still.
-
-Scene 19, 9:00-9:30, legal wife reveal. Attorney He enters with the trust file. Lu Jincheng stops security and stands beside Su Qing. The marriage certificate and trust clause confirm the legal wife is Su Qing. Lu Jincheng reveals the covered clause always named Su Qing.
-
-Scene 20, 9:30-10:00, pregnancy and DNA cliffhanger. Red-apple Su Man enters in red holding an ultrasound envelope. Guests turn. Lu Jincheng gives Su Qing a sealed DNA report. The father line says Lu Mingxuan, not Lu Jincheng. Cut to dark-plum Lu Mingxuan smiling from the second row. End on Su Qing realizing she is inside two family wars.
-
-Required proof objects:
-1. Su Qing's jade pendant.
-2. The covered contract clause.
-3. The unpaid hospital deposit notice.
-4. The mother's trust file.
-5. The hidden transfer page.
-6. The gala LED evidence video.
-7. The DNA report naming Lu Mingxuan.
-
-Editing:
-- Use short captions only for key turns.
-- Add all legal text, dates, and report names in edit, not generated inside the image.
-- Music: low piano for humiliation, silence on document reveals, rising strings for the trust reveal, bass hit on the DNA cliffhanger.
-- Loop cut: cut from the DNA report reveal back to Su Qing standing alone at the wedding altar.</pre>
+Avoid:
+No photoreal humans, no long dialogue scene, no random extra main characters, no readable generated text on documents or screens, no platform UI, no watermark, no copied TikTok username.</pre>
     </section>
 
     <section class="panel">
       <div class="prompt-head">
         <div>
-          <h2>Multi-Shot Prompt Pack</h2>
-          <p class="lead">40 shots, each built as a full 15-second clip with opening composition, motion beats, ending frame, narration, and overlay.</p>
+          <h2>Exact Narration</h2>
+          <p class="lead">About 145 words, timed for a one-minute AI voiceover.</p>
+        </div>
+        <button class="copy" type="button" data-copy-target="narrationScript">Copy script</button>
+      </div>
+      <pre id="narrationScript">She told me, "If you come back broke, don't come home."
+
+I had five dollars, one eviction notice, and my little brother asking for milk.
+
+At the store, Grape Gary laughed and said, "Cuh, that ain't even enough."
+
+Then he tossed a scratched ticket at me like trash.
+
+I scanned it because broke people check everything.
+
+The machine froze.
+
+One million dollars.
+
+I ran home with the ticket under my chain.
+
+Officer Plum was already at the door.
+
+Strawbella stood beside Cherry Flex and called me a poor guy.
+
+So I stayed quiet.
+
+Then the news van pulled up.
+
+Cherry offered me five hundred dollars to disappear.
+
+Strawbella suddenly called me baby again.
+
+Before I could answer, Gary whispered, "Bananita... that ticket was bought with her card."</pre>
+    </section>
+
+    <section class="panel">
+      <h2>Caption Tape</h2>
+      <p class="lead">Use these as big on-screen caption chunks, not subtitles. They should hit in rhythm with the voice.</p>
+      <div>
+        <span class="pill">DON'T</span>
+        <span class="pill">COME BACK</span>
+        <span class="pill">BROKE</span>
+        <span class="pill">$5 LEFT</span>
+        <span class="pill">MILK OR RENT</span>
+        <span class="pill">AIN'T ENOUGH</span>
+        <span class="pill">TRASH TICKET</span>
+        <span class="pill">SCAN IT CUH</span>
+        <span class="pill">$1,000,000</span>
+        <span class="pill">EVICTED TODAY</span>
+        <span class="pill">POOR GUY</span>
+        <span class="pill">NEWS VAN</span>
+        <span class="pill">TAKE $500</span>
+        <span class="pill">BABY?</span>
+        <span class="pill">HER CARD</span>
+        <span class="pill">WHO BOUGHT IT?</span>
+      </div>
+    </section>
+
+    <section class="panel">
+      <div class="prompt-head">
+        <div>
+          <h2>12-Shot 60s Prompt Pack</h2>
+          <p class="lead">Generate each shot as a 4-6 second clip. Assemble them into one minute with the narration and caption tape.</p>
         </div>
       </div>
       <div id="shotGrid"></div>
     </section>
 
-    <p class="note">This page is intentionally word-only. Use the written character bible for consistency, and add legal text overlays later in editing.</p>
+    <p class="note">The key shift from the old dashboard: this is not a long-form plot. It is a one-minute fruit-character reversal story with fast captions, fewer characters, stronger proof objects, and one cliffhanger.</p>
   </main>
 
   <footer>
@@ -321,52 +301,19 @@ Editing:
   </footer>
 
   <script>
-    const framePrompts = [
-      ["Starting Frame", "Vertical 9:16 anthropomorphic fruit-character Chinese Duanju opening frame description. Su Qing, the strawberry nurse heroine, stands alone at a luxury wedding altar in an oversized ivory bridal gown, her green jade pendant visible under the veil. Lu Jincheng, the tall banana CEO groom in a black wedding suit, faces her with a cold unreadable stare. Pineapple Madam Zhao smiles from the front row, pear Su Zhen avoids eye contact, wealthy fruit guests raise phones, and an empty front-row chair signals the missing real bride. Mood: public humiliation, expensive silence, betrayal. No generated readable text, no watermark, no platform UI."],
-      ["Ending Frame", "Vertical 9:16 anthropomorphic fruit-character Chinese Duanju ending frame description. At a corporate charity gala, strawberry Su Qing stands on stage in a simple black evening dress holding a blank DNA report with controlled shock. Banana Lu Jincheng stands beside her like a cold shield. Red-apple Su Man clutches an ultrasound envelope near the ballroom doors. Dark-plum Lu Mingxuan sits in the second row smiling faintly like he planned everything. Mood: family-war cliffhanger, bass-hit reveal. Leave report text blank for later overlay: Father: Lu Mingxuan. No generated readable text, no watermark, no platform UI."]
-    ];
-
-    const shotPrompts = [
-      ["Shot 01", "0:00-0:15", "Wedding altar cold open", "Su Qing stands alone in the wrong wedding dress while guests whisper.", "On my wedding day, my husband looked past me at the empty chair where my stepsister should have been.", "I married him as my sister's replacement.", "Vertical 9:16 cinematic Chinese Duanju wedding altar. Su Qing in oversized ivory bridal gown stands alone under crystal chandeliers. Lu Jincheng faces her coldly. Empty front-row chair visible. Guests whisper in soft blur. Slow push-in on Su Qing's controlled humiliation."],
-      ["Shot 02", "0:15-0:30", "Phones rise", "Guests raise phones and record the substitute bride.", "Their phones lifted before the vows ended. The poor daughter had replaced the real bride, and everyone wanted proof.", "The substitute bride.", "Vertical 9:16 luxury wedding ballroom reaction shot. Wealthy guests raise phones, Su Qing stands still in the aisle, Madam Zhao smiles from the front row. Handheld reality-drama push-in, public shame, no platform UI."],
-      ["Shot 03", "0:30-0:45", "Hospital twelve hours earlier", "Su Qing waits outside surgery in nurse scrubs.", "Twelve hours earlier, I was not a bride. I was a nurse counting the seconds outside an operating room.", "12 hours earlier.", "Vertical 9:16 rainy hospital night corridor. Su Qing in pale blue scrubs clutches a transplant file outside surgery. Fluorescent lights, empty chairs, rain on window, exhausted eyes, urgent quiet mood."],
-      ["Shot 04", "0:45-1:00", "Deposit deadline", "Her phone shows calls from the Su family while the hospital file says pending.", "My brother's deposit was due before sunrise. The hospital did not care that I had worked sixteen nights in a row.", "Deposit due before sunrise.", "Vertical 9:16 close-up hospital payment desk. Su Qing's hand holds phone with repeated family calls, medical file stamped pending, cold fluorescent light, tense document detail, add payment text in edit."],
-      ["Shot 05", "1:00-1:15", "The veil on the table", "Madam Zhao slides a bridal veil across the mansion table.", "Madam Zhao did not ask how my brother was. She only pushed a veil toward me.", "Wear the dress.", "Vertical 9:16 wealthy mansion table confrontation. Madam Zhao in emerald qipao slides an ivory bridal veil toward Su Qing in scrubs. Su Zhen stands behind avoiding eye contact. Cold luxury lighting."],
-      ["Shot 06", "1:15-1:30", "The bargain", "Su Qing sees the wedding dress, hospital bill, and contract together.", "If I wore Su Man's dress for one day, my brother would live. She made it sound like mercy.", "Save your brother.", "Vertical 9:16 mansion close-up montage: wedding dress bag, hospital bill, black pen, contract folder. Su Qing's tense hands enter frame. Wealthy-family melodrama, shallow depth of field."],
-      ["Shot 07", "1:30-1:45", "Covered clause", "The stepmother's pearl bracelet hides a clause on the contract.", "The contract was short because cruelty does not need many pages. I read every line except the one she covered.", "She covered one clause.", "Vertical 9:16 macro legal contract on dark table. Pearl bracelet covers one clause, Su Qing's pen hovers. Realistic hand acting. Leave document text blank for later overlay."],
-      ["Shot 08", "1:45-2:00", "Signature under pressure", "Su Qing signs with fear, not consent.", "I signed because fear can make a signature look voluntary.", "One signature. One trap.", "Vertical 9:16 close-up of Su Qing signing contract, her hand shaking slightly. Madam Zhao's polished nails rest near the paper. Cold mansion light, tense silence."],
-      ["Shot 09", "2:00-2:15", "Scrubs removed", "Assistants strip away Su Qing's nurse identity.", "They erased me carefully. My scrubs went into a trash bag.", "They erased me.", "Vertical 9:16 bridal dressing room. Assistants pull pale blue scrubs away and replace them with ivory bridal fabric. Luxury mirrors, cold beauty lighting, Su Qing's face reflected, controlled humiliation."],
-      ["Shot 10", "2:15-2:30", "Jade pendant hidden", "Su Qing hides her mother's jade under the dress.", "I kept my mother's jade pendant under the gown because it was the only thing that knew my real name.", "The jade knew my name.", "Vertical 9:16 close-up of old green jade pendant hidden beneath ivory bridal bodice. Su Qing's fingers tense around it. Emotional restraint, realistic micro drama lighting."],
-      ["Shot 11", "2:30-2:45", "Groom recognizes clue", "Lu Jincheng sees Su Qing is not Su Man and notices the pendant.", "Lu Jincheng knew before the vows ended. His eyes stopped on my pendant.", "He recognized something.", "Vertical 9:16 wedding altar close-up. Lu Jincheng looks from Su Qing's face to the jade chain at her collar. His expression hardens into recognition, not romance. Guests blurred."],
-      ["Shot 12", "2:45-3:00", "Ring like a file closing", "He places the ring anyway.", "Then he put the ring on my finger like he was closing a file.", "Legal wife.", "Vertical 9:16 close-up ring placement. Lu Jincheng's hand places ring on Su Qing's finger. Su Qing's face in background, shocked but composed. Cold elegant wedding light."],
-      ["Shot 13", "3:00-3:15", "Public shame", "Guests laugh and record while Su Qing stands silent.", "My father did not defend me. Madam Zhao smiled because public shame was cheaper than a transfer agreement.", "They wanted me ashamed.", "Vertical 9:16 wedding guest reaction. Phones, whispers, Madam Zhao smiling, Su Zhen looking away, Su Qing alone in aisle. Hard Duanju cut energy."],
-      ["Shot 14", "3:15-3:30", "Lu Jincheng walks away", "The groom leaves without touching her.", "A legal marriage did not mean a real place beside him.", "Married. Alone.", "Vertical 9:16 post-ceremony ballroom. Lu Jincheng walks ahead, Su Qing trails behind in bridal gown, guests part around them. Lonely luxury, restrained sadness."],
-      ["Shot 15", "3:30-3:45", "Side room", "Su Qing is assigned a small room in the Lu mansion.", "The Lu mansion was quieter than the hospital, and somehow colder.", "Legal wife. Side room.", "Vertical 9:16 Lu mansion corridor at night. Housekeeper opens a small side bedroom, Su Qing holds wedding shoes, marble floor, dark wood doors, lonely rich-house atmosphere."],
-      ["Shot 16", "3:45-4:00", "Forbidden west corridor", "The housekeeper warns her away from family documents.", "I was told not to enter the west corridor, not to touch documents, and not to mistake this for belonging.", "Do not enter.", "Vertical 9:16 mansion corridor with locked west-wing door. Su Qing stands in bridal gown, housekeeper silhouette leaving. Suspenseful moonlit luxury."],
-      ["Shot 17", "4:00-4:15", "Storage room photo", "Su Qing opens a drawer and finds her mother's old photo.", "I broke the first rule before midnight.", "My mother was here.", "Vertical 9:16 dusty mansion storage room. Su Qing opens old drawer, finds a photo of her mother beside Lu Grandfather. Moonlight through blinds, close-up on photo."],
-      ["Shot 18", "4:15-4:30", "Protect Su Qing", "She turns the photo and finds the note.", "On the back, in my mother's handwriting, were three words: protect Su Qing.", "Protect Su Qing.", "Vertical 9:16 close-up of Su Qing holding old photo. Back of photo left blank for overlay: protect Su Qing. Her eyes shift from confusion to suspicion."],
-      ["Shot 19", "4:30-4:45", "Hospital call", "Her phone rings in the Lu mansion.", "At 1:06 a.m., the hospital called. The deposit had not arrived.", "Deposit not received.", "Vertical 9:16 night mansion bedroom. Su Qing answers phone in bridal gown, face lit by screen. Cold luxury room contrasts hospital urgency. Add call overlay in edit."],
-      ["Shot 20", "4:45-5:00", "Back to hospital", "She rushes to the payment desk in bridal coat.", "They had not bought my obedience. They had rented it for free.", "They lied.", "Vertical 9:16 hospital payment counter. Su Qing wears trench coat over wedding dress, clutches file stamped pending, anger replacing fear. Fluorescent realism."],
-      ["Shot 21", "5:00-5:15", "Following father", "Su Qing follows Su Zhen through hotel service halls.", "Desperate people forget quiet daughters have quiet footsteps.", "I followed them.", "Vertical 9:16 luxury hotel service corridor. Su Qing hides behind a door in bridal coat, watching Su Zhen and Madam Zhao enter a private hallway. Suspense."],
-      ["Shot 22", "5:15-5:30", "Transfer document", "Madam Zhao reveals the hidden transfer agreement.", "Behind the service doors, she held the page she had covered earlier.", "Trust transfer.", "Vertical 9:16 close-up document folder in Madam Zhao's hands, Su Zhen beside her, Su Qing secretly recording from shadow. Add transfer title in edit."],
-      ["Shot 23", "5:30-5:45", "Recording phone", "Su Qing hides her phone in her sleeve.", "I learned that survival did not mean silence. It meant documentation.", "Record everything.", "Vertical 9:16 close-up of Su Qing sliding phone into sleeve with recording light hidden, hallway reflected in metal door. Tense practical heroine energy."],
-      ["Shot 24", "5:45-6:00", "Lu Jincheng covers escape", "He sees her, then opens a loud security door.", "Lu Jincheng saw me. Instead of exposing me, he covered my escape.", "He saw. He helped.", "Vertical 9:16 hotel hallway. Lu Jincheng notices Su Qing hiding phone, then pushes security door open loudly while looking away. Su Qing escapes behind him."],
-      ["Shot 25", "6:00-6:15", "Attorney in garage", "Attorney He waits with a sealed envelope.", "By dawn, Attorney He was waiting with my mother's trust file.", "Trust file.", "Vertical 9:16 underground parking garage at dawn. Attorney He in gray suit hands sealed envelope to Su Qing wearing trench over bridal gown. Cool blue light."],
-      ["Shot 26", "6:15-6:30", "Mother's defense", "Su Qing opens the file on the car hood.", "The trust was not a gift. It was my mother's last defense.", "My mother's defense.", "Vertical 9:16 close-up trust documents spread across car hood. Su Qing's hands tremble. Dawn light, legal reveal mood. Leave text blank for overlays."],
-      ["Shot 27", "6:30-6:45", "Thirty percent shares", "The legal clause activates under Su Qing's real name.", "If Su Qing legally married the Lu heir, thirty percent of Su Group returned to her.", "30 percent activated.", "Vertical 9:16 macro trust clause, Su Qing's name highlighted by later overlay, Attorney He pointing calmly. Emotional realization, no fake text."],
-      ["Shot 28", "6:45-7:00", "Not Su Man", "Su Qing realizes why they needed her signature.", "Not Su Man. Not Madam Zhao. Not my father. Me.", "The trust named me.", "Vertical 9:16 Su Qing close-up in parking garage, tears held back, eyes hardening into resolve. Trust papers in foreground, cinematic dawn."],
-      ["Shot 29", "7:00-7:15", "Pendant camera", "She hides a camera in the jade clasp.", "I put a camera inside my jade clasp.", "Evidence first.", "Vertical 9:16 preparation close-up. Su Qing opens jade pendant, inserts tiny camera, copies documents with phone. Determined hands, clean suspense."],
-      ["Shot 30", "7:15-7:30", "Black dress transformation", "She changes into a simple black evening dress.", "If they wanted a quiet bride, they should not have chosen a nurse trained to read small print.", "Tears later.", "Vertical 9:16 mirror shot. Su Qing in simple black evening dress fastens jade pendant, wedding dress hanging behind her. Calm strategic transformation."],
-      ["Shot 31", "7:30-7:45", "Gala execution", "Madam Zhao speaks at the charity gala.", "That night, Madam Zhao chose a charity gala for my execution.", "Public apology.", "Vertical 9:16 corporate charity gala stage. Madam Zhao at microphone, wealthy guests, LED screen, Su Qing below stage in black dress. Public exposure setup."],
-      ["Shot 32", "7:45-8:00", "Hidden page under apology", "The apology paper hides the transfer page.", "The apology page was on top. The transfer page was under it.", "Hidden transfer.", "Vertical 9:16 gala podium close-up. Stack of papers, black pen, Madam Zhao's hand pushing documents toward Su Qing. Two pages slightly stuck at corner."],
-      ["Shot 33", "8:00-8:15", "Glue dot clue", "Su Qing notices the two pages are stuck.", "I saw the glue dot because hospital consent forms taught me where desperate families hide tricks.", "Two pages. One trap.", "Vertical 9:16 macro shot of paper corner with subtle glue dot, Su Qing's eyes narrowing in background. Suspenseful document detail."],
-      ["Shot 34", "8:15-8:30", "Signs only one page", "She signs the top page, then separates the transfer page.", "I signed one page, and only one page.", "I signed one page only.", "Vertical 9:16 gala stage. Su Qing signs top page, separates hidden transfer page, lifts it toward cameras. Madam Zhao's smile freezes. Crowd silent."],
-      ["Shot 35", "8:30-8:45", "Evidence plays", "The LED screen shows the hallway recording.", "My pendant camera did not need to be dramatic. It only needed to be clear.", "Recorded evidence.", "Vertical 9:16 gala LED screen plays surveillance-style hallway footage of Madam Zhao and Su Zhen. Real Madam Zhao panics on stage. Add timestamp in edit."],
-      ["Shot 36", "8:45-9:00", "Father trapped", "Su Zhen is exposed in front of guests.", "My father stood beside her on the screen, nodding like a man selling his daughter for the second time.", "He sold me twice.", "Vertical 9:16 reaction shot. Su Zhen sweating under gala lights, guests turn coldly, Su Qing remains still. Wealthy-family public downfall."],
-      ["Shot 37", "9:00-9:15", "Attorney enters", "Attorney He arrives with the trust file.", "Attorney He arrived exactly when he said he would.", "The trust enters.", "Vertical 9:16 gala entrance. Attorney He walks in carrying leather case. Security steps forward. Lu Jincheng raises one hand to stop them. Crowd parts."],
-      ["Shot 38", "9:15-9:30", "Legal wife reveal", "The marriage certificate and trust clause confirm Su Qing.", "The marriage certificate did not say Su Man. It said Su Qing.", "Legal wife: Su Qing.", "Vertical 9:16 gala podium legal reveal. Attorney He presents marriage certificate and trust clause, Su Qing's name added later as overlay. Lu Jincheng stands beside her."],
-      ["Shot 39", "9:30-9:45", "Su Man returns pregnant", "Su Man enters in red with ultrasound envelope.", "Then the doors opened. Su Man returned wearing red, carrying the only accusation that could still poison my marriage.", "She came back pregnant.", "Vertical 9:16 gala doors swing open. Su Man in red designer dress holds ultrasound envelope, smug expression, guests and reporters turn. Cliffhanger energy."],
-      ["Shot 40", "9:45-10:00", "DNA report", "Lu Jincheng gives Su Qing the DNA report naming Lu Mingxuan.", "The father was not Lu Jincheng. It was Lu Mingxuan. That was when I understood this marriage had pulled me into two family wars.", "Father: Lu Mingxuan. Part 2.", "Vertical 9:16 final cliffhanger. Lu Jincheng hands Su Qing DNA report; she opens it, shocked but controlled. Cutaway composition shows Lu Mingxuan smiling from second row. Leave report text blank for overlay."]
+    const shots = [
+      ["Shot 01", "0:00-0:05", "Doorway insult", "Start in a dirty apartment doorway. Bananita stands half inside the room holding a crumpled five-dollar bill. Strawbella blocks the doorway with crossed arms, angry and embarrassed by him.", "She told me, if you come back broke, don't come home.", "DON'T / COME BACK / BROKE", "Camera starts tight on Bananita's anxious eyes, widens to show Strawbella and the messy apartment. End on the door almost closing in his face."],
+      ["Shot 02", "0:05-0:10", "Milk pressure", "Bananita walks through a wet street toward a convenience store. He looks at a milk carton display through the glass, then down at the five-dollar bill in his hand.", "I had five dollars, one eviction notice, and my little brother asking for milk.", "$5 LEFT / MILK OR RENT", "Use rain reflections, neon store lights, and a lonely over-the-shoulder push-in. End on the five-dollar bill beside the milk carton."],
+      ["Shot 03", "0:10-0:15", "Clerk mocks him", "Inside the store, Grape Gary leans over the counter with a bored grin. Bananita places the five-dollar bill down. The milk, lottery display, and scanner are visible.", "At the store, Grape Gary laughed and said, cuh, that ain't even enough.", "AIN'T ENOUGH", "Cut from Gary's smirk to Bananita's embarrassed face, then to the bill on the counter. Keep the convenience store cramped and fluorescent."],
+      ["Shot 04", "0:15-0:20", "Trash ticket", "Gary sweeps a scratched lottery ticket off the counter toward Bananita like it is garbage. Bananita catches it against his hoodie.", "Then he tossed a scratched ticket at me like trash.", "TRASH TICKET", "Follow the ticket in slow motion for one second, then snap back to Bananita staring at it. End with the ticket in his hand."],
+      ["Shot 05", "0:20-0:25", "Scanner freeze", "Bananita slides the ticket under the lottery scanner. Gary stops smiling. The scanner glows, but leave the screen blank for editing.", "I scanned it because broke people check everything.", "SCAN IT CUH", "Use a tight hand-and-scanner shot, then a reaction close-up. Add the scanner result later in edit; do not generate readable screen text."],
+      ["Shot 06", "0:25-0:30", "Million-dollar proof", "The store goes silent. Bananita's eyes widen. Gary's mouth drops open. The ticket shakes in Bananita's hand.", "The machine froze. One million dollars.", "$1,000,000", "Start on the blank scanner screen, cut to Gary panicking, then push into Bananita's stunned face. End on the ticket tucked under Bananita's silver chain."],
+      ["Shot 07", "0:30-0:35", "Eviction at home", "Bananita runs back through the apartment hallway. Officer Plum stands at the door with a clipboard and eviction notice. Strawbella watches from inside.", "I ran home with the ticket under my chain. Officer Plum was already at the door.", "EVICTED TODAY", "Use handheld urgency. Show the notice as blank paper for later overlay. End with Bananita stopping short at the doorway."],
+      ["Shot 08", "0:35-0:40", "Rich rival reveal", "Cherry Flex steps out from behind Strawbella wearing gold chains. He puts an arm around her while Bananita stands in the hall, still hiding the ticket.", "Strawbella stood beside Cherry Flex and called me a poor guy.", "POOR GUY", "Frame Cherry and Strawbella inside the warm apartment light, Bananita in cold hallway light. End on Strawbella's ashamed-but-smug expression."],
+      ["Shot 09", "0:40-0:45", "Silent winner", "Bananita looks down, touches the ticket hidden under his chain, and does not reveal it. Cherry laughs. Officer Plum waits awkwardly.", "So I stayed quiet.", "NAH", "Hold the silence. Use a close-up of Bananita's hand pressing the chain against his hoodie. End on his eyes lifting toward the street."],
+      ["Shot 10", "0:45-0:50", "News van arrival", "Blue news lights wash across the hallway. A news crew arrives outside the building. Gary is visible behind them, terrified.", "Then the news van pulled up.", "NEWS VAN", "Start with flashing blue light on Bananita's face, cut to the van outside, then to Gary pointing toward Bananita. End with everyone turning."],
+      ["Shot 11", "0:50-0:55", "Fake offer", "Cherry Flex pulls out a small stack of cash and tries to press it into Bananita's chest. Strawbella's expression changes from disgust to panic.", "Cherry offered me five hundred dollars to disappear. Strawbella suddenly called me baby again.", "TAKE $500 / BABY?", "Use fast reaction cuts: cash, Cherry's grin, Strawbella grabbing Bananita's sleeve, Bananita looking through both of them."],
+      ["Shot 12", "0:55-1:00", "Receipt cliffhanger", "Gary holds up a tiny receipt behind the news camera. Bananita turns slowly. Strawbella freezes. The ticket is still under Bananita's chain.", "Before I could answer, Gary whispered, Bananita... that ticket was bought with her card.", "HER CARD / WHO BOUGHT IT?", "End on a three-way cliffhanger: Bananita shocked, Strawbella terrified, blank receipt held close to camera. Leave receipt text blank for overlay."]
     ];
 
     function escapeHtml(value) {
@@ -377,41 +324,27 @@ Editing:
         .replaceAll('"', "&quot;");
     }
 
-    document.getElementById("frameGrid").innerHTML = framePrompts.map((item, index) => `
-      <article class="image-card">
-        <div class="slot">${escapeHtml(item[0])}</div>
-        <div class="prompt-head">
-          <h3>${escapeHtml(item[0])}</h3>
-          <button class="copy" type="button" data-copy-target="framePrompt${index}">Copy</button>
-        </div>
-        <pre id="framePrompt${index}">${escapeHtml(item[1])}</pre>
-      </article>
-    `).join("");
-
-    function buildShotBody(item) {
+    function shotBody(item) {
       return `${item[0]} | ${item[1]}
 Beat: ${item[2]}
 Narration: ${item[4]}
-Text overlay: ${item[5]}
+Caption chunks: ${item[5]}
 
-Full 15-second video prompt:
-Use the Word-Only Character Bible. All named characters are anthropomorphic fruit characters, not photoreal humans. If a beat mentions a face, hands, body, scrubs, gown, suit, or gesture, render the fruit-character version with human-like acting and clothing. Create one complete vertical 9:16 Duanju clip.
+Video prompt:
+Use the Character Bible. Create a vertical 9:16 anthropomorphic fruit-character TikTok micro-drama clip, 4-6 seconds long.
 
-Opening frame, 0-3s:
-${item[3]} Establish the location immediately and make the emotional power dynamic readable in the first second.
+Opening frame:
+${item[3]}
 
-Motion beats, 3-12s:
-${item[6]} Stretch the action across the full clip with 2-3 Duanju micro-beats: a wide setup, a proof-object close-up, and a reaction close-up. Use restrained but expressive fruit-character facial acting, small hand gestures, and one clear emotional turn.
+Motion and camera:
+${item[6]}
 
-Ending frame, 12-15s:
-Hold on the most important face or proof object from this beat for a clean edit point. The final frame should make the next shot feel necessary.
-
-Camera and edit:
-Vertical 9:16, cinematic wealthy-family micro-drama lighting, shallow depth of field, hard cuts, no generated readable text, no watermark, no platform UI. Add legal words, captions, dates, and document labels later in editing.`;
+Style rules:
+Gritty cinematic 3D, glossy fruit heads, human-like streetwear bodies, expressive eyes, shallow depth of field, fast TikTok micro-drama cuts. Keep Bananita's hoodie, silver chain, ripped jeans, and anxious charcoal-banana face consistent. Do not generate readable document or screen text; add captions and proof labels in editing. No watermark, no platform UI.`;
     }
 
-    document.getElementById("shotGrid").innerHTML = shotPrompts.map((item, index) => {
-      const body = buildShotBody(item);
+    document.getElementById("shotGrid").innerHTML = shots.map((item, index) => {
+      const body = shotBody(item);
       return `<article class="shot-card">
         <div>
           <div class="time">${escapeHtml(item[1])}</div>
